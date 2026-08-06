@@ -1,0 +1,18 @@
+# Git Ignore Rules for Beta Samos
+
+# Sensitive Credentials, Environment Variables & Passwords
+.env
+.env.*
+.secrets/
+*.secret
+credentials.*
+credentials.local.*
+
+# Sensitive Internal Documents
+knowledge_base/important_info/
+
+# Python & System Cache
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
