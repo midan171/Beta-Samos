@@ -9,7 +9,7 @@
 - **Tagline**: *"Explore Samos by ATV & on Foot — Scenic off-road thrills and guided hikes: local, safe, unforgettable."*
 
 ## Contact & Legal Information
-- **Legal Business Name**: BETA SAMOS MONOPROSOPI IKE (ΒΕΤΑ ΣΑΜΟΣ ΜΟΝΟΠΡΟΣΩΠΗ ΙΚΕ)
+- **Legal Business Name**: B.E.T.A SAMOS MONOPROSOPI IKE (Β.Ε.Τ.Α SAMOS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε)
 - **Name of Legal Representative**: Oltion Beta
 - **Trade Name**: Beta Samos ATV & Hiking Tour
 - **AFM (Tax Registration / ΑΦΜ)**: `802485045` (Δ.Ο.Υ. Σάμου)
