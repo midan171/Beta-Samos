@@ -13,6 +13,7 @@
 - **Name of Legal Representative**: Oltion Beta
 - **Trade Name**: Beta Samos ATV & Hiking Tour
 - **AFM (Tax Registration / ΑΦΜ)**: `802485045` (Δ.Ο.Υ. Σάμου)
+- **GEMI (General Electronic Business Register / Αριθμός ΓΕΜΗ)**: 177240851000
 - **Registered Headquarters**: Kanari 1, Karlovasi, Samos, Greece (T.K. 83200)
 - **Primary Official Email**: `betasamos.greece@gmail.com`
 - **Secondary Contact Email**: `edeliverades@gmail.com`
