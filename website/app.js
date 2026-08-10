@@ -99,8 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
       feat_1_desc: "Fully automatic, easy-to-drive, rigorously inspected quads built for comfort, safety, and stability.",
       feat_2_title: "Secret Island Trails",
       feat_2_desc: "Reach secluded mountain lookouts, hidden chapels, and waterfalls inaccessible by standard rental cars.",
-      feat_3_title: "Authentic Samian Treats",
-      feat_3_desc: "Enjoy traditional local snacks, fresh seasonal fruits, and refreshments at scenic rest spots.",
+      feat_3_title: "Delicious Snacks for Regaining Energy",
+      feat_3_desc: "Recharge with nutritious energy snacks, fresh seasonal fruit, and cool bottled water at scenic rest stops along the way.",
       feat_4_title: "Free Action Photos",
       feat_4_desc: "Our guides capture your best driving moments, ridge crossings, and waterfall walks — shared with you for free!",
 
@@ -255,8 +255,8 @@ document.addEventListener('DOMContentLoaded', () => {
       feat_1_desc: "Πλήρως αυτόματα, εύκολα στην οδήγηση, άψογα συντηρημένα quads για άνεση και σταθερότητα.",
       feat_2_title: "Μυστικές Διαδρομές",
       feat_2_desc: "Πρόσβαση σε απόκρημνα σημεία θέας, ξωκλήσια και καταρράκτες που δεν προσεγγίζονται με συμβατικά ενοικιαζόμενα αυτοκίνητα.",
-      feat_3_title: "Αυθεντικά Σαμιώτικα Κεράσματα",
-      feat_3_desc: "Απολαύστε τοπικά παραδοσιακά σνακ, φρέσκα φρούτα και αναψυκτικά σε επιλεγμένα σημεία ανάπαυλας.",
+      feat_3_title: "Γευστικά Snacks για Αναπλήρωση Ενέργειας",
+      feat_3_desc: "Ανακτήστε ενέργεια με θρεπτικά snacks, φρέσκα φρούτα εποχής και δροσερό νερό σε επιλεγμένα σημεία ανάπαυλας με εκπληκτική θέα.",
       feat_4_title: "Δωρεάν Φωτογραφίες Δράσης",
       feat_4_desc: "Οι οδηγοί μας τραβούν τις καλύτερες στιγμές της οδήγησης και της πεζοπορίας σας και τις μοιράζονται δωρεάν μαζί σας!",
 

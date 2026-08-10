@@ -78,8 +78,28 @@
       </div>
       <div class="topbar-right">
         <div class="lang-switcher">
-          <button class="lang-btn active" data-lang="en">🇬🇧 EN</button>
-          <button class="lang-btn" data-lang="el">🇬🇷 ΕΛ</button>
+          <button class="lang-btn active" data-lang="en">
+            <svg class="flag-icon" viewBox="0 0 60 30" width="18" height="12">
+              <clipPath id="uk-flag"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+              <g clip-path="url(#uk-flag)">
+                <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-flag)" stroke="#C8102E" stroke-width="4"/>
+                <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+              </g>
+            </svg>
+            EN
+          </button>
+          <button class="lang-btn" data-lang="el">
+            <svg class="flag-icon" viewBox="0 0 27 18" width="18" height="12">
+              <rect width="27" height="18" fill="#0D5EAF"/>
+              <path d="M0,2h27M0,6h27M0,10h27M0,14h27" stroke="#fff" stroke-width="2"/>
+              <rect width="10" height="10" fill="#0D5EAF"/>
+              <path d="M5,0v10M0,5h10" stroke="#fff" stroke-width="2"/>
+            </svg>
+            ΕΛ
+          </button>
         </div>
       </div>
     </div>
@@ -485,25 +505,53 @@
 
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon-box">🚜</div>
+          <div class="feature-icon-box">
+            <!-- ATV / Quad Safari Icon -->
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="5.5" cy="17.5" r="3.5"/>
+              <circle cx="18.5" cy="17.5" r="3.5"/>
+              <path d="M5.5 14h13"/>
+              <path d="M9 14l1.5-6h5l2.5 6"/>
+              <path d="M12 8V4m-3 0h6"/>
+              <path d="M2 12h3m14 0h3"/>
+            </svg>
+          </div>
           <h4 data-i18n="feat_1_title">Top Modern ATVs</h4>
           <p data-i18n="feat_1_desc">Fully automatic, easy-to-drive, rigorously inspected quads built for comfort, safety, and stability.</p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon-box">🧭</div>
+          <div class="feature-icon-box">
+            <!-- Mountain Trail / Hiking Path Icon -->
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 20l5-9 4 5 4-7 5 11H3z"/>
+              <path d="M8 20c2-3 4-3 6 0"/>
+              <path d="M10 14c1.5-2 3-2 4.5 0"/>
+            </svg>
+          </div>
           <h4 data-i18n="feat_2_title">Secret Island Trails</h4>
           <p data-i18n="feat_2_desc">Reach secluded mountain lookouts, hidden chapels, and waterfalls inaccessible by standard rental cars.</p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon-box">🍇</div>
-          <h4 data-i18n="feat_3_title">Authentic Samian Treats</h4>
-          <p data-i18n="feat_3_desc">Enjoy traditional local snacks, fresh seasonal fruits, and refreshments at scenic rest spots.</p>
+          <div class="feature-icon-box">
+            <!-- Energy Snacks & Refreshments Icon -->
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <h4 data-i18n="feat_3_title">Delicious Snacks for Regaining Energy</h4>
+          <p data-i18n="feat_3_desc">Recharge with nutritious energy snacks, fresh seasonal fruit, and cool bottled water at scenic rest stops along the way.</p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon-box">📸</div>
+          <div class="feature-icon-box">
+            <!-- Action Photography Icon -->
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+              <circle cx="12" cy="13" r="4"/>
+            </svg>
+          </div>
           <h4 data-i18n="feat_4_title">Free Action Photos</h4>
           <p data-i18n="feat_4_desc">Our guides capture your best driving moments, ridge crossings, and waterfall walks — shared with you for free!</p>
         </div>
@@ -592,7 +640,18 @@
             "The highlight of our 2 weeks in Samos! Oltion was an incredible guide who showed us mountain viewpoints we would never have found on our own. The quads are brand new and the hike was refreshing!"
           </p>
           <div class="reviewer-meta">
-            <span class="flag-avatar">🇬🇧</span>
+            <span class="flag-avatar">
+              <svg viewBox="0 0 60 30" width="32" height="20">
+                <clipPath id="uk-rev"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+                <g clip-path="url(#uk-rev)">
+                  <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                  <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                  <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"/>
+                  <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                  <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                </g>
+              </svg>
+            </span>
             <div class="reviewer-details">
               <h5>James &amp; Sophie T.</h5>
               <p>London, United Kingdom • July 2026</p>
@@ -606,7 +665,13 @@
             "Fantastic 5-hour tour! The mix of off-road quad riding and the walk through Potami waterfalls was perfect. Great safety briefing and the local Greek snacks at the viewpoint were delicious."
           </p>
           <div class="reviewer-meta">
-            <span class="flag-avatar">🇩🇪</span>
+            <span class="flag-avatar">
+              <svg viewBox="0 0 5 3" width="32" height="20">
+                <rect width="5" height="1" y="0" fill="#000"/>
+                <rect width="5" height="1" y="1" fill="#D00"/>
+                <rect width="5" height="1" y="2" fill="#FFCE00"/>
+              </svg>
+            </span>
             <div class="reviewer-details">
               <h5>Markus &amp; Elena W.</h5>
               <p>Munich, Germany • August 2026</p>
@@ -620,7 +685,14 @@
             "Η καλύτερη εμπειρία στη Σάμο! Φοβερή διαδρομή στο βουνό, απόλυτη ασφάλεια και απίστευτη θέα. Το συστήνουμε ανεπιφύλακτα σε όποιον θέλει πραγματική περιπέτεια στο νησί!"
           </p>
           <div class="reviewer-meta">
-            <span class="flag-avatar">🇬🇷</span>
+            <span class="flag-avatar">
+              <svg viewBox="0 0 27 18" width="32" height="20">
+                <rect width="27" height="18" fill="#0D5EAF"/>
+                <path d="M0,2h27M0,6h27M0,10h27M0,14h27" stroke="#fff" stroke-width="2"/>
+                <rect width="10" height="10" fill="#0D5EAF"/>
+                <path d="M5,0v10M0,5h10" stroke="#fff" stroke-width="2"/>
+              </svg>
+            </span>
             <div class="reviewer-details">
               <h5>Νίκος &amp; Μαρία Κ.</h5>
               <p>Αθήνα, Ελλάδα • Αύγουστος 2026</p>
