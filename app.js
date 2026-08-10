@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_location: "Location",
       nav_book: "Book Now",
 
-      hero_badge: "Rated 4.9/5 by International Travelers | Samos, Greece",
+      hero_badge: "Rated as Excellent by International Travelers | Samos, Greece",
       hero_title: "Explore Samos by <span>ATV & on Foot</span>",
       hero_subtitle: "Scenic off-road thrills, hidden mountain trails, Potami waterfalls, and breathtaking Aegean viewpoints with passionate local guides.",
 
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_location: "Τοποθεσία",
       nav_book: "Κράτηση",
 
-      hero_badge: "Αξιολόγηση 4.9/5 από ταξιδιώτες παγκοσμίως | Σάμος, Ελλάδα",
+      hero_badge: "Αξιολογήθηκε ως Εξαιρετικό από Ταξιδιώτες Διεθνώς | Σάμος, Ελλάδα",
       hero_title: "Ανακαλύψτε τη Σάμο με <span>ATV & Πεζοπορία</span>",
       hero_subtitle: "Συναρπαστικές off-road διαδρομές, ορεινά μονοπάτια, καταρράκτες Ποτάμι και μαγευτική θέα στο Αιγαίο με έμπειρους τοπικούς οδηγούς.",
 
