@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Primary Meta Tags -->
   <title>Beta Samos ATV &amp; Hiking Guided Tours | Explore Samos Island, Greece</title>
   <meta name="description" content="Premier guided ATV off-road adventures and scenic hiking tours on Samos Island, Greece. Explore Potami waterfalls, mountain viewpoints, and authentic Greek trails. Book online!">
   <meta name="keywords" content="Beta Samos, Samos ATV tour, quad safari Samos, hiking Samos island, Potami waterfalls tour, Karlovasi excursions, outdoor activities Greece">
@@ -47,8 +45,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 37.7946,
-      "longitude": 26.6854
+      "latitude": 37.7944,
+      "longitude": 26.6881
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -58,427 +56,574 @@
       "opens": "09:00",
       "closes": "20:00"
     },
-    "priceRange": "€€",
-    "taxID": "802485045"
+    "priceRange": "€€"
   }
   </script>
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
-  <div class="announcement-bar">
-    <div class="container">
-      <div class="announcement-left">
-        <span class="badge-live"><span class="pulse-dot"></span> Season 2026 Open</span>
-        <span>Daily departures at 09:30 AM &amp; 15:30 PM from Karlovasi</span>
+  <!-- Top Notification Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-left">
+        <a href="tel:+306942430930" class="topbar-item">
+          <span>📞</span> +30 694 243 0930
+        </a>
+        <a href="https://wa.me/306942430930" target="_blank" rel="noopener" class="topbar-item">
+          <span>💬</span> <span data-i18n="topbar_whatsapp">WhatsApp Booking</span>
+        </a>
+        <span class="topbar-item">
+          <span>📍</span> Karlovasi, Samos Island, Greece
+        </span>
       </div>
-      <div class="announcement-right">
-        <a href="tel:+306942430930" class="announcement-link">📞 +30 694 243 0930</a>
-        <a href="https://wa.me/306942430930" target="_blank" class="announcement-link">💬 WhatsApp</a>
+      <div class="topbar-right">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="en">🇬🇧 EN</button>
+          <button class="lang-btn" data-lang="el">🇬🇷 ΕΛ</button>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Main Navigation Header -->
-  <header class="site-header">
+  <!-- Main Navigation -->
+  <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo-wrap">
-        <div class="logo-badge">🏔️</div>
-        <div class="logo-text">
-          <h1>BETA SAMOS</h1>
-          <span>ATV &amp; Hiking Tour</span>
+      <a href="#" class="logo-brand">
+        <span class="logo-icon">🏔️</span>
+        <div class="logo-text-wrap">
+          <span class="logo-title">BETA SAMOS</span>
+          <span class="logo-tag" data-i18n="nav_tag">ATV &amp; Hiking Tour</span>
         </div>
       </a>
 
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="#tours" class="nav-link" data-i18n="nav_tours">Tours &amp; Pricing</a></li>
-          <li><a href="#itinerary" class="nav-link" data-i18n="nav_itinerary">Itinerary</a></li>
-          <li><a href="#gallery" class="nav-link">Gallery</a></li>
-          <li><a href="#safety" class="nav-link" data-i18n="nav_safety">Safety &amp; Rules</a></li>
-          <li><a href="#reviews" class="nav-link" data-i18n="nav_reviews">Reviews</a></li>
-          <li><a href="#location" class="nav-link" data-i18n="nav_location">Location</a></li>
-        </ul>
-      </nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#tours" class="nav-link" data-i18n="nav_tours">Tours &amp; Pricing</a></li>
+        <li><a href="#whyus" class="nav-link" data-i18n="nav_whyus">Why Beta Samos</a></li>
+        <li><a href="#guide" class="nav-link" data-i18n="nav_guide">Before You Ride</a></li>
+        <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+        <li><a href="#reviews" class="nav-link" data-i18n="nav_reviews">Reviews</a></li>
+        <li><a href="#location" class="nav-link" data-i18n="nav_location">Location</a></li>
+      </ul>
 
       <div class="nav-actions">
-        <!-- Language Switcher -->
-        <div class="lang-toggle">
-          <button class="lang-btn active" data-lang="en">EN</button>
-          <button class="lang-btn" data-lang="el">ΕΛ</button>
-        </div>
+        <button class="btn btn-primary btn-sm open-booking-modal" data-i18n="nav_book">Book Now</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </nav>
 
-        <a href="#tours" class="btn btn-primary open-booking-modal" data-tour="flagship" data-i18n="nav_book_btn">Book Now</a>
-        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">☰</button>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span>⭐</span> <span data-i18n="hero_badge">Rated 4.9/5 by International Travelers | Samos, Greece</span>
+      </div>
+
+      <h1 class="hero-title" data-i18n="hero_title">
+        Explore Samos by <span>ATV &amp; on Foot</span>
+      </h1>
+
+      <p class="hero-subtitle" data-i18n="hero_subtitle">
+        Scenic off-road thrills, hidden mountain trails, Potami waterfalls, and breathtaking Aegean viewpoints with passionate local guides.
+      </p>
+
+      <!-- Floating Quick-Booking Bar (Madeira Adventure Kingdom Style) -->
+      <div class="quick-book-card">
+        <div class="quick-book-grid">
+          <div class="qb-field">
+            <label class="qb-label"><span>🗺️</span> <span data-i18n="qb_tour_label">Select Adventure</span></label>
+            <select class="qb-select" id="qbTour">
+              <option value="flagship">Beta Samos 5h ATV &amp; Hiking Tour (€110)</option>
+              <option value="sunset">Sunset Mountain &amp; Coastal Quad Tour (€95)</option>
+              <option value="vip">Custom Private VIP Excursion</option>
+            </select>
+          </div>
+
+          <div class="qb-field">
+            <label class="qb-label"><span>📅</span> <span data-i18n="qb_date_label">Tour Date</span></label>
+            <input type="date" class="qb-input" id="qbDate">
+          </div>
+
+          <div class="qb-field">
+            <label class="qb-label"><span>👥</span> <span data-i18n="qb_riders_label">Quads &amp; Riders</span></label>
+            <select class="qb-select" id="qbRiders">
+              <option value="1-solo">1 Quad (1 Solo Driver)</option>
+              <option value="1-shared">1 Quad (Driver + Passenger)</option>
+              <option value="2-solo">2 Quads (2 Drivers)</option>
+              <option value="2-shared">2 Quads (4 People)</option>
+              <option value="group">3+ Quads (Group Safari)</option>
+            </select>
+          </div>
+
+          <div class="qb-field">
+            <button class="btn btn-primary btn-block" id="qbSubmitBtn" data-i18n="qb_btn">Check &amp; Book</button>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge" data-i18n="hero_badge">⭐ Rated #1 Guided Outdoor Adventure in Samos</div>
-        <h1 class="hero-title" data-i18n="hero_title">Explore Samos by <span>ATV &amp; on Foot</span></h1>
-        <p class="hero-desc" data-i18n="hero_desc">Scenic off-road thrills, hidden mountain trails, Potami waterfalls, and breathtaking Aegean viewpoints with expert local guides.</p>
-        
-        <div class="hero-cta-group">
-          <a href="#bookingModal" class="btn btn-primary open-booking-modal" data-tour="flagship" data-i18n="hero_btn_book">Book Guided Tour (€110)</a>
-          <a href="https://wa.me/306942430930?text=Hello%20Beta%20Samos!%20I%20am%20interested%20in%20booking%20an%20ATV%20tour." target="_blank" class="btn btn-whatsapp" data-i18n="hero_btn_wa">💬 WhatsApp Quick Chat</a>
+  <!-- Trust Ribbon -->
+  <section class="trust-ribbon">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">🛡️</div>
+        <div class="trust-text">
+          <h4 data-i18n="trust_1_title">100% Safety Certified</h4>
+          <p data-i18n="trust_1_desc">DOT/ECE helmets, safety briefing &amp; automatic ATVs</p>
         </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔄</div>
+        <div class="trust-text">
+          <h4 data-i18n="trust_2_title">Free 24h Cancellation</h4>
+          <p data-i18n="trust_2_desc">Full refund if plans change or bad weather occurs</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">💬</div>
+        <div class="trust-text">
+          <h4 data-i18n="trust_3_title">Instant WhatsApp Booking</h4>
+          <p data-i18n="trust_3_desc">Direct contact with local guides for fast confirmation</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🇬🇷</div>
+        <div class="trust-text">
+          <h4 data-i18n="trust_4_title">Authentic Island Guides</h4>
+          <p data-i18n="trust_4_desc">Passionate local knowledge &amp; hidden viewpoint trails</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="hero-features">
-          <div class="feature-pill">
-            <div class="feature-pill-icon">🛡️</div>
-            <span data-i18n="feat_helmets">Helmets &amp; Gear Included</span>
+  <!-- Tour Packages Section -->
+  <section class="section-tours" id="tours">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="tours_tag">Guided Expeditions</span>
+        <h2 class="section-title" data-i18n="tours_title">Choose Your Samos Adventure</h2>
+        <p class="section-subtitle" data-i18n="tours_subtitle">
+          Small-group off-road quad safaris combining rugged mountain trails, waterfall hikes, and panoramic sea vistas.
+        </p>
+      </div>
+
+      <!-- Tour 1: Flagship 5-Hour Tour -->
+      <div class="tour-card" id="flagship-tour">
+        <div class="tour-grid">
+          <div class="tour-media">
+            <img src="assets/images/IMG_3026.jpeg" alt="Beta Samos ATV & Hiking Guided Tour" class="tour-img">
+            <div class="tour-badge-top">
+              <span class="pill-badge featured" data-i18n="badge_bestseller">🔥 Most Popular</span>
+              <span class="pill-badge">⏱️ 5 Hours</span>
+              <span class="pill-badge">📍 Karlovasi &amp; Potami</span>
+            </div>
           </div>
-          <div class="feature-pill">
-            <div class="feature-pill-icon">👥</div>
-            <span data-i18n="feat_groups">Small Groups &amp; Private</span>
+
+          <div class="tour-body">
+            <div class="tour-header-row">
+              <div>
+                <h3 class="tour-title" data-i18n="t1_title">Beta Samos ATV &amp; Hiking Guided Tour</h3>
+                <p style="color: var(--slate-500); font-size: 0.9rem;" data-i18n="t1_dep">Departures: 09:30 AM &amp; 15:30 PM Daily</p>
+              </div>
+              <div class="tour-pricing-box">
+                <span class="price-from" data-i18n="price_from">From</span>
+                <span class="price-val">€110</span>
+                <span class="price-sub" data-i18n="price_per_driver">/ driver</span>
+              </div>
+            </div>
+
+            <!-- Tour Specs Bar -->
+            <div class="tour-specs-bar">
+              <div class="spec-item">
+                <span class="spec-icon">⏱️</span>
+                <div class="spec-data">
+                  <h5 data-i18n="spec_dur">Duration</h5>
+                  <p>5.0 Hours</p>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">⛰️</span>
+                <div class="spec-data">
+                  <h5 data-i18n="spec_terrain">Terrain</h5>
+                  <p data-i18n="spec_terrain_val">70% Dirt / 30% Road</p>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🪪</span>
+                <div class="spec-data">
+                  <h5 data-i18n="spec_lic">Driver Lic.</h5>
+                  <p>Category B (18+)</p>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">👥</span>
+                <div class="spec-data">
+                  <h5 data-i18n="spec_grp">Group Size</h5>
+                  <p data-i18n="spec_grp_val">Max 6 Quads</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Tour Tabs (Madeira Style) -->
+            <div class="tour-tabs">
+              <button class="tab-btn active" data-tab="t1-overview" data-i18n="tab_overview">Overview</button>
+              <button class="tab-btn" data-tab="t1-itinerary" data-i18n="tab_itinerary">Itinerary</button>
+              <button class="tab-btn" data-tab="t1-inclusions" data-i18n="tab_inclusions">Inclusions</button>
+              <button class="tab-btn" data-tab="t1-bring" data-i18n="tab_bring">What to Bring</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+              <!-- Overview -->
+              <div class="tab-pane active" id="t1-overview">
+                <p data-i18n="t1_desc">
+                  Our flagship 5-hour adventure combines exhilarating off-road ATV driving through shaded pine forests with a guided nature hike to hidden mountain viewpoints and Potami waterfalls. Includes traditional Samian snacks and bottled water.
+                </p>
+              </div>
+
+              <!-- Itinerary -->
+              <div class="tab-pane" id="t1-itinerary">
+                <div class="itinerary-list">
+                  <div class="itinerary-step">
+                    <span class="itinerary-time">00:00</span>
+                    <div class="itinerary-info">
+                      <h5 data-i18n="itin_1_title">Safety Briefing &amp; Practice Lap</h5>
+                      <p data-i18n="itin_1_desc">Helmet fitting, vehicle controls briefing, and a practice run at Karlovasi HQ.</p>
+                    </div>
+                  </div>
+                  <div class="itinerary-step">
+                    <span class="itinerary-time">01:00</span>
+                    <div class="itinerary-info">
+                      <h5 data-i18n="itin_2_title">Off-Road Mountain Trails</h5>
+                      <p data-i18n="itin_2_desc">Ride rugged dirt tracks and mountain paths through dense pine forests.</p>
+                    </div>
+                  </div>
+                  <div class="itinerary-step">
+                    <span class="itinerary-time">02:30</span>
+                    <div class="itinerary-info">
+                      <h5 data-i18n="itin_3_title">Guided Hike &amp; Potami Waterfalls</h5>
+                      <p data-i18n="itin_3_desc">Park quads for a scenic guided foot trail into lush river gorges and historic stone paths.</p>
+                    </div>
+                  </div>
+                  <div class="itinerary-step">
+                    <span class="itinerary-time">03:45</span>
+                    <div class="itinerary-info">
+                      <h5 data-i18n="itin_4_title">Samian Snack &amp; Panorama Stop</h5>
+                      <p data-i18n="itin_4_desc">Rest at a cliffside viewpoint for traditional Greek snacks, fresh fruit, and cool water.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Inclusions -->
+              <div class="tab-pane" id="t1-inclusions">
+                <div class="inclusions-grid">
+                  <div class="inc-item yes"><span>✅</span> <span data-i18n="inc_1">Premium Automatic ATV &amp; Fuel</span></div>
+                  <div class="inc-item yes"><span>✅</span> <span data-i18n="inc_2">DOT/ECE Approved Helmets</span></div>
+                  <div class="inc-item yes"><span>✅</span> <span data-i18n="inc_3">Certified Local Island Guide</span></div>
+                  <div class="inc-item yes"><span>✅</span> <span data-i18n="inc_4">Local Samian Snacks &amp; Water</span></div>
+                  <div class="inc-item yes"><span>✅</span> <span data-i18n="inc_5">Free Action Photos Shared</span></div>
+                  <div class="inc-item no"><span>❌</span> <span data-i18n="inc_6">Hotel Transfer (Available on Request)</span></div>
+                </div>
+              </div>
+
+              <!-- What to Bring -->
+              <div class="tab-pane" id="t1-bring">
+                <div class="bring-grid">
+                  <div class="bring-item">
+                    <div class="bring-icon">👟</div>
+                    <span data-i18n="bring_shoes">Closed Shoes</span>
+                  </div>
+                  <div class="bring-item">
+                    <div class="bring-icon">🪪</div>
+                    <span data-i18n="bring_license">Physical Driver Lic.</span>
+                  </div>
+                  <div class="bring-item">
+                    <div class="bring-icon">🕶️</div>
+                    <span data-i18n="bring_glasses">Sunglasses</span>
+                  </div>
+                  <div class="bring-item">
+                    <div class="bring-icon">☀️</div>
+                    <span data-i18n="bring_sunscreen">Sunscreen &amp; Hat</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tour-footer-actions">
+              <button class="btn btn-primary open-booking-modal" data-tour="flagship" data-i18n="btn_book_t1">Book This Tour (€110)</button>
+              <a href="https://wa.me/306942430930?text=Hello!%20I%20would%20like%20to%20inquire%20about%20the%205-Hour%20ATV%20Tour" target="_blank" class="btn btn-whatsapp" data-i18n="btn_whatsapp_inquire">💬 WhatsApp Chat</a>
+            </div>
           </div>
-          <div class="feature-pill">
-            <div class="feature-pill-icon">⚡</div>
-            <span data-i18n="feat_automatic">Easy Automatic ATVs</span>
+        </div>
+      </div>
+
+      <!-- Tour 2: Sunset Mountain & Coastal Quad Tour -->
+      <div class="tour-card" id="sunset-tour">
+        <div class="tour-grid">
+          <div class="tour-media">
+            <img src="assets/images/IMG_2938.jpeg" alt="Sunset Mountain & Coastal Quad Tour" class="tour-img">
+            <div class="tour-badge-top">
+              <span class="pill-badge" style="background: #ea580c;" data-i18n="badge_sunset">🌅 Golden Hour</span>
+              <span class="pill-badge">⏱️ 3.5 Hours</span>
+              <span class="pill-badge">📍 Coastal &amp; Ridge Views</span>
+            </div>
           </div>
-          <div class="feature-pill">
-            <div class="feature-pill-icon">📍</div>
-            <span data-i18n="feat_hq">Karlovasi HQ Meeting Point</span>
+
+          <div class="tour-body">
+            <div class="tour-header-row">
+              <div>
+                <h3 class="tour-title" data-i18n="t2_title">Sunset Mountain &amp; Coastal Quad Tour</h3>
+                <p style="color: var(--slate-500); font-size: 0.9rem;" data-i18n="t2_dep">Departure: 17:30 PM (Seasonal)</p>
+              </div>
+              <div class="tour-pricing-box">
+                <span class="price-from" data-i18n="price_from">From</span>
+                <span class="price-val">€95</span>
+                <span class="price-sub" data-i18n="price_per_driver">/ driver</span>
+              </div>
+            </div>
+
+            <!-- Specs Bar -->
+            <div class="tour-specs-bar">
+              <div class="spec-item">
+                <span class="spec-icon">⏱️</span>
+                <div class="spec-data">
+                  <h5 data-i18n="spec_dur">Duration</h5>
+                  <p>3.5 Hours</p>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">⛰️</span>
+                <div class="spec-data">
+                  <h5 data-i18n="spec_terrain">Terrain</h5>
+                  <p data-i18n="spec_t2_terrain">60% Dirt / 40% Scenic</p>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🪪</span>
+                <div class="spec-data">
+                  <h5 data-i18n="spec_lic">Driver Lic.</h5>
+                  <p>Category B (18+)</p>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">👥</span>
+                <div class="spec-data">
+                  <h5 data-i18n="spec_grp">Group Size</h5>
+                  <p data-i18n="spec_grp_val">Max 6 Quads</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Tour Tabs -->
+            <div class="tour-tabs">
+              <button class="tab-btn active" data-tab="t2-overview" data-i18n="tab_overview">Overview</button>
+              <button class="tab-btn" data-tab="t2-inclusions" data-i18n="tab_inclusions">Inclusions</button>
+              <button class="tab-btn" data-tab="t2-bring" data-i18n="tab_bring">What to Bring</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="t2-overview">
+                <p data-i18n="t2_desc">
+                  Ride during the cooler evening hours as the golden sun dips over the Aegean sea. Experience high mountain ridge paths, panoramic sunset viewpoints, and twilight coastal trails.
+                </p>
+              </div>
+
+              <div class="tab-pane" id="t2-inclusions">
+                <div class="inclusions-grid">
+                  <div class="inc-item yes"><span>✅</span> <span data-i18n="inc_1">Premium Automatic ATV &amp; Fuel</span></div>
+                  <div class="inc-item yes"><span>✅</span> <span data-i18n="inc_2">DOT/ECE Approved Helmets</span></div>
+                  <div class="inc-item yes"><span>✅</span> <span data-i18n="inc_3">Certified Local Island Guide</span></div>
+                  <div class="inc-item yes"><span>✅</span> <span data-i18n="inc_sunset_drink">Sunset Refreshments &amp; Water</span></div>
+                </div>
+              </div>
+
+              <div class="tab-pane" id="t2-bring">
+                <div class="bring-grid">
+                  <div class="bring-item">
+                    <div class="bring-icon">👟</div>
+                    <span data-i18n="bring_shoes">Closed Shoes</span>
+                  </div>
+                  <div class="bring-item">
+                    <div class="bring-icon">🪪</div>
+                    <span data-i18n="bring_license">Physical Driver Lic.</span>
+                  </div>
+                  <div class="bring-item">
+                    <div class="bring-icon">🕶️</div>
+                    <span data-i18n="bring_glasses">Sunglasses</span>
+                  </div>
+                  <div class="bring-item">
+                    <div class="bring-icon">🧥</div>
+                    <span data-i18n="bring_jacket">Light Evening Jacket</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tour-footer-actions">
+              <button class="btn btn-primary open-booking-modal" data-tour="sunset" data-i18n="btn_book_t2">Book Sunset Tour (€95)</button>
+              <a href="https://wa.me/306942430930?text=Hello!%20I%20am%20interested%20in%20the%20Sunset%20Quad%20Tour" target="_blank" class="btn btn-whatsapp" data-i18n="btn_whatsapp_inquire">💬 WhatsApp Chat</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Quick Highlights Section -->
-  <section class="highlights-section">
+  <!-- "Why Choose Beta Samos" Features Section -->
+  <section class="section-features" id="whyus">
     <div class="container">
-      <div class="text-center">
-        <span class="section-tag" data-i18n="tag_why_us">Why Choose Us</span>
-        <h2 class="section-title" data-i18n="title_why_us">Unforgettable Samos Island Adventures</h2>
-        <p class="section-subtitle" data-i18n="sub_why_us">Experience the perfect balance of exhilarating off-road driving and peaceful guided nature discovery.</p>
+      <div class="section-header">
+        <span class="section-tag" data-i18n="why_tag">The Beta Samos Difference</span>
+        <h2 class="section-title" data-i18n="why_title">Why Explore Samos With Us?</h2>
+        <p class="section-subtitle" data-i18n="why_subtitle">
+          We combine the adrenaline of off-road driving with deep local roots and unforgettable island hospitality.
+        </p>
       </div>
 
-      <div class="highlight-grid">
-        <div class="highlight-card">
-          <div class="highlight-icon-wrap">🏍️</div>
-          <h3 data-i18n="hl_1_title">Off-Road Quad Thrills</h3>
-          <p data-i18n="hl_1_desc">Ride curated mountain and coastal tracks through pine forests and ridge paths with safe, automatic ATVs.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box">🚜</div>
+          <h4 data-i18n="feat_1_title">Top Modern ATVs</h4>
+          <p data-i18n="feat_1_desc">Fully automatic, easy-to-drive, rigorously inspected quads built for comfort, safety, and stability.</p>
         </div>
 
-        <div class="highlight-card">
-          <div class="highlight-icon-wrap">🥾</div>
-          <h3 data-i18n="hl_2_title">Guided Nature Hiking</h3>
-          <p data-i18n="hl_2_desc">Discover hidden waterfalls, historic stone bridges, and panoramic viewpoints only accessible on foot.</p>
+        <div class="feature-card">
+          <div class="feature-icon-box">🧭</div>
+          <h4 data-i18n="feat_2_title">Secret Island Trails</h4>
+          <p data-i18n="feat_2_desc">Reach secluded mountain lookouts, hidden chapels, and waterfalls inaccessible by standard rental cars.</p>
         </div>
 
-        <div class="highlight-card">
-          <div class="highlight-icon-wrap">🧭</div>
-          <h3 data-i18n="hl_3_title">Certified Local Guides</h3>
-          <p data-i18n="hl_3_desc">Passionate local leaders ensuring full safety briefings, helmet fittings, and authentic island stories.</p>
+        <div class="feature-card">
+          <div class="feature-icon-box">🍇</div>
+          <h4 data-i18n="feat_3_title">Authentic Samian Treats</h4>
+          <p data-i18n="feat_3_desc">Enjoy traditional local snacks, fresh seasonal fruits, and refreshments at scenic rest spots.</p>
         </div>
 
-        <div class="highlight-card">
-          <div class="highlight-icon-wrap">🍇</div>
-          <h3 data-i18n="hl_4_title">Local Treats Included</h3>
-          <p data-i18n="hl_4_desc">Enjoy traditional Samian snacks, fresh seasonal fruits, and cool bottled water at scenic rest stops.</p>
+        <div class="feature-card">
+          <div class="feature-icon-box">📸</div>
+          <h4 data-i18n="feat_4_title">Free Action Photos</h4>
+          <p data-i18n="feat_4_desc">Our guides capture your best driving moments, ridge crossings, and waterfall walks — shared with you for free!</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Tour Packages & Pricing Section -->
-  <section id="tours" class="tours-section">
+  <!-- "Before You Ride" Preparation Guide (Madeira Style) -->
+  <section class="section-guide" id="guide">
     <div class="container">
-      <div class="text-center">
-        <span class="section-tag" data-i18n="tag_packages">Tour Packages</span>
-        <h2 class="section-title" data-i18n="title_packages">Choose Your Outdoor Adventure</h2>
-        <p class="section-subtitle" data-i18n="sub_packages">All tours include safety briefings, DOT/ECE approved helmets, fuel, guide, and local snacks.</p>
+      <div class="section-header">
+        <span class="section-tag" style="background: rgba(255,255,255,0.15); color: var(--amber-100);" data-i18n="guide_tag">Traveler Preparation</span>
+        <h2 class="section-title" style="color: var(--white);" data-i18n="guide_title">Before You Ride: Important Info</h2>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.8);" data-i18n="guide_subtitle">
+          Everything you need to know for a smooth, safe, and exciting excursion on Samos.
+        </p>
       </div>
 
-      <div class="tours-grid">
-        <!-- Main Flagship Tour -->
-        <div class="tour-card featured">
-          <div class="tour-badge" data-i18n="tour1_badge">Most Popular Signature Tour</div>
-          <div class="tour-image-wrap">
-            <img src="assets/images/IMG_2938.jpeg" alt="Beta Samos ATV &amp; Hiking Guided Tour">
-            <div class="tour-price-tag">
-              <div class="price-amount">€110</div>
-              <div class="price-unit">per person</div>
-            </div>
-          </div>
-          <div class="tour-content">
-            <div class="tour-meta">
-              <span>⏱️ 5.0 Hours</span>
-              <span>📍 Karlovasi HQ</span>
-              <span>🗣️ English &amp; Greek</span>
-            </div>
-            <h3 class="tour-title" data-i18n="tour1_title">Beta Samos ATV &amp; Hiking Guided Tour</h3>
-            <p class="tour-desc" data-i18n="tour1_desc">Our complete 5-hour flagship experience. Off-road quad driving through lush mountain forests, guided trail walk to hidden viewpoints, and authentic local snacks.</p>
-            
-            <div class="tour-itinerary-preview">
-              <div class="itinerary-step">
-                <span class="itinerary-time">09:30</span>
-                <span>Safety briefing, helmet fitting &amp; ATV test drive</span>
-              </div>
-              <div class="itinerary-step">
-                <span class="itinerary-time">10:00</span>
-                <span>Scenic off-road drive up mountain ridge trails</span>
-              </div>
-              <div class="itinerary-step">
-                <span class="itinerary-time">11:30</span>
-                <span>Guided hiking walk to Potami waterfalls &amp; viewpoints</span>
-              </div>
-              <div class="itinerary-step">
-                <span class="itinerary-time">13:00</span>
-                <span>Traditional Samian snack &amp; refreshment break</span>
-              </div>
-              <div class="itinerary-step">
-                <span class="itinerary-time">14:30</span>
-                <span>Smooth coastal ATV ride back to Karlovasi</span>
-              </div>
-            </div>
-
-            <ul class="tour-inclusions">
-              <li data-i18n="tour1_inc1">5-Hour guided ATV &amp; hiking excursion</li>
-              <li data-i18n="tour1_inc2">High-performance automatic ATV &amp; fuel</li>
-              <li data-i18n="tour1_inc3">DOT/ECE approved helmets &amp; safety gear</li>
-              <li data-i18n="tour1_inc4">Guided nature walk with local guide</li>
-              <li data-i18n="tour1_inc5">Traditional Greek snacks &amp; bottled water</li>
-            </ul>
-
-            <button class="btn btn-primary open-booking-modal" style="width: 100%;" data-tour="flagship" data-i18n="btn_select_tour">Book This Tour (€110)</button>
-          </div>
+      <div class="guide-grid">
+        <div class="guide-card">
+          <span class="guide-num">1</span>
+          <h4 data-i18n="g1_title">Driver's License</h4>
+          <p data-i18n="g1_desc">Drivers must hold a valid <strong>physical Category B (car) driver's license</strong>. Minimum driver age is 18 years old.</p>
         </div>
 
-        <!-- Secondary Tours Stack -->
-        <div class="side-tours-stack">
-          <!-- Sunset Tour -->
-          <div class="tour-card">
-            <div class="tour-image-wrap" style="height: 180px;">
-              <img src="assets/images/IMG_3026.jpeg" alt="Sunset Mountain ATV Tour">
-              <div class="tour-price-tag">
-                <div class="price-amount">€95</div>
-                <div class="price-unit">per person</div>
-              </div>
-            </div>
-            <div class="tour-content">
-              <div class="tour-meta">
-                <span>⏱️ 3.5 Hours</span>
-                <span>🌅 Departure: 16:30</span>
-              </div>
-              <h3 class="tour-title" style="font-size: 1.25rem;" data-i18n="tour2_title">Sunset Mountain &amp; Coastal Quad Tour</h3>
-              <p class="tour-desc" data-i18n="tour2_desc">Catch the magical golden hour over the Aegean Sea from panoramic mountain heights. Smooth 3.5-hour evening ride.</p>
-              <button class="btn btn-secondary open-booking-modal" style="width: 100%;" data-tour="sunset" data-i18n="btn_select_tour">Book Sunset Tour (€95)</button>
-            </div>
-          </div>
+        <div class="guide-card">
+          <span class="guide-num">2</span>
+          <h4 data-i18n="g2_title">Proper Footwear</h4>
+          <p data-i18n="g2_desc"><strong>Closed-toe sneakers or hiking shoes are mandatory</strong> for driving and hiking. No flip-flops or open sandals allowed.</p>
+        </div>
 
-          <!-- Private / Custom Tour -->
-          <div class="tour-card">
-            <div class="tour-image-wrap" style="height: 180px;">
-              <img src="assets/images/IMG_3031.jpeg" alt="Private Custom Tour Samos">
-              <div class="tour-price-tag">
-                <div class="price-amount">Custom</div>
-                <div class="price-unit">VIP Package</div>
-              </div>
-            </div>
-            <div class="tour-content">
-              <div class="tour-meta">
-                <span>⏱️ Flexible Hours</span>
-                <span>👑 Private Guide</span>
-              </div>
-              <h3 class="tour-title" style="font-size: 1.25rem;" data-i18n="tour3_title">Custom &amp; Private VIP Group Tour</h3>
-              <p class="tour-desc" data-i18n="tour3_desc">Tailor-made itineraries for families, couples, or private groups. Flexible pacing, custom stops, and private guide.</p>
-              <button class="btn btn-secondary open-booking-modal" style="width: 100%;" data-tour="private" data-i18n="btn_select_tour">Inquire Private Tour</button>
-            </div>
-          </div>
+        <div class="guide-card">
+          <span class="guide-num">3</span>
+          <h4 data-i18n="g3_title">Passengers &amp; Families</h4>
+          <p data-i18n="g3_desc">Passengers can join from <strong>8 years and older</strong>. Two riders can comfortably share one quad.</p>
+        </div>
+
+        <div class="guide-card">
+          <span class="guide-num">4</span>
+          <h4 data-i18n="g4_title">Weather Guarantee</h4>
+          <p data-i18n="g4_desc">In case of extreme weather, reschedule for free or receive a <strong>100% full refund</strong>.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Photo Gallery Showcase -->
-  <section id="gallery" class="gallery-section">
+  <!-- Photo Gallery -->
+  <section class="section-gallery" id="gallery">
     <div class="container">
-      <div class="text-center">
-        <span class="section-tag">Photo Showcase</span>
-        <h2 class="section-title">Live The Samos Experience</h2>
-        <p class="section-subtitle">Real moments captured during our off-road ATV rides, nature hikes, and scenic viewpoints across Samos.</p>
-      </div>
-
-      <div class="gallery-filter">
-        <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
-        <button class="gallery-filter-btn" data-filter="atv">ATV Trails</button>
-        <button class="gallery-filter-btn" data-filter="views">Waterfalls &amp; Views</button>
+      <div class="section-header">
+        <span class="section-tag" data-i18n="gal_tag">Sights &amp; Trails</span>
+        <h2 class="section-title" data-i18n="gal_title">Real Moments on the Trails</h2>
+        <p class="section-subtitle" data-i18n="gal_subtitle">A glimpse of the terrain, pine forests, and vistas waiting for you.</p>
       </div>
 
       <div class="gallery-grid">
-        <div class="gallery-item" data-category="atv">
-          <img src="assets/images/IMG_3026.jpeg" alt="ATV High Summit Aegean View">
-          <div class="gallery-overlay"><span class="gallery-caption">Panoramic Mountain Ridge View</span></div>
+        <div class="gallery-card">
+          <img src="assets/images/IMG_3031.jpeg" alt="Samos Mountain Quad Convoy">
+          <div class="gallery-overlay"><span data-i18n="g_cap_1">Mountain Ridge Convoy</span></div>
         </div>
-        <div class="gallery-item" data-category="atv">
-          <img src="assets/images/IMG_2938.jpeg" alt="Beta Samos Quad Fleet">
-          <div class="gallery-overlay"><span class="gallery-caption">Ready for Departure at Karlovasi</span></div>
+        <div class="gallery-card">
+          <img src="assets/images/IMG_3018.jpeg" alt="Potami Stream Crossing">
+          <div class="gallery-overlay"><span data-i18n="g_cap_2">Forest &amp; Water Crossing</span></div>
         </div>
-        <div class="gallery-item" data-category="views">
-          <img src="assets/images/IMG_3031.jpeg" alt="Forest and River Trail">
-          <div class="gallery-overlay"><span class="gallery-caption">Potami Stream &amp; Forest Crossing</span></div>
-        </div>
-        <div class="gallery-item" data-category="atv">
-          <img src="assets/images/IMG_3018.jpeg" alt="ATV Trail Riding">
-          <div class="gallery-overlay"><span class="gallery-caption">Off-Road Mountain Adventure</span></div>
-        </div>
-        <div class="gallery-item" data-category="atv">
-          <img src="assets/images/IMG_2939.jpeg" alt="ATV Riders Lineup">
-          <div class="gallery-overlay"><span class="gallery-caption">Exploring Pine Forests</span></div>
-        </div>
-        <div class="gallery-item" data-category="views">
-          <img src="assets/images/IMG_5179.jpg" alt="Coastal Trail View Samos">
-          <div class="gallery-overlay"><span class="gallery-caption">Scenic Coastal Trail Hike</span></div>
+        <div class="gallery-card">
+          <img src="assets/images/IMG_2939.jpeg" alt="Sunset Over Aegean Sea">
+          <div class="gallery-overlay"><span data-i18n="g_cap_3">Golden Hour Over Karlovasi</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Safety & FAQ Section -->
-  <section id="safety" class="faq-section">
+  <!-- Customer Reviews with Country Flags (Madeira Style) -->
+  <section class="section-reviews" id="reviews">
     <div class="container">
-      <div class="text-center">
-        <span class="section-tag" data-i18n="tag_safety">Safety &amp; FAQ</span>
-        <h2 class="section-title" data-i18n="title_safety">Everything You Need to Know</h2>
-      </div>
-
-      <div class="faq-grid">
-        <!-- Safety Standards Card -->
-        <div class="safety-card-box">
-          <h3 data-i18n="safety_box_title">Safety &amp; Driver Regulations</h3>
-
-          <div class="safety-rule">
-            <div class="safety-rule-icon">🪪</div>
-            <div class="safety-rule-content">
-              <h4 data-i18n="safety_rule1_title">Valid Driver's License Required</h4>
-              <p data-i18n="safety_rule1_desc">Drivers must hold a valid physical car driver's license (EU Category B or International Driving Permit).</p>
-            </div>
-          </div>
-
-          <div class="safety-rule">
-            <div class="safety-rule-icon">⛑️</div>
-            <div class="safety-rule-content">
-              <h4 data-i18n="safety_rule2_title">Mandatory Helmets</h4>
-              <p data-i18n="safety_rule2_desc">Safety is our #1 priority. DOT/ECE helmets are provided and mandatory during all ATV riding segments.</p>
-            </div>
-          </div>
-
-          <div class="safety-rule">
-            <div class="safety-rule-icon">👥</div>
-            <div class="safety-rule-content">
-              <h4 data-i18n="safety_rule3_title">Age Limits</h4>
-              <p data-i18n="safety_rule3_desc">Drivers must be 18+ years old. Passengers must be at least 8 years old.</p>
-            </div>
-          </div>
-
-          <div class="safety-rule">
-            <div class="safety-rule-icon">☀️</div>
-            <div class="safety-rule-content">
-              <h4 data-i18n="safety_rule4_title">Weather &amp; Cancellation Guarantee</h4>
-              <p data-i18n="safety_rule4_desc">Free cancellation up to 24h before tour. 100% full refund or reschedule in case of severe weather.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ Accordion -->
-        <div class="faq-accordion">
-          <div class="faq-item">
-            <button class="faq-header">
-              <span data-i18n="faq1_q">Do I need prior experience driving an ATV?</span>
-              <span class="arrow">▼</span>
-            </button>
-            <div class="faq-body">
-              <p data-i18n="faq1_a">No experience required! Our ATVs are modern, easy-to-drive automatic quad bikes. We conduct a full safety briefing and practice test ride before departure.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-header">
-              <span data-i18n="faq2_q">Can two people share one ATV?</span>
-              <span class="arrow">▼</span>
-            </button>
-            <div class="faq-body">
-              <p data-i18n="faq2_a">Yes! All our ATVs are approved 2-seaters. You can choose a single rider or double rider setup when booking.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-header">
-              <span data-i18n="faq3_q">What should I wear and bring?</span>
-              <span class="arrow">▼</span>
-            </button>
-            <div class="faq-body">
-              <p data-i18n="faq3_a">Wear comfortable outdoor clothing that can get dusty, mandatory closed-toe shoes (sneakers or hiking shoes), sunglasses, sunscreen, and bring a small backpack with water.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-header">
-              <span>Are local snacks and refreshments included?</span>
-              <span class="arrow">▼</span>
-            </button>
-            <div class="faq-body">
-              <p>Yes! During our tour stop we provide authentic Samian snacks, fresh seasonal fruit, and cool bottled water.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Verified Reviews Section -->
-  <section id="reviews" class="reviews-section">
-    <div class="container">
-      <div class="text-center">
-        <span class="section-tag" data-i18n="tag_reviews">Guest Experiences</span>
-        <h2 class="section-title" data-i18n="title_reviews">What Travelers Say About Us</h2>
+      <div class="section-header">
+        <span class="section-tag" data-i18n="rev_tag">Guest Experiences</span>
+        <h2 class="section-title" data-i18n="rev_title">Loved by Travelers Worldwide</h2>
+        <p class="section-subtitle" data-i18n="rev_subtitle">Here is what our guests have to say about riding with Beta Samos.</p>
       </div>
 
       <div class="reviews-grid">
         <div class="review-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"The ATV tour was the absolute highlight of our trip to Samos! Great routes, breathtaking views, and the guide made safety feel effortless while keeping it super exciting."</p>
-          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text" data-i18n="r1_text">
+            "The highlight of our 2 weeks in Samos! Oltion was an incredible guide who showed us mountain viewpoints we would never have found on our own. The quads are brand new and the hike was refreshing!"
+          </p>
           <div class="reviewer-meta">
-            <div class="reviewer-avatar">JR</div>
-            <div class="reviewer-info">
-              <h4>James R.</h4>
-              <span>Couple Traveler • UK</span>
+            <span class="flag-avatar">🇬🇧</span>
+            <div class="reviewer-details">
+              <h5>James &amp; Sophie T.</h5>
+              <p>London, United Kingdom • July 2026</p>
             </div>
           </div>
         </div>
 
         <div class="review-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"Our hiking and ATV excursion was beautifully paced with plenty of stops for photos and local lore. We saw parts of Samos we never would have found on our own."</p>
-          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text" data-i18n="r2_text">
+            "Fantastic 5-hour tour! The mix of off-road quad riding and the walk through Potami waterfalls was perfect. Great safety briefing and the local Greek snacks at the viewpoint were delicious."
+          </p>
           <div class="reviewer-meta">
-            <div class="reviewer-avatar">EP</div>
-            <div class="reviewer-info">
-              <h4>Elena P.</h4>
-              <span>Nature Enthusiast • Greece</span>
+            <span class="flag-avatar">🇩🇪</span>
+            <div class="reviewer-details">
+              <h5>Markus &amp; Elena W.</h5>
+              <p>Munich, Germany • August 2026</p>
             </div>
           </div>
         </div>
 
         <div class="review-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"We booked a private family package and it was perfectly organized from start to finish. Clear instructions, friendly staff, and an unforgettable route!"</p>
-          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text" data-i18n="r3_text">
+            "Η καλύτερη εμπειρία στη Σάμο! Φοβερή διαδρομή στο βουνό, απόλυτη ασφάλεια και απίστευτη θέα. Το συστήνουμε ανεπιφύλακτα σε όποιον θέλει πραγματική περιπέτεια στο νησί!"
+          </p>
           <div class="reviewer-meta">
-            <div class="reviewer-avatar">MK</div>
-            <div class="reviewer-info">
-              <h4>Maria &amp; Kostas D.</h4>
-              <span>Family Travelers • Germany</span>
+            <span class="flag-avatar">🇬🇷</span>
+            <div class="reviewer-details">
+              <h5>Νίκος &amp; Μαρία Κ.</h5>
+              <p>Αθήνα, Ελλάδα • Αύγουστος 2026</p>
             </div>
           </div>
         </div>
@@ -486,59 +631,51 @@
     </div>
   </section>
 
-  <!-- Location & Google Maps Section -->
-  <section id="location" class="location-section">
+  <!-- Location & Map Section -->
+  <section class="section-location" id="location">
     <div class="container">
-      <div class="text-center">
-        <span class="section-tag" data-i18n="tag_location">Find Us</span>
-        <h2 class="section-title" data-i18n="title_location">Visit Us in Karlovasi, Samos</h2>
-      </div>
-
-      <div class="location-wrapper">
+      <div class="location-grid">
         <div class="location-info">
-          <div class="contact-item">
-            <div class="contact-icon">📍</div>
-            <div class="contact-details">
-              <h4 data-i18n="address_label">Headquarters &amp; Meeting Point</h4>
-              <p>Kon/nou Kanari 1, Neo Karlovasi, Samos 832 00, Greece</p>
-              <p style="font-size: 0.82rem; color: #64748b; margin-top: 4px;">(Κωνσταντίνου Κανάρη 1, Νέο Καρλόβασι)</p>
+          <span class="section-tag" data-i18n="loc_tag">Meeting Point</span>
+          <h3 style="font-size: 1.8rem; margin-bottom: 16px;" data-i18n="loc_title">Find Us in Karlovasi</h3>
+          <p style="color: var(--slate-600); margin-bottom: 24px;" data-i18n="loc_desc">
+            Conveniently located in Karlovasi with easy parking and direct access to mountain and coastal tracks.
+          </p>
+
+          <div class="location-item">
+            <span class="location-icon">📍</span>
+            <div>
+              <strong data-i18n="loc_addr_label">Address:</strong>
+              <p>Kanari 1, Karlovasi 83200, Samos, Greece</p>
             </div>
           </div>
 
-          <div class="contact-item">
-            <div class="contact-icon">🕒</div>
-            <div class="contact-details">
-              <h4 data-i18n="hours_label">Operating Hours</h4>
-              <p>Monday – Sunday: 09:00 – 20:00 (April – October)</p>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon">📞</div>
-            <div class="contact-details">
-              <h4 data-i18n="phone_label">Direct Phone &amp; WhatsApp</h4>
+          <div class="location-item">
+            <span class="location-icon">📞</span>
+            <div>
+              <strong data-i18n="loc_phone_label">Phone &amp; WhatsApp:</strong>
               <p><a href="tel:+306942430930">+30 694 243 0930</a> / <a href="tel:+302273079075">+30 22730 79075</a></p>
             </div>
           </div>
 
-          <div class="contact-item">
-            <div class="contact-icon">✉️</div>
-            <div class="contact-details">
-              <h4 data-i18n="email_label">Official Email</h4>
-              <p><a href="mailto:betasamos.greece@gmail.com">betasamos.greece@gmail.com</a></p>
+          <div class="location-item">
+            <span class="location-icon">⏰</span>
+            <div>
+              <strong data-i18n="loc_hours_label">Opening Hours:</strong>
+              <p data-i18n="loc_hours_val">09:00 - 20:00 Daily (Summer Season)</p>
             </div>
           </div>
 
-          <a href="https://maps.google.com/?q=Kon/nou+Kanari+1,+Neo+Karlovasi+832+00" target="_blank" class="btn btn-primary" style="margin-top: 10px; width: 100%;" data-i18n="btn_directions">Get Google Maps Directions</a>
+          <a href="https://maps.google.com/?q=Kon/nou+Kanari+1,+Neo+Karlovasi+832+00" target="_blank" class="btn btn-primary btn-sm" style="margin-top: 10px;" data-i18n="btn_directions">Get Directions on Google Maps</a>
         </div>
 
-        <div class="map-container">
-          <!-- Google Maps Embed for Karlovasi HQ -->
+        <div class="map-frame-wrap">
           <iframe 
-            src="https://maps.google.com/maps?q=Kon/nou+Kanari+1,+Neo+Karlovasi+83200+Samos+Greece&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.4284168748385!2d26.6855213!3d37.7944005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bc1261d7637841%3A0x6b0933e1456209b!2sKanari%201%2C%20Karlovasi%20832%2000%2C%20Greece!5e0!3m2!1sen!2sgr!4v1710000000000!5m2!1sen!2sgr" 
+            allowfullscreen="" 
             loading="lazy" 
-            title="Beta Samos Google Map Location"
-            allowfullscreen>
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Beta Samos Location Map">
           </iframe>
         </div>
       </div>
@@ -546,155 +683,146 @@
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <h2>BETA SAMOS</h2>
-          <p>Premier guided ATV quad safaris and scenic nature hiking excursions on Samos Island, Greece.</p>
-          <span class="legal-badge-pill">BETA SAMOS MONOPROSOPI IKE • AFM: 802485045 • GEMI: 177240851000</span>
+        <div class="footer-col">
+          <div class="logo-brand" style="margin-bottom: 14px;">
+            <span class="logo-icon">🏔️</span>
+            <div class="logo-text-wrap">
+              <span class="logo-title" style="color: var(--white);">BETA SAMOS</span>
+              <span class="logo-tag">ATV &amp; Hiking Tour</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: rgba(255,255,255,0.7);" data-i18n="footer_about">
+            Premier outdoor tour operator on Samos Island, Greece. Guided off-road quad excursions combined with scenic nature hikes.
+          </p>
         </div>
 
         <div class="footer-col">
-          <h3>Quick Links</h3>
+          <h5 data-i18n="foot_exp">Adventures</h5>
           <ul class="footer-links">
-            <li><a href="#tours">All Tour Packages</a></li>
-            <li><a href="#gallery">Photo Gallery</a></li>
-            <li><a href="#safety">Safety &amp; Rules</a></li>
-            <li><a href="#location">Find Us on Google Maps</a></li>
+            <li><a href="#flagship-tour" data-i18n="t1_title">5-Hour ATV &amp; Hike Tour</a></li>
+            <li><a href="#sunset-tour" data-i18n="t2_title">Sunset Quad Safari</a></li>
+            <li><a href="#tours" data-i18n="t3_title">Custom Private VIP Tours</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h3>Tours</h3>
+          <h5 data-i18n="foot_info">Information</h5>
           <ul class="footer-links">
-            <li><a href="#tours">5h ATV &amp; Hiking Guided Tour (€110)</a></li>
-            <li><a href="#tours">Sunset Mountain Quad Tour (€95)</a></li>
-            <li><a href="#tours">Custom Private Group Package</a></li>
+            <li><a href="#guide" data-i18n="nav_guide">Before You Ride</a></li>
+            <li><a href="#whyus" data-i18n="nav_whyus">Why Beta Samos</a></li>
+            <li><a href="#location" data-i18n="nav_location">Find Location</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h3>Contact</h3>
-          <ul class="footer-links">
-            <li><a href="tel:+306942430930">+30 694 243 0930</a></li>
-            <li><a href="https://wa.me/306942430930">WhatsApp Chat</a></li>
-            <li><a href="mailto:betasamos.greece@gmail.com">betasamos.greece@gmail.com</a></li>
-            <li><span>Karlovasi, Samos 83200</span></li>
-          </ul>
+          <h5 data-i18n="foot_contact">Contact Us</h5>
+          <p style="font-size: 0.88rem; margin-bottom: 6px;">📞 +30 694 243 0930</p>
+          <p style="font-size: 0.88rem; margin-bottom: 6px;">💬 WhatsApp: +30 694 243 0930</p>
+          <p style="font-size: 0.88rem; margin-bottom: 6px;">✉️ betasamos.greece@gmail.com</p>
+          <p style="font-size: 0.88rem; margin-top: 10px; color: rgba(255,255,255,0.6);">Legal: BETA SAMOS MONOPROSOPI IKE (AFM: 802485045)</p>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 BETA SAMOS MONOPROSOPI IKE. All rights reserved.</p>
-        <p>Explore Samos by ATV &amp; on Foot — Safe, Local, Unforgettable.</p>
+        <p>&copy; 2026 Beta Samos ATV &amp; Hiking Tour (BETA SAMOS MONOPROSOPI IKE). All Rights Reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Booking Modal -->
-  <div id="bookingModal" class="modal-backdrop">
-    <div class="modal-card">
+  <!-- Mobile Bottom Sticky Action Bar -->
+  <div class="mobile-action-bar">
+    <div class="mobile-action-grid">
+      <a href="tel:+306942430930" class="btn btn-secondary btn-sm" style="color: var(--navy-900); border-color: var(--slate-300);" data-i18n="mob_call">📞 Call</a>
+      <a href="https://wa.me/306942430930" target="_blank" class="btn btn-whatsapp btn-sm" data-i18n="mob_wa">💬 WhatsApp</a>
+      <button class="btn btn-primary btn-sm open-booking-modal" data-i18n="mob_book">⚡ Book Tour</button>
+    </div>
+  </div>
+
+  <!-- Interactive Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">&times;</button>
       <div class="modal-header">
-        <h3 data-i18n="modal_title">Reserve Your Tour</h3>
-        <button class="modal-close-btn">&times;</button>
+        <h3 data-i18n="modal_title">Reserve Your Samos Adventure</h3>
+        <p style="color: var(--slate-500); font-size: 0.9rem;" data-i18n="modal_sub">Instant reservation request via WhatsApp</p>
       </div>
-      <div class="modal-body">
-        <form id="bookingForm">
+
+      <form class="modal-form" id="bookingForm" onsubmit="return false;">
+        <div class="form-group">
+          <label data-i18n="m_tour_label">Selected Tour</label>
+          <select class="form-control" id="modalTourSelect">
+            <option value="flagship">Beta Samos 5h ATV &amp; Hiking Tour (€110)</option>
+            <option value="sunset">Sunset Mountain &amp; Coastal Quad Tour (€95)</option>
+            <option value="vip">Custom Private VIP Excursion</option>
+          </select>
+        </div>
+
+        <div class="form-row">
           <div class="form-group">
-            <label class="form-label" data-i18n="form_tour">Select Tour Package</label>
-            <select id="modalTourSelect" class="form-control">
-              <option value="flagship">Beta Samos ATV &amp; Hiking Guided Tour (€110 / person)</option>
-              <option value="sunset">Sunset Mountain &amp; Coastal Quad Tour (€95 / person)</option>
-              <option value="private">Custom &amp; Private VIP Group Tour (Custom)</option>
+            <label data-i18n="m_date_label">Preferred Date</label>
+            <input type="date" class="form-control" id="modalDate" required>
+          </div>
+          <div class="form-group">
+            <label data-i18n="m_time_label">Time Slot</label>
+            <select class="form-control" id="modalTime">
+              <option value="09:30 AM">Morning (09:30 AM)</option>
+              <option value="15:30 PM">Afternoon (15:30 PM)</option>
+              <option value="17:30 PM">Sunset (17:30 PM)</option>
             </select>
           </div>
+        </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" data-i18n="form_date">Preferred Date</label>
-              <input type="date" id="modalDate" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" data-i18n="form_time">Departure Time</label>
-              <select id="modalTime" class="form-control">
-                <option value="09:30 AM (Morning Tour)">09:30 AM (Morning Tour)</option>
-                <option value="15:30 PM (Afternoon / Sunset Tour)">15:30 PM (Afternoon / Sunset Tour)</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" data-i18n="form_riders">Number of Participants</label>
-              <input type="number" id="modalRiders" class="form-control" value="2" min="1" max="10" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Riding Option</label>
-              <select id="modalRiderType" class="form-control">
-                <option value="Double Riders (2 per ATV)">Double Riders (2 per ATV)</option>
-                <option value="Single Riders (1 per ATV)">Single Riders (1 per ATV)</option>
-              </select>
-            </div>
-          </div>
-
+        <div class="form-row">
           <div class="form-group">
-            <label class="form-label" data-i18n="form_name">Full Name</label>
-            <input type="text" id="modalName" class="form-control" placeholder="e.g. John Smith" required>
+            <label data-i18n="m_quads_label">Number of Quads</label>
+            <select class="form-control" id="modalQuads">
+              <option value="1">1 Quad</option>
+              <option value="2">2 Quads</option>
+              <option value="3">3 Quads</option>
+              <option value="4">4+ Quads</option>
+            </select>
           </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" data-i18n="form_phone">Phone / WhatsApp Number</label>
-              <input type="tel" id="modalPhone" class="form-control" placeholder="+30 69..." required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" data-i18n="form_email">Email Address</label>
-              <input type="email" id="modalEmail" class="form-control" placeholder="john@example.com">
-            </div>
+          <div class="form-group">
+            <label data-i18n="m_rider_type_label">Rider Arrangement</label>
+            <select class="form-control" id="modalRiderType">
+              <option value="solo">1 Driver per Quad (Solo)</option>
+              <option value="shared">Driver + Passenger (Shared)</option>
+            </select>
           </div>
+        </div>
 
-          <div class="checkbox-group">
-            <input type="checkbox" id="modalLicenseCheck" required checked>
-            <label for="modalLicenseCheck" data-i18n="form_license_agree">I confirm the driver is 18+ and holds a valid physical Car Driving License (Category B).</label>
+        <div class="form-group">
+          <label data-i18n="m_name_label">Lead Guest Full Name</label>
+          <input type="text" class="form-control" id="modalName" placeholder="e.g. John Doe" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="m_phone_label">Phone / WhatsApp Number</label>
+            <input type="tel" class="form-control" id="modalPhone" placeholder="+30 690 000 0000" required>
           </div>
-
-          <div class="calc-summary-box">
-            <span class="calc-summary-title">Estimated Total:</span>
-            <span id="modalPriceDisplay" class="calc-summary-price">€220</span>
+          <div class="form-group">
+            <label data-i18n="m_email_label">Email Address</label>
+            <input type="email" class="form-control" id="modalEmail" placeholder="your@email.com">
           </div>
+        </div>
 
-          <button type="button" id="btnSubmitWhatsApp" class="btn btn-whatsapp" style="width: 100%; margin-bottom: 10px;" data-i18n="btn_send_wa">💬 Confirm &amp; Reserve via WhatsApp</button>
-        </form>
-      </div>
+        <div class="price-summary-box">
+          <span data-i18n="m_est_price">Estimated Total:</span>
+          <span class="calc-total" id="modalPriceDisplay">€110</span>
+        </div>
+
+        <button type="button" class="btn btn-whatsapp btn-block" id="btnSubmitWhatsApp">
+          <span>💬</span> <span data-i18n="btn_send_wa">Send Reservation Request via WhatsApp</span>
+        </button>
+      </form>
     </div>
   </div>
 
-  <!-- Photo Lightbox Modal -->
-  <div id="lightboxModal" class="lightbox-modal">
-    <span class="lightbox-close">&times;</span>
-    <img id="lightboxImg" class="lightbox-img" src="" alt="Enlarged view">
-  </div>
-
-  <!-- Mobile Sticky Action Bar -->
-  <div class="mobile-action-bar">
-    <div class="mobile-action-container">
-      <a href="tel:+306942430930" class="mobile-action-btn call">
-        <span>📞</span>
-        <span>Call</span>
-      </a>
-      <a href="https://wa.me/306942430930" target="_blank" class="mobile-action-btn wa">
-        <span>💬</span>
-        <span>WhatsApp</span>
-      </a>
-      <button class="mobile-action-btn book open-booking-modal" data-tour="flagship">
-        <span>📅</span>
-        <span>Book Now</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- Application Script -->
+  <!-- JavaScript -->
   <script src="app.js"></script>
 </body>
 </html>

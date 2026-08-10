@@ -1,428 +1,543 @@
 /**
- * Beta Samos ATV & Hiking Tour - Main JavaScript Application
- * Handles i18n bilingual toggle, dynamic booking modal & WhatsApp dispatcher,
- * FAQ accordion, photo lightbox, and mobile navigation.
+ * Beta Samos ATV & Hiking Tour - Application Logic & Bilingual Engine
+ * Madeira Adventure Kingdom Design System Implementation
  */
 
-// --- Bilingual Translation Dictionary (EN / EL) ---
-const i18n = {
-  en: {
-    hero_badge: "⭐ Rated #1 Guided Outdoor Adventure in Samos",
-    hero_title: "Explore Samos by <span>ATV & on Foot</span>",
-    hero_desc: "Scenic off-road thrills, hidden mountain trails, Potami waterfalls, and breathtaking Aegean viewpoints with expert local guides.",
-    hero_btn_book: "Book Guided Tour (€110)",
-    hero_btn_wa: "WhatsApp Quick Chat",
-    feat_helmets: "Helmets & Gear Included",
-    feat_groups: "Small Groups & Private",
-    feat_automatic: "Easy Automatic ATVs",
-    feat_hq: "Karlovasi HQ Meeting Point",
-    
-    nav_tours: "Tours & Pricing",
-    nav_itinerary: "Itinerary",
-    nav_safety: "Safety & Rules",
-    nav_reviews: "Reviews",
-    nav_location: "Location",
-    nav_book_btn: "Book Now",
-    
-    tag_why_us: "Why Choose Us",
-    title_why_us: "Unforgettable Samos Island Adventures",
-    sub_why_us: "Experience the perfect balance of exhilarating off-road driving and peaceful guided nature discovery.",
-    
-    hl_1_title: "Off-Road Quad Thrills",
-    hl_1_desc: "Ride curated mountain and coastal tracks through pine forests and ridge paths with safe, automatic ATVs.",
-    hl_2_title: "Guided Nature Hiking",
-    hl_2_desc: "Discover hidden waterfalls, historic stone bridges, and panoramic viewpoints only accessible on foot.",
-    hl_3_title: "Certified Local Guides",
-    hl_3_desc: "Passionate local leaders ensuring full safety briefings, helmet fittings, and authentic island stories.",
-    hl_4_title: "Local Treats Included",
-    hl_4_desc: "Enjoy traditional Samian snacks, fresh seasonal fruits, and cool bottled water at scenic rest stops.",
-    
-    tag_packages: "Tour Packages",
-    title_packages: "Choose Your Outdoor Adventure",
-    sub_packages: "All tours include safety briefings, DOT/ECE approved helmets, fuel, guide, and local snacks.",
-    
-    tour1_badge: "Most Popular Signature Tour",
-    tour1_title: "Beta Samos ATV & Hiking Guided Tour",
-    tour1_desc: "Our complete 5-hour flagship experience. Off-road quad driving through lush mountain forests, guided trail walk to hidden viewpoints, and authentic local snacks.",
-    tour1_inc1: "5-Hour guided ATV & hiking excursion",
-    tour1_inc2: "High-performance automatic ATV & fuel",
-    tour1_inc3: "DOT/ECE approved helmets & safety gear",
-    tour1_inc4: "Guided nature walk with local guide",
-    tour1_inc5: "Traditional Greek snacks & bottled water",
-    
-    tour2_title: "Sunset Mountain & Coastal Quad Tour",
-    tour2_desc: "Catch the magical golden hour over the Aegean Sea from panoramic mountain heights. Smooth 3.5-hour evening ride.",
-    
-    tour3_title: "Custom & Private VIP Group Tour",
-    tour3_desc: "Tailor-made itineraries for families, couples, or private groups. Flexible pacing, custom stops, and private guide.",
-    
-    btn_select_tour: "Book This Tour",
-    
-    tag_safety: "Safety & FAQ",
-    title_safety: "Everything You Need to Know",
-    safety_box_title: "Safety & Driver Regulations",
-    safety_rule1_title: "Valid Driver's License Required",
-    safety_rule1_desc: "Drivers must hold a valid physical car driver's license (EU Category B or International Driving Permit).",
-    safety_rule2_title: "Mandatory Helmets",
-    safety_rule2_desc: "Safety is our #1 priority. DOT/ECE helmets are provided and mandatory during all ATV riding segments.",
-    safety_rule3_title: "Age Limits",
-    safety_rule3_desc: "Drivers must be 18+ years old. Passengers must be at least 8 years old.",
-    safety_rule4_title: "Weather & Cancellation Guarantee",
-    safety_rule4_desc: "Free cancellation up to 24h before tour. 100% full refund or reschedule in case of severe weather.",
-    
-    faq1_q: "Do I need prior experience driving an ATV?",
-    faq1_a: "No experience required! Our ATVs are modern, easy-to-drive automatic quad bikes. We conduct a full safety briefing and practice test ride before departure.",
-    faq2_q: "Can two people share one ATV?",
-    faq2_a: "Yes! All our ATVs are approved 2-seaters. You can choose a single rider or double rider setup when booking.",
-    faq3_q: "What should I wear and bring?",
-    faq3_a: "Wear comfortable outdoor clothing that can get dusty, mandatory closed-toe shoes (sneakers or hiking shoes), sunglasses, sunscreen, and bring a small backpack with water.",
-    
-    tag_reviews: "Guest Experiences",
-    title_reviews: "What Travelers Say About Us",
-    
-    tag_location: "Find Us",
-    title_location: "Visit Us in Karlovasi, Samos",
-    address_label: "Headquarters & Meeting Point",
-    hours_label: "Operating Hours",
-    phone_label: "Direct Phone & WhatsApp",
-    email_label: "Official Email",
-    btn_directions: "Get Google Maps Directions",
-    
-    modal_title: "Reserve Your Tour",
-    form_name: "Full Name",
-    form_email: "Email Address",
-    form_phone: "Phone / WhatsApp Number",
-    form_tour: "Select Tour Package",
-    form_date: "Preferred Date",
-    form_time: "Departure Time",
-    form_riders: "Number of Participants",
-    form_license_agree: "I confirm the driver is 18+ and holds a valid physical Car Driving License (Category B).",
-    btn_send_wa: "Confirm via WhatsApp",
-    btn_send_email: "Submit Reservation"
-  },
-  el: {
-    hero_badge: "⭐ Κορυφαία Οργανωμένη Υπαίθρια Εμπειρία στη Σάμο",
-    hero_title: "Εξερευνήστε τη Σάμο με <span>ATV & Πεζοπορία</span>",
-    hero_desc: "Μοναδικές off-road διαδρομές με γουρούνες, κρυφά ορεινά μονοπάτια, οι καταρράκτες στο Ποτάμι και πανοραμική θέα στο Αιγαίο με έμπειρους τοπικούς οδηγούς.",
-    hero_btn_book: "Κράτηση Εκδρομής (110€)",
-    hero_btn_wa: "Άμεση Συνομιλία WhatsApp",
-    feat_helmets: "Περιλαμβάνονται Κράνη & Εξοπλισμός",
-    feat_groups: "Ολιγομελή & Πριβέ Γκρουπ",
-    feat_automatic: "Εύκολες Αυτόματες Γουρούνες (ATV)",
-    feat_hq: "Σημείο Συνάντησης: Καρλόβασι",
-    
-    nav_tours: "Εκδρομές & Τιμές",
-    nav_itinerary: "Πρόγραμμα",
-    nav_safety: "Ασφάλεια & Κανόνες",
-    nav_reviews: "Κριτικές",
-    nav_location: "Τοποθεσία",
-    nav_book_btn: "Κάντε Κράτηση",
-    
-    tag_why_us: "Γιατί Εμάς",
-    title_why_us: "Αξέχαστες Περιπέτειες στη Σάμο",
-    sub_why_us: "Ζήστε τον τέλειο συνδυασμό οδήγησης ATV και χαλαρωτικής πεζοπορίας στη φύση.",
-    
-    hl_1_title: "Off-Road Περιπέτεια με ATV",
-    hl_1_desc: "Οδηγήστε σε επιλεγμένες ορεινές και παραθαλάσσιες διαδρομές μέσα από πευκοδάση με ασφαλή αυτόματα ATV.",
-    hl_2_title: "Οργανωμένη Πεζοπορία",
-    hl_2_desc: "Ανακαλύψτε κρυφούς καταρράκτες, παραδοσιακά γεφύρια και πανοραμικά σημεία προσβάσιμα μόνο με τα πόδια.",
-    hl_3_title: "Έμπειροι Τοπικοί Συνοδοί",
-    hl_3_desc: "Παθιασμένοι ντόπιοι οδηγοί που εγγυώνται πλήρη ενημέρωση ασφαλείας, σωστό εξοπλισμό και τοπικές ιστορίες.",
-    hl_4_title: "Τοπικά Κεράσματα",
-    hl_4_desc: "Απολαύστε παραδοσιακά σαμιώτικα σνακ, φρέσκα φρούτα εποχής και δροσερό νερό σε γραφικές στάσεις.",
-    
-    tag_packages: "Πακέτα Εκδρομών",
-    title_packages: "Επιλέξτε την Εμπειρία σας",
-    sub_packages: "Όλες οι εκδρομές περιλαμβάνουν ενημέρωση ασφαλείας, κράνη, καύσιμα, συνοδό και σνακ.",
-    
-    tour1_badge: "Το Δημοφιλέστερο Πακέτο",
-    tour1_title: "Beta Samos ATV & Hiking Guided Tour",
-    tour1_desc: "Η πλήρης 5ωρη εμπειρία μας. Οδήγηση ATV στα βουνά, πεζοπορία σε μυστικά μονοπάτια και παραδοσιακά τοπικά σνακ.",
-    tour1_inc1: "5ωρη οργανωμένη εκδρομή ATV & πεζοπορίας",
-    tour1_inc2: "Σύγχρονο αυτόματο ATV & καύσιμα",
-    tour1_inc3: "Εγκεκριμένα κράνη DOT/ECE & εξοπλισμός",
-    tour1_inc4: "Πεζοπορία με έμπειρο τοπικό συνοδό",
-    tour1_inc5: "Παραδοσιακά σνακ Σάμου & εμφιαλωμένο νερό",
-    
-    tour2_title: "Sunset ATV Tour στο Ηλιοβασίλεμα",
-    tour2_desc: "Απολαύστε τη χρυσή ώρα του ηλιοβασιλέματος πάνω από το Αιγαίο Πέλαγος από ψηλά. 3.5 ώρες μαγευτικής διαδρομής.",
-    
-    tour3_title: "Πριβέ & Εξατομικευμένη Εκδρομή VIP",
-    tour3_desc: "Προσαρμοσμένο πρόγραμμα για οικογένειες ή παρέες. Ευέλικτος ρυθμός, ιδιωτικός συνοδός και επιλεγμένες στάσεις.",
-    
-    btn_select_tour: "Κράτηση Εκδρομής",
-    
-    tag_safety: "Ασφάλεια & Συχνές Ερωτήσεις",
-    title_safety: "Όλα όσα πρέπει να γνωρίζετε",
-    safety_box_title: "Κανονισμοί Ασφαλείας & Οδηγών",
-    safety_rule1_title: "Απαραίτητο Δίπλωμα Αυτοκινήτου",
-    safety_rule1_desc: "Οι οδηγοί πρέπει να κατέχουν γνήσιο φυσικό δίπλωμα αυτοκινήτου (Κατηγορία Β).",
-    safety_rule2_title: "Υποχρεωτική Χρήση Κράνους",
-    safety_rule2_desc: "Η ασφάλεια είναι η προτεραιότητά μας. Παρέχουμε πιστοποιημένα κράνη που φοριούνται υποχρεωτικά.",
-    safety_rule3_title: "Όρια Ηλικίας",
-    safety_rule3_desc: "Ελάχιστη ηλικία οδηγού: 18 ετών. Ελάχιστη ηλικία συνεπιβάτη: 8 ετών.",
-    safety_rule4_title: "Εγγύηση Καιρού & Ακύρωση",
-    safety_rule4_desc: "Δωρεάν ακύρωση έως 24 ώρες πριν. 100% πλήρης επιστροφή χρημάτων ή αλλαγή ημερομηνίας λόγω καιρού.",
-    
-    faq1_q: "Χρειάζεται προηγούμενη εμπειρία σε ATV;",
-    faq1_a: "Καθόλου! Οι γουρούνες μας είναι σύγχρονες, αυτόματες και πολύ εύκολες στην οδήγηση. Κάνουμε πλήρη εκπαίδευση και δοκιμαστική οδήγηση πριν ξεκινήσουμε.",
-    faq2_q: "Μπορούν δύο άτομα να ανέβουν σε ένα ATV;",
-    faq2_a: "Ναι! Όλα τα ATV μας είναι διθέσια. Μπορείτε να επιλέξετε 1 ή 2 άτομα ανά όχημα κατά την κράτηση.",
-    faq3_q: "Τι πρέπει να φοράω και να έχω μαζί μου;",
-    faq3_a: "Φορέστε άνετα ρούχα, υποχρεωτικά κλειστά παπούτσια (αθλητικά), γυαλιά ηλίου, αντηλιακό και πάρτε μαζί ένα μικρό σακίδιο με νερό.",
-    
-    tag_reviews: "Κριτικές Επισκεπτών",
-    title_reviews: "Τι λένε οι ταξιδιώτες για εμάς",
-    
-    tag_location: "Τοποθεσία",
-    title_location: "Επισκεφθείτε μας στο Καρλόβασι Σάμου",
-    address_label: "Έδρα & Σημείο Συνάντησης",
-    hours_label: "Ώρες Λειτουργίας",
-    phone_label: "Τηλέφωνο & WhatsApp",
-    email_label: "Επίσημο Email",
-    btn_directions: "Οδηγίες στο Google Maps",
-    
-    modal_title: "Κράτηση Εκδρομής",
-    form_name: "Ονοματεπώνυμο",
-    form_email: "Email",
-    form_phone: "Τηλέφωνο / WhatsApp",
-    form_tour: "Επιλέξτε Εκδρομή",
-    form_date: "Επιθυμητή Ημερομηνία",
-    form_time: "Ώρα Αναχώρησης",
-    form_riders: "Αριθμός Ατόμων",
-    form_license_agree: "Επιβεβαιώνω ότι ο οδηγός είναι 18+ και κατέχει έγκυρο δίπλωμα αυτοκινήτου (Κατηγορία Β).",
-    btn_send_wa: "Επιβεβαίωση μέσω WhatsApp",
-    btn_send_email: "Υποβολή Κράτησης"
-  }
-};
-
-let currentLang = 'en';
-
-// --- Price Configuration ---
-const tourPrices = {
-  flagship: 110,
-  sunset: 95,
-  private: 150
-};
-
-// --- Language Switcher Handler ---
-function setLanguage(lang) {
-  currentLang = lang;
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (i18n[lang] && i18n[lang][key]) {
-      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-        el.placeholder = i18n[lang][key];
-      } else {
-        el.innerHTML = i18n[lang][key];
-      }
-    }
-  });
-
-  // Update active toggle button style
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === lang);
-  });
-
-  localStorage.setItem('beta_samos_lang', lang);
-}
-
-// --- Dynamic Price Calculator for Modal ---
-function updateModalPrice() {
-  const tourSelect = document.getElementById('modalTourSelect');
-  const ridersInput = document.getElementById('modalRiders');
-  const priceDisplay = document.getElementById('modalPriceDisplay');
-  
-  if (!tourSelect || !ridersInput || !priceDisplay) return;
-  
-  const tourKey = tourSelect.value || 'flagship';
-  const riders = parseInt(ridersInput.value, 10) || 1;
-  const unitPrice = tourPrices[tourKey] || 110;
-  const totalPrice = unitPrice * riders;
-  
-  priceDisplay.textContent = `€${totalPrice}`;
-}
-
-// --- WhatsApp & Reservation Dispatcher ---
-function handleWhatsAppBooking(e) {
-  if (e) e.preventDefault();
-  
-  const name = document.getElementById('modalName').value.trim();
-  const phone = document.getElementById('modalPhone').value.trim();
-  const email = document.getElementById('modalEmail').value.trim();
-  const tourSelect = document.getElementById('modalTourSelect');
-  const tourName = tourSelect.options[tourSelect.selectedIndex].text;
-  const date = document.getElementById('modalDate').value;
-  const time = document.getElementById('modalTime').value;
-  const riders = document.getElementById('modalRiders').value;
-  const licenseAgree = document.getElementById('modalLicenseCheck').checked;
-  const price = document.getElementById('modalPriceDisplay').textContent;
-
-  if (!name || !phone || !date) {
-    alert(currentLang === 'el' ? 'Παρακαλούμε συμπληρώστε τα υποχρεωτικά πεδία (Όνομα, Τηλέφωνο, Ημερομηνία).' : 'Please fill in the required fields (Name, Phone, Date).');
-    return;
-  }
-
-  if (!licenseAgree) {
-    alert(currentLang === 'el' ? 'Παρακαλούμε επιβεβαιώστε ότι ο οδηγός κατέχει έγκυρο δίπλωμα αυτοκινήτου (Κατηγορία Β).' : 'Please confirm that the driver holds a valid Category B driver license.');
-    return;
-  }
-
-  const message = `👋 Hello Beta Samos Tours! I would like to reserve a tour:
-━━━━━━━━━━━━━━━━━
-📍 Tour: ${tourName}
-📅 Date: ${date} (${time})
-👥 Participants: ${riders}
-💰 Total: ${price}
-👤 Name: ${name}
-📞 Contact: ${phone}
-✉️ Email: ${email || 'N/A'}
-🪪 Driver License Confirmed: Yes (Category B)
-━━━━━━━━━━━━━━━━━
-Please confirm availability!`;
-
-  const encoded = encodeURIComponent(message);
-  const waUrl = `https://wa.me/306942430930?text=${encoded}`;
-  window.open(waUrl, '_blank');
-}
-
-// --- DOM Initializations ---
 document.addEventListener('DOMContentLoaded', () => {
-  // Load stored language or default to en
-  const savedLang = localStorage.getItem('beta_samos_lang') || 'en';
-  setLanguage(savedLang);
+  // --- Translation Dictionary (English / Greek) ---
+  const translations = {
+    en: {
+      topbar_whatsapp: "WhatsApp Booking",
+      nav_tag: "ATV & Hiking Tour",
+      nav_tours: "Tours & Pricing",
+      nav_whyus: "Why Beta Samos",
+      nav_guide: "Before You Ride",
+      nav_gallery: "Gallery",
+      nav_reviews: "Reviews",
+      nav_location: "Location",
+      nav_book: "Book Now",
 
-  // Language buttons
+      hero_badge: "Rated 4.9/5 by International Travelers | Samos, Greece",
+      hero_title: "Explore Samos by <span>ATV & on Foot</span>",
+      hero_subtitle: "Scenic off-road thrills, hidden mountain trails, Potami waterfalls, and breathtaking Aegean viewpoints with passionate local guides.",
+
+      qb_tour_label: "Select Adventure",
+      qb_date_label: "Tour Date",
+      qb_riders_label: "Quads & Riders",
+      qb_btn: "Check & Book",
+
+      trust_1_title: "100% Safety Certified",
+      trust_1_desc: "DOT/ECE helmets, safety briefing & automatic ATVs",
+      trust_2_title: "Free 24h Cancellation",
+      trust_2_desc: "Full refund if plans change or bad weather occurs",
+      trust_3_title: "Instant WhatsApp Booking",
+      trust_3_desc: "Direct contact with local guides for fast confirmation",
+      trust_4_title: "Authentic Island Guides",
+      trust_4_desc: "Passionate local knowledge & hidden viewpoint trails",
+
+      tours_tag: "Guided Expeditions",
+      tours_title: "Choose Your Samos Adventure",
+      tours_subtitle: "Small-group off-road quad safaris combining rugged mountain trails, waterfall hikes, and panoramic sea vistas.",
+
+      badge_bestseller: "🔥 Most Popular",
+      badge_sunset: "🌅 Golden Hour",
+      price_from: "From",
+      price_per_driver: "/ driver",
+
+      spec_dur: "Duration",
+      spec_terrain: "Terrain",
+      spec_terrain_val: "70% Dirt / 30% Road",
+      spec_t2_terrain: "60% Dirt / 40% Scenic",
+      spec_lic: "Driver Lic.",
+      spec_grp: "Group Size",
+      spec_grp_val: "Max 6 Quads",
+
+      tab_overview: "Overview",
+      tab_itinerary: "Itinerary",
+      tab_inclusions: "Inclusions",
+      tab_bring: "What to Bring",
+
+      t1_title: "Beta Samos ATV & Hiking Guided Tour",
+      t1_dep: "Departures: 09:30 AM & 15:30 PM Daily",
+      t1_desc: "Our flagship 5-hour adventure combines exhilarating off-road ATV driving through shaded pine forests with a guided nature hike to hidden mountain viewpoints and Potami waterfalls. Includes traditional Samian snacks and bottled water.",
+
+      itin_1_title: "Safety Briefing & Practice Lap",
+      itin_1_desc: "Helmet fitting, vehicle controls briefing, and a practice run at Karlovasi HQ.",
+      itin_2_title: "Off-Road Mountain Trails",
+      itin_2_desc: "Ride rugged dirt tracks and mountain paths through dense pine forests.",
+      itin_3_title: "Guided Hike & Potami Waterfalls",
+      itin_3_desc: "Park quads for a scenic guided foot trail into lush river gorges and historic stone paths.",
+      itin_4_title: "Samian Snack & Panorama Stop",
+      itin_4_desc: "Rest at a cliffside viewpoint for traditional Greek snacks, fresh fruit, and cool water.",
+
+      inc_1: "Premium Automatic ATV & Fuel",
+      inc_2: "DOT/ECE Approved Helmets",
+      inc_3: "Certified Local Island Guide",
+      inc_4: "Local Samian Snacks & Water",
+      inc_5: "Free Action Photos Shared",
+      inc_6: "Hotel Transfer (Available on Request)",
+      inc_sunset_drink: "Sunset Refreshments & Water",
+
+      bring_shoes: "Closed Shoes",
+      bring_license: "Physical Driver Lic.",
+      bring_glasses: "Sunglasses",
+      bring_sunscreen: "Sunscreen & Hat",
+      bring_jacket: "Light Evening Jacket",
+
+      btn_book_t1: "Book This Tour (€110)",
+      btn_book_t2: "Book Sunset Tour (€95)",
+      btn_whatsapp_inquire: "💬 WhatsApp Chat",
+
+      t2_title: "Sunset Mountain & Coastal Quad Tour",
+      t2_dep: "Departure: 17:30 PM (Seasonal)",
+      t2_desc: "Ride during the cooler evening hours as the golden sun dips over the Aegean sea. Experience high mountain ridge paths, panoramic sunset viewpoints, and twilight coastal trails.",
+
+      why_tag: "The Beta Samos Difference",
+      why_title: "Why Explore Samos With Us?",
+      why_subtitle: "We combine the adrenaline of off-road driving with deep local roots and unforgettable island hospitality.",
+      feat_1_title: "Top Modern ATVs",
+      feat_1_desc: "Fully automatic, easy-to-drive, rigorously inspected quads built for comfort, safety, and stability.",
+      feat_2_title: "Secret Island Trails",
+      feat_2_desc: "Reach secluded mountain lookouts, hidden chapels, and waterfalls inaccessible by standard rental cars.",
+      feat_3_title: "Authentic Samian Treats",
+      feat_3_desc: "Enjoy traditional local snacks, fresh seasonal fruits, and refreshments at scenic rest spots.",
+      feat_4_title: "Free Action Photos",
+      feat_4_desc: "Our guides capture your best driving moments, ridge crossings, and waterfall walks — shared with you for free!",
+
+      guide_tag: "Traveler Preparation",
+      guide_title: "Before You Ride: Important Info",
+      guide_subtitle: "Everything you need to know for a smooth, safe, and exciting excursion on Samos.",
+      g1_title: "Driver's License",
+      g1_desc: "Drivers must hold a valid physical Category B (car) driver's license. Minimum driver age is 18 years old.",
+      g2_title: "Proper Footwear",
+      g2_desc: "Closed-toe sneakers or hiking shoes are mandatory for driving and hiking. No flip-flops or open sandals allowed.",
+      g3_title: "Passengers & Families",
+      g3_desc: "Passengers can join from 8 years and older. Two riders can comfortably share one quad.",
+      g4_title: "Weather Guarantee",
+      g4_desc: "In case of extreme weather, reschedule for free or receive a 100% full refund.",
+
+      gal_tag: "Sights & Trails",
+      gal_title: "Real Moments on the Trails",
+      gal_subtitle: "A glimpse of the terrain, pine forests, and vistas waiting for you.",
+      g_cap_1: "Mountain Ridge Convoy",
+      g_cap_2: "Forest & Water Crossing",
+      g_cap_3: "Golden Hour Over Karlovasi",
+
+      rev_tag: "Guest Experiences",
+      rev_title: "Loved by Travelers Worldwide",
+      rev_subtitle: "Here is what our guests have to say about riding with Beta Samos.",
+      r1_text: "\"The highlight of our 2 weeks in Samos! Oltion was an incredible guide who showed us mountain viewpoints we would never have found on our own. The quads are brand new and the hike was refreshing!\"",
+      r2_text: "\"Fantastic 5-hour tour! The mix of off-road quad riding and the walk through Potami waterfalls was perfect. Great safety briefing and the local Greek snacks at the viewpoint were delicious.\"",
+      r3_text: "\"Η καλύτερη εμπειρία στη Σάμο! Φοβερή διαδρομή στο βουνό, απόλυτη ασφάλεια και απίστευτη θέα. Το συστήνουμε ανεπιφύλακτα σε όποιον θέλει πραγματική περιπέτεια στο νησί!\"",
+
+      loc_tag: "Meeting Point",
+      loc_title: "Find Us in Karlovasi",
+      loc_desc: "Conveniently located in Karlovasi with easy parking and direct access to mountain and coastal tracks.",
+      loc_addr_label: "Address:",
+      loc_phone_label: "Phone & WhatsApp:",
+      loc_hours_label: "Opening Hours:",
+      loc_hours_val: "09:00 - 20:00 Daily (Summer Season)",
+      btn_directions: "Get Directions on Google Maps",
+
+      footer_about: "Premier outdoor tour operator on Samos Island, Greece. Guided off-road quad excursions combined with scenic nature hikes.",
+      foot_exp: "Adventures",
+      foot_info: "Information",
+      foot_contact: "Contact Us",
+
+      mob_call: "📞 Call",
+      mob_wa: "💬 WhatsApp",
+      mob_book: "⚡ Book Tour",
+
+      modal_title: "Reserve Your Samos Adventure",
+      modal_sub: "Instant reservation request via WhatsApp",
+      m_tour_label: "Selected Tour",
+      m_date_label: "Preferred Date",
+      m_time_label: "Time Slot",
+      m_quads_label: "Number of Quads",
+      m_rider_type_label: "Rider Arrangement",
+      m_name_label: "Lead Guest Full Name",
+      m_phone_label: "Phone / WhatsApp Number",
+      m_email_label: "Email Address",
+      m_est_price: "Estimated Total:",
+      btn_send_wa: "Send Reservation Request via WhatsApp"
+    },
+
+    el: {
+      topbar_whatsapp: "Κράτηση μέσω WhatsApp",
+      nav_tag: "Περιηγήσεις ATV & Πεζοπορία",
+      nav_tours: "Εκδρομές & Τιμές",
+      nav_whyus: "Γιατί Beta Samos",
+      nav_guide: "Οδηγίες & Ασφάλεια",
+      nav_gallery: "Φωτογραφίες",
+      nav_reviews: "Κριτικές",
+      nav_location: "Τοποθεσία",
+      nav_book: "Κράτηση",
+
+      hero_badge: "Αξιολόγηση 4.9/5 από ταξιδιώτες παγκοσμίως | Σάμος, Ελλάδα",
+      hero_title: "Ανακαλύψτε τη Σάμο με <span>ATV & Πεζοπορία</span>",
+      hero_subtitle: "Συναρπαστικές off-road διαδρομές, ορεινά μονοπάτια, καταρράκτες Ποτάμι και μαγευτική θέα στο Αιγαίο με έμπειρους τοπικούς οδηγούς.",
+
+      qb_tour_label: "Επιλέξτε Εκδρομή",
+      qb_date_label: "Ημερομηνία",
+      qb_riders_label: "Γουρούνες & Αναβάτες",
+      qb_btn: "Έλεγχος & Κράτηση",
+
+      trust_1_title: "100% Πιστοποιημένη Ασφάλεια",
+      trust_1_desc: "Εγκεκριμένα κράνη DOT/ECE, οδηγίες ασφαλείας & αυτόματα ATV",
+      trust_2_title: "Δωρεάν Ακύρωση 24ωρο Πριν",
+      trust_2_desc: "Πλήρης επιστροφή χρημάτων σε αλλαγή σχεδίων ή κακοκαιρία",
+      trust_3_title: "Άμεση Κράτηση WhatsApp",
+      trust_3_desc: "Απευθείας επικοινωνία με τους τοπικούς οδηγούς",
+      trust_4_title: "Αυθεντικοί Τοπικοί Οδηγοί",
+      trust_4_desc: "Βαθιά γνώση του νησιού και μυστικά ορεινά μονοπάτια",
+
+      tours_tag: "Οργανωμένες Περιηγήσεις",
+      tours_title: "Επιλέξτε την Περιπέτειά σας",
+      tours_subtitle: "Ολιγομελή quad safaris που συνδυάζουν χωμάτινες ορεινές διαδρομές, πεζοπορία σε καταρράκτες και πανοραμική θέα στη θάλασσα.",
+
+      badge_bestseller: "🔥 Δημοφιλέστερη",
+      badge_sunset: "🌅 Ηλιοβασίλεμα",
+      price_from: "Από",
+      price_per_driver: "/ οδηγό",
+
+      spec_dur: "Διάρκεια",
+      spec_terrain: "Έδαφος",
+      spec_terrain_val: "70% Χώμα / 30% Άσφαλτος",
+      spec_t2_terrain: "60% Χώμα / 40% Θέα",
+      spec_lic: "Δίπλωμα",
+      spec_grp: "Μέγεθος Group",
+      spec_grp_val: "Έως 6 Quads",
+
+      tab_overview: "Επισκόπηση",
+      tab_itinerary: "Πρόγραμμα",
+      tab_inclusions: "Παροχές",
+      tab_bring: "Τι να Φέρετε",
+
+      t1_title: "Beta Samos 5ωρη Περιήγηση ATV & Πεζοπορίας",
+      t1_dep: "Αναχωρήσεις: 09:30 & 15:30 Καθημερινά",
+      t1_desc: "Η κορυφαία 5ωρη περιπέτειά μας συνδυάζει συναρπαστική off-road οδήγηση quad μέσα σε πυκνά πευκοδάση με πεζοπορία στους καταρράκτες Ποτάμι και πανοραμικά σημεία θέας. Περιλαμβάνει τοπικά κεράσματα και δροσερό νερό.",
+
+      itin_1_title: "Ενημέρωση Ασφαλείας & Δοκιμαστικός Γύρος",
+      itin_1_desc: "Ρύθμιση κράνους, εξοικείωση με τα χειριστήρια και δοκιμαστικός γύρος στην έδρα μας στο Καρλόβασι.",
+      itin_2_title: "Ορεινές Off-Road Διαδρομές",
+      itin_2_desc: "Οδήγηση σε χωμάτινα μονοπάτια και δασικούς δρόμους μέσα στα πεύκα.",
+      itin_3_title: "Πεζοπορία στους Καταρράκτες Ποτάμι",
+      itin_3_desc: "Στάθμευση των ATV για guided πεζοπορία σε καταπράσινα φαράγγια και ιστορικά πέτρινα μονοπάτια.",
+      itin_4_title: "Στάση για Τοπικά Κεράσματα & Θέα",
+      itin_4_desc: "Χαλάρωση σε σημείο με πανοραμική θέα στο Αιγαίο με παραδοσιακά σαμιώτικα σνακ και φρέσκα φρούτα.",
+
+      inc_1: "Κορυφαίο Αυτόματο ATV & Καύσιμα",
+      inc_2: "Εγκεκριμένα Κράνη DOT/ECE",
+      inc_3: "Πιστοποιημένος Τοπικός Οδηγός",
+      inc_4: "Σαμιώτικα Σνακ & Δροσερό Νερό",
+      inc_5: "Δωρεάν Φωτογραφίες Δράσης",
+      inc_6: "Μεταφορά από Ξενοδοχείο (Κατόπιν Συνεννόησης)",
+      inc_sunset_drink: "Αναψυκτικά Ηλιοβασιλέματος & Νερό",
+
+      bring_shoes: "Κλειστά Παπούτσια",
+      bring_license: "Φυσικό Δίπλωμα (Κατ. Β)",
+      bring_glasses: "Γυαλιά Ηλίου",
+      bring_sunscreen: "Αντηλιακό & Καπέλο",
+      bring_jacket: "Ελαφρύ Μπουφάν (Απόγευμα)",
+
+      btn_book_t1: "Κράτηση Εκδρομής (€110)",
+      btn_book_t2: "Κράτηση Sunset Tour (€95)",
+      btn_whatsapp_inquire: "💬 Συνομιλία WhatsApp",
+
+      t2_title: "Sunset Mountain & Coastal Quad Tour",
+      t2_dep: "Αναχώρηση: 17:30 (Εποχιακό)",
+      t2_desc: "Οδηγήστε τις δροσερές απογευματινές ώρες καθώς ο ήλιος δύει πάνω από το Αιγαίο. Ζήστε ορεινές κορυφογραμμές, μαγευτικά σημεία ηλιοβασιλέματος και παράκτιες διαδρομές στο λυκόφως.",
+
+      why_tag: "Η Διαφορά Beta Samos",
+      why_title: "Γιατί να Επιλέξετε Εμάς;",
+      why_subtitle: "Συνδυάζουμε την αδρεναλίνη της off-road οδήγησης με γνήσια σαμιώτικη φιλοξενία και απόλυτη ασφάλεια.",
+      feat_1_title: "Σύγχρονα Αυτόματα ATVs",
+      feat_1_desc: "Πλήρως αυτόματα, εύκολα στην οδήγηση, άψογα συντηρημένα quads για άνεση και σταθερότητα.",
+      feat_2_title: "Μυστικές Διαδρομές",
+      feat_2_desc: "Πρόσβαση σε απόκρημνα σημεία θέας, ξωκλήσια και καταρράκτες που δεν προσεγγίζονται με συμβατικά ενοικιαζόμενα αυτοκίνητα.",
+      feat_3_title: "Αυθεντικά Σαμιώτικα Κεράσματα",
+      feat_3_desc: "Απολαύστε τοπικά παραδοσιακά σνακ, φρέσκα φρούτα και αναψυκτικά σε επιλεγμένα σημεία ανάπαυλας.",
+      feat_4_title: "Δωρεάν Φωτογραφίες Δράσης",
+      feat_4_desc: "Οι οδηγοί μας τραβούν τις καλύτερες στιγμές της οδήγησης και της πεζοπορίας σας και τις μοιράζονται δωρεάν μαζί σας!",
+
+      guide_tag: "Προετοιμασία Ταξιδιώτη",
+      guide_title: "Οδηγίες & Χρήσιμες Πληροφορίες",
+      guide_subtitle: "Όλα όσα χρειάζεται να γνωρίζετε για μια άνετη, ασφαλή και αξέχαστη εκδρομή.",
+      g1_title: "Δίπλωμα Οδήγησης",
+      g1_desc: "Οι οδηγοί πρέπει να κατέχουν έγκυρο φυσικό δίπλωμα αυτοκινήτου (Κατηγορία Β). Ελάχιστο όριο ηλικίας οδηγού: 18 έτη.",
+      g2_title: "Κατάλληλα Υποδήματα",
+      g2_desc: "Τα κλειστά αθλητικά ή πεζοπορικά παπούτσια είναι υποχρεωτικά. Δεν επιτρέπονται σαγιονάρες ή ανοιχτά σανδάλια.",
+      g3_title: "Συνεπιβάτες & Οικογένειες",
+      g3_desc: "Συνεπιβάτες γίνονται δεκτοί από 8 ετών και άνω. Δύο άτομα μοιράζονται άνετα ένα quad.",
+      g4_title: "Εγγύηση Καιρού",
+      g4_desc: "Σε περίπτωση ακραίων καιρικών φαινομένων, δωρεάν αλλαγή ημερομηνίας ή 100% πλήρης επιστροφή χρημάτων.",
+
+      gal_tag: "Τοπία & Διαδρομές",
+      gal_title: "Στιγμές από τις Διαδρομές μας",
+      gal_subtitle: "Μια ματιά στα δάση, τις κορυφές και τα μονοπάτια που σας περιμένουν.",
+      g_cap_1: "Κομβόι στις Κορυφογραμμές",
+      g_cap_2: "Πέρασμα από το Ποτάμι",
+      g_cap_3: "Ηλιοβασίλεμα πάνω από το Καρλόβασι",
+
+      rev_tag: "Εμπειρίες Επισκεπτών",
+      rev_title: "Τι Λένε οι Ταξιδιώτες",
+      rev_subtitle: "Πραγματικές κριτικές από επισκέπτες που οδήγησαν μαζί μας.",
+      r1_text: "\"Το αποκορύφωμα των διακοπών μας στη Σάμο! Ο Oltion ήταν φανταστικός οδηγός που μας έδειξε μέρη που δεν θα βρίσκαμε ποτέ μόνοι μας. Τα quads είναι καινούργια και η πεζοπορία αναζωογονητική!\"",
+      r2_text: "\"Φανταστική 5ωρη εκδρομή! Ο συνδυασμός quad και πεζοπορίας στους καταρράκτες ήταν τέλειος. Άψογη ενημέρωση ασφαλείας και πεντανόστιμα τοπικά σνακ στη στάση με θέα.\"",
+      r3_text: "\"Η καλύτερη εμπειρία στη Σάμο! Φοβερή διαδρομή στο βουνό, απόλυτη ασφάλεια και απίστευτη θέα. Το συστήνουμε ανεπιφύλακτα σε όποιον θέλει πραγματική περιπέτεια στο νησί!\"",
+
+      loc_tag: "Σημείο Συνάντησης",
+      loc_title: "Βρείτε μας στο Καρλόβασι",
+      loc_desc: "Σε κεντρικό σημείο στο Καρλόβασι με εύκολο parking και άμεση πρόσβαση στις ορεινές και παράκτιες διαδρομές.",
+      loc_addr_label: "Διεύθυνση:",
+      loc_phone_label: "Τηλέφωνο & WhatsApp:",
+      loc_hours_label: "Ωράριο Λειτουργίας:",
+      loc_hours_val: "09:00 - 20:00 Καθημερινά (Καλοκαιρινή Περίοδος)",
+      btn_directions: "Οδηγίες στο Google Maps",
+
+      footer_about: "Κορυφαίος πάροχος υπαίθριων περιηγήσεων στη Σάμο. Καθοδηγούμενες off-road εκδρομές με ATV σε συνδυασμό με γραφική πεζοπορία στη φύση.",
+      foot_exp: "Εκδρομές",
+      foot_info: "Πληροφορίες",
+      foot_contact: "Επικοινωνία",
+
+      mob_call: "📞 Κλήση",
+      mob_wa: "💬 WhatsApp",
+      mob_book: "⚡ Κράτηση",
+
+      modal_title: "Κράτηση Περιπέτειας στη Σάμο",
+      modal_sub: "Άμεσο αίτημα κράτησης μέσω WhatsApp",
+      m_tour_label: "Επιλεγμένη Εκδρομή",
+      m_date_label: "Επιθυμητή Ημερομηνία",
+      m_time_label: "Ώρα Αναχώρησης",
+      m_quads_label: "Αριθμός Quads",
+      m_rider_type_label: "Διάταξη Αναβατών",
+      m_name_label: "Ονοματεπώνυμο",
+      m_phone_label: "Τηλέφωνο / WhatsApp",
+      m_email_label: "Email",
+      m_est_price: "Εκτιμώμενο Σύνολο:",
+      btn_send_wa: "Αποστολή Αιτήματος μέσω WhatsApp"
+    }
+  };
+
+  let currentLang = 'en';
+
+  // --- Apply Language Translation ---
+  function setLanguage(lang) {
+    if (!translations[lang]) return;
+    currentLang = lang;
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang][key]) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+
+    document.documentElement.lang = lang;
+  }
+
+  // Language Switcher Buttons
   document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
-  });
-
-  // Mobile Menu Toggle
-  const mobileBtn = document.querySelector('.mobile-menu-btn');
-  const navMenu = document.querySelector('.nav-menu');
-  if (mobileBtn && navMenu) {
-    mobileBtn.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-    });
-    // Close on link click
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => navMenu.classList.remove('open'));
-    });
-  }
-
-  // FAQ Accordion
-  document.querySelectorAll('.faq-header').forEach(header => {
-    header.addEventListener('click', () => {
-      const item = header.parentElement;
-      const body = item.querySelector('.faq-body');
-      const isActive = item.classList.contains('active');
-
-      // Close all items
-      document.querySelectorAll('.faq-item').forEach(i => {
-        i.classList.remove('active');
-        const b = i.querySelector('.faq-body');
-        if (b) b.style.maxHeight = null;
-      });
-
-      if (!isActive) {
-        item.classList.add('active');
-        body.style.maxHeight = body.scrollHeight + 'px';
-      }
-    });
-  });
-
-  // Open First FAQ by default
-  const firstFaq = document.querySelector('.faq-item');
-  if (firstFaq) {
-    firstFaq.classList.add('active');
-    const firstBody = firstFaq.querySelector('.faq-body');
-    if (firstBody) firstBody.style.maxHeight = firstBody.scrollHeight + 'px';
-  }
-
-  // Booking Modal Logic
-  const modal = document.getElementById('bookingModal');
-  const openButtons = document.querySelectorAll('.open-booking-modal');
-  const closeBtn = document.querySelector('.modal-close-btn');
-
-  openButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const tourType = btn.dataset.tour;
-      if (tourType && document.getElementById('modalTourSelect')) {
-        document.getElementById('modalTourSelect').value = tourType;
-      }
-      updateModalPrice();
-      if (modal) modal.classList.add('active');
-    });
-  });
-
-  if (closeBtn && modal) {
-    closeBtn.addEventListener('click', () => modal.classList.remove('active'));
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) modal.classList.remove('active');
-    });
-  }
-
-  // Modal Inputs Price Change
-  const tourSelect = document.getElementById('modalTourSelect');
-  const ridersInput = document.getElementById('modalRiders');
-  if (tourSelect) tourSelect.addEventListener('change', updateModalPrice);
-  if (ridersInput) ridersInput.addEventListener('input', updateModalPrice);
-
-  // WhatsApp Submit in Modal
-  const waSubmitBtn = document.getElementById('btnSubmitWhatsApp');
-  if (waSubmitBtn) {
-    waSubmitBtn.addEventListener('click', handleWhatsAppBooking);
-  }
-
-  // Gallery Filter Logic
-  const filterBtns = document.querySelectorAll('.gallery-filter-btn');
-  const galleryItems = document.querySelectorAll('.gallery-item');
-
-  filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const category = btn.dataset.filter;
+      const lang = btn.getAttribute('data-lang');
+      setLanguage(lang);
+    });
+  });
 
-      galleryItems.forEach(item => {
-        if (category === 'all' || item.dataset.category === category) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
+  // --- Mobile Navigation Toggle ---
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      const isVisible = navMenu.style.display === 'flex';
+      navMenu.style.display = isVisible ? 'none' : 'flex';
+      if (!isVisible) {
+        navMenu.style.flexDirection = 'column';
+        navMenu.style.position = 'absolute';
+        navMenu.style.top = '76px';
+        navMenu.style.left = '0';
+        navMenu.style.width = '100%';
+        navMenu.style.background = 'white';
+        navMenu.style.padding = '20px';
+        navMenu.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+      }
+    });
+
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          navMenu.style.display = 'none';
+        }
+      });
+    });
+  }
+
+  // --- Tour Card Tab Switching (Madeira Style) ---
+  document.querySelectorAll('.tour-tabs').forEach(tabGroup => {
+    const buttons = tabGroup.querySelectorAll('.tab-btn');
+    const parentBody = tabGroup.closest('.tour-body');
+    const panes = parentBody.querySelectorAll('.tab-pane');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-tab');
+
+        // Deactivate all buttons & panes in this tour card
+        buttons.forEach(b => b.classList.remove('active'));
+        panes.forEach(p => p.classList.remove('active'));
+
+        // Activate clicked
+        btn.classList.add('active');
+        const targetPane = document.getElementById(targetId);
+        if (targetPane) {
+          targetPane.classList.add('active');
         }
       });
     });
   });
 
-  // Lightbox Modal
-  const lightbox = document.getElementById('lightboxModal');
-  const lightboxImg = document.getElementById('lightboxImg');
-  const lightboxClose = document.querySelector('.lightbox-close');
+  // --- Dynamic Pricing & Booking Modal ---
+  const bookingModal = document.getElementById('bookingModal');
+  const modalClose = document.getElementById('modalClose');
+  const modalTourSelect = document.getElementById('modalTourSelect');
+  const modalQuads = document.getElementById('modalQuads');
+  const modalRiderType = document.getElementById('modalRiderType');
+  const modalPriceDisplay = document.getElementById('modalPriceDisplay');
+  const modalDate = document.getElementById('modalDate');
+  const modalTime = document.getElementById('modalTime');
+  const modalName = document.getElementById('modalName');
+  const modalPhone = document.getElementById('modalPhone');
+  const modalEmail = document.getElementById('modalEmail');
+  const btnSubmitWhatsApp = document.getElementById('btnSubmitWhatsApp');
 
-  galleryItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const img = item.querySelector('img');
-      if (img && lightbox && lightboxImg) {
-        lightboxImg.src = img.src;
-        lightbox.classList.add('active');
-      }
+  // Set default minimum date to tomorrow
+  const today = new Date();
+  today.setDate(today.getDate() + 1);
+  const minDateStr = today.toISOString().split('T')[0];
+  if (modalDate) modalDate.min = minDateStr;
+  const qbDate = document.getElementById('qbDate');
+  if (qbDate) qbDate.min = minDateStr;
+
+  function calculatePrice() {
+    const tour = modalTourSelect ? modalTourSelect.value : 'flagship';
+    const quads = modalQuads ? parseInt(modalQuads.value, 10) || 1 : 1;
+    const isShared = modalRiderType ? modalRiderType.value === 'shared' : false;
+
+    let baseQuadPrice = 110;
+    if (tour === 'sunset') {
+      baseQuadPrice = 95;
+    } else if (tour === 'vip') {
+      baseQuadPrice = 140;
+    }
+
+    // Shared quad supplement (+€40 for passenger snacks/gear)
+    const perQuadCost = isShared ? baseQuadPrice + 40 : baseQuadPrice;
+    const total = perQuadCost * quads;
+
+    if (modalPriceDisplay) {
+      modalPriceDisplay.textContent = `€${total}`;
+    }
+    return total;
+  }
+
+  if (modalTourSelect) modalTourSelect.addEventListener('change', calculatePrice);
+  if (modalQuads) modalQuads.addEventListener('change', calculatePrice);
+  if (modalRiderType) modalRiderType.addEventListener('change', calculatePrice);
+
+  function openModal(preselectedTour = 'flagship') {
+    if (bookingModal) {
+      if (modalTourSelect) modalTourSelect.value = preselectedTour;
+      calculatePrice();
+      bookingModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal() {
+    if (bookingModal) {
+      bookingModal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+  }
+
+  document.querySelectorAll('.open-booking-modal').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const tour = btn.getAttribute('data-tour') || 'flagship';
+      openModal(tour);
     });
   });
 
-  if (lightboxClose && lightbox) {
-    lightboxClose.addEventListener('click', () => lightbox.classList.remove('active'));
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) lightbox.classList.remove('active');
+  if (modalClose) modalClose.addEventListener('click', closeModal);
+  if (bookingModal) {
+    bookingModal.addEventListener('click', (e) => {
+      if (e.target === bookingModal) closeModal();
     });
   }
 
-  // Set default reservation date to tomorrow
-  const dateInput = document.getElementById('modalDate');
-  if (dateInput) {
-    const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    dateInput.value = tomorrow.toISOString().split('T')[0];
-    dateInput.min = new Date().toISOString().split('T')[0];
+  // --- Hero Quick-Booking Bar Submit ---
+  const qbSubmitBtn = document.getElementById('qbSubmitBtn');
+  if (qbSubmitBtn) {
+    qbSubmitBtn.addEventListener('click', () => {
+      const qbTour = document.getElementById('qbTour').value;
+      const qbDateVal = document.getElementById('qbDate').value;
+      const qbRidersVal = document.getElementById('qbRiders').value;
+
+      if (modalTourSelect) modalTourSelect.value = qbTour;
+      if (modalDate && qbDateVal) modalDate.value = qbDateVal;
+
+      if (modalQuads && modalRiderType) {
+        if (qbRidersVal.includes('shared')) {
+          modalRiderType.value = 'shared';
+        } else {
+          modalRiderType.value = 'solo';
+        }
+        if (qbRidersVal.startsWith('2')) {
+          modalQuads.value = '2';
+        } else {
+          modalQuads.value = '1';
+        }
+      }
+
+      openModal(qbTour);
+    });
+  }
+
+  // --- WhatsApp Reservation Dispatch ---
+  if (btnSubmitWhatsApp) {
+    btnSubmitWhatsApp.addEventListener('click', () => {
+      const name = modalName ? modalName.value.trim() : '';
+      const phone = modalPhone ? modalPhone.value.trim() : '';
+      const date = modalDate ? modalDate.value : '';
+      const time = modalTime ? modalTime.value : '';
+      const tour = modalTourSelect ? modalTourSelect.options[modalTourSelect.selectedIndex].text : '';
+      const quads = modalQuads ? modalQuads.value : '1';
+      const riderType = modalRiderType ? (modalRiderType.value === 'shared' ? 'Driver + Passenger (Shared)' : '1 Driver Solo') : '';
+      const total = modalPriceDisplay ? modalPriceDisplay.textContent : '';
+
+      if (!name || !phone || !date) {
+        alert(currentLang === 'el' ? 'Παρακαλούμε συμπληρώστε Όνομα, Τηλέφωνο και Ημερομηνία.' : 'Please fill in your Name, Phone/WhatsApp, and Date.');
+        return;
+      }
+
+      const message = `🏔️ *Beta Samos Tour Reservation Request*
+👤 *Lead Guest:* ${name}
+📞 *Phone/WhatsApp:* ${phone}
+🗺️ *Tour:* ${tour}
+📅 *Date:* ${date} (${time})
+🚜 *Quads:* ${quads} Quad(s) [${riderType}]
+💰 *Estimated Total:* ${total}
+
+_Sent via betasamos.gr instant reservation engine._`;
+
+      const encodedMsg = encodeURIComponent(message);
+      const waUrl = `https://wa.me/306942430930?text=${encodedMsg}`;
+      window.open(waUrl, '_blank');
+      closeModal();
+    });
   }
 });
