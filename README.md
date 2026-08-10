@@ -32,6 +32,45 @@ Custom workspace rules and skills are configured so AI agents can perform automa
 
 ---
 
+## 🌐 Official Website & Cloudflare Deployment
+
+The official bilingual website for **Beta Samos ATV & Hiking Tour** is hosted on **Cloudflare Edge CDN** and mapped to **`https://betasamos.gr`**.
+
+- **Production URL**: `https://betasamos.gr`
+- **Cloudflare Edge Deployment**: `https://beta-samos.mikedan171.workers.dev`
+- **Registrar**: Papaki.gr (team.blue) | Nameservers: `lee.ns.cloudflare.com`, `lina.ns.cloudflare.com`
+
+### 🔒 Safe Branching & Update Workflow
+
+We use a dual-branch Git workflow to ensure production is never broken:
+
+```
+[develop] (Draft changes, new tours, testing) ──> Cloudflare Preview URL
+     │
+     └── (Pull Request / Merge when tested) ──> [main] (Production: betasamos.gr)
+```
+
+1. **Working on Updates (Always on `develop`)**:
+   ```bash
+   git checkout develop
+   # Make your changes to HTML, CSS, images, etc.
+   git add .
+   git commit -m "feat: add new sunset tour photos"
+   git push origin develop
+   ```
+2. **Reviewing on Preview URL**:
+   - Cloudflare creates a private preview build where you can test changes on mobile and desktop safely.
+3. **Releasing to Production (`main`)**:
+   - Once approved, merge `develop` into `main`:
+   ```bash
+   git checkout main
+   git merge develop
+   git push origin main
+   ```
+   - Cloudflare automatically deploys the update to `betasamos.gr` in ~15 seconds with zero downtime.
+
+---
+
 ## 🛠️ Utilities & CLI Scripts (`scripts/`)
 
 - **Validate Knowledge Base & GYG Specs**:
@@ -46,3 +85,4 @@ Custom workspace rules and skills are configured so AI agents can perform automa
   ```powershell
   powershell.exe -ExecutionPolicy Bypass -File "scripts/export_gyg_listing.ps1" -TourFile "knowledge_base/tours_catalog/atv_hiking_guided_tour.md"
   ```
+
