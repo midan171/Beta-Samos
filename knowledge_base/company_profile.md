@@ -19,7 +19,9 @@
 - **Secondary Contact Email**: `edeliverades@gmail.com`
 - **Phone / WhatsApp**: `+30 6942430930` / `+30 2273079075`
 - **Operating Hours**: 09:00 - 20:00 Daily (Seasonal summer operation)
-- **Primary Website**: `https://6a3157a4b8dfb.site123.me/?app=1`
+- **Official Domain**: `https://betasamos.gr` (Registrar: Papaki.gr)
+- **Technical Contact & Lead Developer**: Michail Danousis (`mikedan171@gmail.com` / `+30 6988708303`)
+- **Legacy Website**: `https://6a3157a4b8dfb.site123.me/?app=1`
 
 ## Banking & Payment Information
 - **Bank**: National Bank of Greece S.A. (Εθνική Τράπεζα της Ελλάδος Α.Ε.)
