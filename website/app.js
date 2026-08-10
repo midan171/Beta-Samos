@@ -119,8 +119,8 @@ document.addEventListener('DOMContentLoaded', () => {
       gal_tag: "Sights & Trails",
       gal_title: "Real Moments on the Trails",
       gal_subtitle: "A glimpse of the terrain, pine forests, and vistas waiting for you.",
-      g_cap_1: "Mountain Ridge Convoy",
-      g_cap_2: "Forest & Water Crossing",
+      g_cap_1: "Forest & Water Crossing",
+      g_cap_2: "Mountain Ridge Convoy",
       g_cap_3: "Golden Hour Over Karlovasi",
 
       rev_tag: "Guest Experiences",
@@ -275,8 +275,8 @@ document.addEventListener('DOMContentLoaded', () => {
       gal_tag: "Τοπία & Διαδρομές",
       gal_title: "Στιγμές από τις Διαδρομές μας",
       gal_subtitle: "Μια ματιά στα δάση, τις κορυφές και τα μονοπάτια που σας περιμένουν.",
-      g_cap_1: "Κομβόι στις Κορυφογραμμές",
-      g_cap_2: "Πέρασμα από το Ποτάμι",
+      g_cap_1: "Πέρασμα από το Ποτάμι",
+      g_cap_2: "Κομβόι στις Κορυφογραμμές",
       g_cap_3: "Ηλιοβασίλεμα πάνω από το Καρλόβασι",
 
       rev_tag: "Εμπειρίες Επισκεπτών",
