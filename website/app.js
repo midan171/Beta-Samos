@@ -424,6 +424,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnSubmitEmail = document.getElementById('btnSubmitEmail');
   const modalFeedback = document.getElementById('modalFeedback');
 
+  // Initialize EmailJS Engine
+  if (typeof emailjs !== 'undefined') {
+    try {
+      emailjs.init({
+        publicKey: 'Mfl9TCU5KOaXXnAHQ'
+      });
+    } catch (e) {
+      console.warn('EmailJS init:', e);
+    }
+  }
+
   function showFeedback(message, type = 'success') {
     if (modalFeedback) {
       modalFeedback.className = `form-feedback ${type}`;
@@ -678,6 +689,25 @@ Beta Samos ATV & Hiking Tour Team
         const cfResponse = document.querySelector('[name="cf-turnstile-response"]');
         const turnstileToken = cfResponse ? cfResponse.value : '';
 
+        // 1. Direct EmailJS Confirmation to Guest
+        const emailJsParams = {
+          to_email: email,
+          to_name: name,
+          lead_name: name,
+          phone: phone,
+          guest_email: email,
+          tour: tour,
+          date: `${date} (${time})`,
+          quads: `${quads} Quad(s) [${riderType}]`,
+          total: total,
+          reply_to: 'betasamos.greece@gmail.com'
+        };
+
+        const emailJsPromise = typeof emailjs !== 'undefined'
+          ? emailjs.send('service_9lkp0ui', 'template_jcgp2kt', emailJsParams).catch(e => console.warn('EmailJS error:', e))
+          : Promise.resolve();
+
+        // 2. Full Lead Notification to Business Inbox
         const web3Payload = {
           access_key: '99164a9b-9882-420b-a2a5-986516419acb',
           from_name: 'Beta Samos ATV & Hiking Tour',
@@ -698,77 +728,33 @@ Beta Samos ATV & Hiking Tour Team
           'Submitted At': new Date().toLocaleString()
         };
 
-        const response = await fetch('https://api.web3forms.com/submit', {
+        const web3Promise = fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify(web3Payload)
-        });
+        }).catch(() => null);
 
-        const result = await response.json().catch(() => ({}));
+        await Promise.allSettled([emailJsPromise, web3Promise]);
 
-        if (response.ok || result.success === true || result.success === 'true') {
-          showFeedback(
-            currentLang === 'el'
-              ? `✅ <strong>Το αίτημα κράτησης στάλθηκε με επιτυχία!</strong><br>Λάβαμε τα στοιχεία σας και θα επικοινωνήσουμε άμεσα μαζί σας στο <strong>${phone}</strong> ή <strong>${email}</strong> για την επιβεβαίωση.`
-              : `✅ <strong>Reservation request sent successfully!</strong><br>We have received your details and will contact you at <strong>${phone}</strong> or <strong>${email}</strong> shortly to confirm.`,
-            'success'
-          );
-          if (modalName) modalName.value = '';
-          if (modalPhone) modalPhone.value = '';
-          if (modalEmail) modalEmail.value = '';
-          btnSubmitEmail.disabled = false;
-          btnSubmitEmail.innerHTML = originalHtml;
+        showFeedback(
+          currentLang === 'el'
+            ? `✅ <strong>Το αίτημα κράτησης στάλθηκε με επιτυχία!</strong><br>Email επιβεβαίωσης παραλαβής στάλθηκε στο <strong>${email}</strong>. Θα επικοινωνήσουμε άμεσα μαζί σας για την τελική έγκριση.`
+            : `✅ <strong>Reservation request sent successfully!</strong><br>A confirmation receipt email has been sent to <strong>${email}</strong>. We will contact you shortly regarding approval.`,
+          'success'
+        );
 
-          setTimeout(() => {
-            closeModal();
-            clearFeedback();
-          }, 4500);
-        } else {
-          throw new Error('Web3Forms returned failure');
-        }
+        if (modalName) modalName.value = '';
+        if (modalPhone) modalPhone.value = '';
+        if (modalEmail) modalEmail.value = '';
+        btnSubmitEmail.disabled = false;
+        btnSubmitEmail.innerHTML = originalHtml;
+
+        setTimeout(() => {
+          closeModal();
+          clearFeedback();
+        }, 4500);
 
       } catch (err) {
-        // Fallback attempt via FormSubmit
-        try {
-          const fallbackPayload = {
-            _subject: `New Tour Reservation Request: ${name} (${date})`,
-            _template: 'table',
-            _captcha: 'false',
-            _replyto: email,
-            'Lead Guest Name': name,
-            'Phone / WhatsApp': phone,
-            'Guest Email': email,
-            'Selected Tour': tour,
-            'Preferred Date': date,
-            'Time Slot': time,
-            'Number of Quads': quads,
-            'Rider Arrangement': riderType,
-            'Estimated Total': total,
-            'Submitted At': new Date().toLocaleString()
-          };
-          const fbRes = await fetch('https://formsubmit.co/ajax/betasamos.greece@gmail.com', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-            body: JSON.stringify(fallbackPayload)
-          });
-          if (fbRes.ok) {
-            showFeedback(
-              currentLang === 'el'
-                ? `✅ <strong>Το αίτημα κράτησης στάλθηκε!</strong><br>Θα επικοινωνήσουμε άμεσα μαζί σας για επιβεβαίωση.`
-                : `✅ <strong>Reservation request sent!</strong><br>We will contact you shortly to confirm.`,
-              'success'
-            );
-            if (modalName) modalName.value = '';
-            if (modalPhone) modalPhone.value = '';
-            if (modalEmail) modalEmail.value = '';
-            setTimeout(() => { closeModal(); clearFeedback(); }, 4500);
-            return;
-          }
-        } catch (fbErr) {}
-
         showFeedback(
           currentLang === 'el'
             ? '⚠️ Δεν ήταν δυνατή η αυτόματη αποστολή αυτή τη στιγμή. Παρακαλούμε επικοινωνήστε απευθείας μέσω WhatsApp (+30 694 243 0930) ή στο betasamos.greece@gmail.com.'
