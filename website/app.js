@@ -678,11 +678,13 @@ Beta Samos ATV & Hiking Tour Team
         const cfResponse = document.querySelector('[name="cf-turnstile-response"]');
         const turnstileToken = cfResponse ? cfResponse.value : '';
 
-        const payload = {
-          _subject: `New Tour Reservation Request: ${name} (${date})`,
-          _template: 'table',
-          _captcha: 'false',
-          _replyto: email,
+        const web3Payload = {
+          access_key: '99164a9b-9882-420b-a2a5-986516419acb',
+          from_name: 'Beta Samos ATV & Hiking Tour',
+          subject: `New Tour Reservation Request: ${name} (${date})`,
+          name: name,
+          email: email,
+          replyto: email,
           'Lead Guest Name': name,
           'Phone / WhatsApp': phone,
           'Guest Email': email,
@@ -696,18 +698,18 @@ Beta Samos ATV & Hiking Tour Team
           'Submitted At': new Date().toLocaleString()
         };
 
-        const response = await fetch('https://formsubmit.co/ajax/betasamos.greece@gmail.com', {
+        const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
           },
-          body: JSON.stringify(payload)
+          body: JSON.stringify(web3Payload)
         });
 
         const result = await response.json().catch(() => ({}));
 
-        if (response.ok || result.success === 'true' || result.success === true) {
+        if (response.ok || result.success === true || result.success === 'true') {
           showFeedback(
             currentLang === 'el'
               ? `✅ <strong>Το αίτημα κράτησης στάλθηκε με επιτυχία!</strong><br>Λάβαμε τα στοιχεία σας και θα επικοινωνήσουμε άμεσα μαζί σας στο <strong>${phone}</strong> ή <strong>${email}</strong> για την επιβεβαίωση.`
@@ -725,16 +727,55 @@ Beta Samos ATV & Hiking Tour Team
             clearFeedback();
           }, 4500);
         } else {
-          throw new Error('Form submission failed');
+          throw new Error('Web3Forms returned failure');
         }
 
       } catch (err) {
+        // Fallback attempt via FormSubmit
+        try {
+          const fallbackPayload = {
+            _subject: `New Tour Reservation Request: ${name} (${date})`,
+            _template: 'table',
+            _captcha: 'false',
+            _replyto: email,
+            'Lead Guest Name': name,
+            'Phone / WhatsApp': phone,
+            'Guest Email': email,
+            'Selected Tour': tour,
+            'Preferred Date': date,
+            'Time Slot': time,
+            'Number of Quads': quads,
+            'Rider Arrangement': riderType,
+            'Estimated Total': total,
+            'Submitted At': new Date().toLocaleString()
+          };
+          const fbRes = await fetch('https://formsubmit.co/ajax/betasamos.greece@gmail.com', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(fallbackPayload)
+          });
+          if (fbRes.ok) {
+            showFeedback(
+              currentLang === 'el'
+                ? `✅ <strong>Το αίτημα κράτησης στάλθηκε!</strong><br>Θα επικοινωνήσουμε άμεσα μαζί σας για επιβεβαίωση.`
+                : `✅ <strong>Reservation request sent!</strong><br>We will contact you shortly to confirm.`,
+              'success'
+            );
+            if (modalName) modalName.value = '';
+            if (modalPhone) modalPhone.value = '';
+            if (modalEmail) modalEmail.value = '';
+            setTimeout(() => { closeModal(); clearFeedback(); }, 4500);
+            return;
+          }
+        } catch (fbErr) {}
+
         showFeedback(
           currentLang === 'el'
             ? '⚠️ Δεν ήταν δυνατή η αυτόματη αποστολή αυτή τη στιγμή. Παρακαλούμε επικοινωνήστε απευθείας μέσω WhatsApp (+30 694 243 0930) ή στο betasamos.greece@gmail.com.'
             : '⚠️ Could not send automatic email right now. Please reach us directly via WhatsApp (+30 694 243 0930) or email betasamos.greece@gmail.com.',
           'error'
         );
+      } finally {
         btnSubmitEmail.disabled = false;
         btnSubmitEmail.innerHTML = originalHtml;
       }
