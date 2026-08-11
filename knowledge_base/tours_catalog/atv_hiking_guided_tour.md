@@ -1,48 +1,56 @@
-# Samos ATV & Hiking Guided Tour with Local Snacks
+# Samos: ATV Adventure to Pythagoras Cave & 3 Villages
 
 ## Tour Summary
-- **Tour Name**: Beta Samos ATV and Hiking Guided Tour
-- **Category**: Off-Road ATV Adventure & Guided Hike
-- **Duration**: 3.5 - 4 hours (Departures: 09:00 AM & 13:00 PM)
-- **Pricing**: €110 per person
+- **Tour Name**: ATV ADVENTURE – PYTHAGORAS CAVE TOUR
+- **Tagline**: Off-Road • Mountain • Seaside • 3 Villages • Pythagoras Cave
+- **Category**: Off-Road ATV Adventure & Cultural Sightseeing
+- **Duration**: 3–4 hours (Departures: 09:00 AM & 13:00 PM)
+- **Pricing**: €95 per person
 - **Group Size**: Small group (Max 8 participants) or Private options
 - **Languages Offered**: English, Greek
 - **Start Location / Meeting Point**: Beta Samos HQ, Karlovasi (T.K. 83200, Samos)
 
 ## Short Description
-Discover the hidden gems of Samos with our guided ATV and hiking tour! Experience an unforgettable adventure filled with adrenaline, breathtaking Aegean views, and scenic mountain trails, led by experienced and friendly local guides. Includes off-road driving, guided nature walk, and traditional local snacks.
+**EN**: Experience a unique ATV exploration tour on a route that combines off-road adventure, mountain trails, seaside views, and traditional villages. The route passes through 3 villages and continues through mountain and dirt tracks, with a guided stop at the historic Pythagoras Cave. A unique ATV adventure combining nature, mountain, sea, and exploration!
+
+**EL**: Ζήστε μια μοναδική εμπειρία εξερεύνησης με ATV, σε μια διαδρομή που συνδυάζει off-road περιπέτεια, βουνό, θάλασσα και παραδοσιακά χωριά. Η διαδρομή περνά από 3 χωριά και συνεχίζει μέσα από ορεινές και χωμάτινες διαδρομές, με στάση στη Σπηλιά του Πυθαγόρα. Μια μοναδική ATV περιπέτεια που συνδυάζει φύση, βουνό, θάλασσα και εξερεύνηση!
 
 ## Highlights
-- **Quad / ATV Thrills**: Ride curated off-road mountain and coastal routes across Samos with safety briefings and clear instruction.
-- **Guided Nature Hike**: Walk picturesque mountain and coastal trails to hidden viewpoints and secret spots only accessible on foot.
-- **Local Insights**: Learn about Samos history, flora, fauna, and local lore from passionate local guides.
-- **Panoramic Photo Stops**: Stop at dramatic coastal cliffs, olive groves, and mountain summits for photos.
-- **Refreshments Included**: Enjoy fresh local snacks and water during the excursion.
+- **Off-Road & Mountain Trails**: Ride thrilling dirt tracks and mountain paths with panoramic island scenery.
+- **3 Traditional Villages**: Drive through 3 authentic Samian villages and discover local charm.
+- **Seaside Route**: Enjoy scenic coastal ATV riding alongside the crystal-clear Aegean Sea.
+- **Pythagoras Cave Exploration**: Stop at the historic Cave of Pythagoras on Mount Kerkis.
+- **Panoramic Photo Stops**: Capture unforgettable viewpoint photos across dramatic coastal cliffs and mountains.
+- **Refreshing Cold Beverage**: Enjoy cool refreshments and water during the excursion.
 
 ## Full Itinerary
-1. **Welcome & Safety Briefing (20 mins)**: Meet at Karlovasi HQ, receive safety equipment (helmet, goggles), test drive ATVs, and go over hand signals and trail rules.
-2. **Off-Road ATV Scenic Ride (1 hour 15 mins)**: Drive through lush pine forests, olive groves, and rugged mountain paths towards mountain viewpoints overlooking the Aegean Sea.
-3. **Guided Hike & Trail Exploration (1 hour 15 mins)**: Park the ATVs and embark on a relaxed, scenic hike along hidden trails. Discover local herbs, historic ruins, and panoramic vistas.
-4. **Snack & Refreshment Break (30 mins)**: Pause at a scenic rest spot to enjoy traditional local Greek snacks, fresh seasonal fruit, and cool drinks while taking in the views.
-5. **Return ATV Scenic Drive (40 mins)**: Enjoy a smooth ride back along coastal paths to Karlovasi base.
+1. **Welcome & Safety Briefing (20 mins)**: Meet at Karlovasi HQ, receive safety equipment (DOT/ECE helmet), get familiar with automatic ATV controls, and complete a test drive.
+2. **Traditional Villages & Scenic Countryside (45 mins)**: Drive through 3 picturesque traditional Samian villages experiencing authentic island charm.
+3. **Off-Road Mountain & Seaside Trails (1 hour 15 mins)**: Navigate exciting dirt paths, pine forest trails, and scenic coastal seaside tracks overlooking the Aegean Sea.
+4. **Pythagoras Cave Stop & Refreshment Break (45 mins)**: Stop at the historic Cave of Pythagoras. Enjoy guided sightseeing, take stunning panoramic photos, and relax with a refreshing cold drink.
+5. **Return Scenic ATV Ride (30 mins)**: Enjoy a smooth ride back along panoramic coastal tracks to Karlovasi base.
 
 ## Inclusions
-- 3.5 to 4-hour guided ATV and hiking tour
-- Well-maintained quad / ATV vehicle
-- Fuel and maintenance charges
-- Certified local guide(s)
-- Helmet and safety gear
-- Guided hiking trail session
-- Local snacks and bottled water
+- 🏍️ Well-maintained automatic Quad / ATV
+- ⛽ Fuel included
+- 🪖 DOT/ECE certified safety helmet
+- 🏔️ Off-road & mountain routes
+- 🌊 Seaside route
+- 🏘️ Route through 3 traditional villages
+- 🪨 Stop at Pythagoras Cave
+- 📸 Scenic viewpoint & photo stops
+- 🥤 Refreshing cold beverage and water
+- 🇬🇷 Certified local guide
+- 👥 Small group experience (Max 8 guests)
 
 ## Exclusions
 - Hotel pickup/drop-off (Available upon request for private groups)
-- Driver license deposit or personal insurance top-ups
+- Personal driver license deposit or optional insurance top-ups
 - Gratuities for guides
 
 ## Participant Requirements & Rules
 - **Age Limits**: All participants (drivers & passengers) must be **between 21 and 74 years old** (Ages 21–74).
 - **Drivers**: Must hold a valid full car driver's license (Category B). International Driving Permit (IDP) required for non-EU license holders.
 - **Group Capacity**: Strict maximum of 8 participants per tour group.
-- **Fitness Level**: Moderate physical activity (able to walk on uneven dirt/rocky trails for ~1 hour).
-- **What to Bring**: Closed-toe shoes (sneakers or hiking boots mandatory for ATV & hiking), sunglasses, sunscreen, comfortable outdoor clothing, and valid physical driver's license / photo ID.
+- **Fitness Level**: Moderate physical activity.
+- **What to Bring**: Closed-toe shoes (sneakers or boots mandatory for ATV riding), sunglasses, sunscreen, comfortable outdoor clothing, and valid physical driver's license / photo ID.

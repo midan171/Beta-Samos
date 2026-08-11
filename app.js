@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       spec_dur: "Duration",
       spec_terrain: "Terrain",
-      spec_terrain_val: "70% Dirt / 30% Road",
+      spec_terrain_val: "Off-Road • Mountain • Seaside",
       spec_t2_terrain: "60% Dirt / 40% Scenic",
       spec_lic: "Driver Lic.",
       spec_grp: "Group Size",
@@ -57,23 +57,32 @@ document.addEventListener('DOMContentLoaded', () => {
       tab_inclusions: "Inclusions",
       tab_bring: "What to Bring",
 
-      t1_title: "Beta Samos ATV & Hiking Guided Tour",
+      t1_title: "ATV ADVENTURE – PYTHAGORAS CAVE TOUR",
       t1_dep: "Departures: 09:00 AM & 13:00 PM Daily",
-      t1_desc: "Our signature 3.5 to 4-hour adventure combines exhilarating off-road ATV driving through shaded pine forests with a guided nature hike to hidden mountain viewpoints and Potami waterfalls. Includes traditional Samian snacks and bottled water.",
+      t1_desc: "Experience a unique ATV exploration tour on a route that combines off-road adventure, mountain trails, seaside views, and traditional villages. The route passes through 3 villages and continues through mountain and dirt tracks, with a guided stop at the historic Pythagoras Cave. A unique ATV adventure combining nature, mountain, sea, and exploration!",
 
       itin_1_title: "Safety Briefing & Practice Lap",
       itin_1_desc: "Helmet fitting, vehicle controls briefing, and a practice run at Karlovasi HQ.",
-      itin_2_title: "Off-Road Mountain Trails",
-      itin_2_desc: "Ride rugged dirt tracks and mountain paths through dense pine forests.",
-      itin_3_title: "Guided Hike & Potami Waterfalls",
-      itin_3_desc: "Park quads for a scenic guided foot trail into lush river gorges and historic stone paths.",
-      itin_4_title: "Samian Snack & Panorama Stop",
-      itin_4_desc: "Rest at a cliffside viewpoint for traditional Greek snacks, fresh fruit, and cool water.",
+      itin_2_title: "3 Traditional Villages",
+      itin_2_desc: "Drive through 3 authentic Samian villages and experience local culture and charm.",
+      itin_3_title: "Off-Road Mountain & Seaside Trails",
+      itin_3_desc: "Ride thrilling dirt paths, mountain tracks, and scenic coastal seaside routes overlooking the Aegean Sea.",
+      itin_4_title: "Pythagoras Cave & Cold Drink Stop",
+      itin_4_desc: "Stop at the historic Cave of Pythagoras, capture panoramic photos, and enjoy a cool refreshing drink.",
 
+      inc_atv: "Premium Automatic ATV & Fuel",
+      inc_helmet: "DOT/ECE Safety Helmet",
+      inc_offroad: "Off-Road & Mountain Routes",
+      inc_seaside: "Seaside Coastal Route",
+      inc_villages: "Route Through 3 Traditional Villages",
+      inc_cave: "Stop at Pythagoras Cave",
+      inc_photos: "Photo & Viewpoint Stops",
+      inc_drink: "Refreshing Cold Beverage",
+      inc_guide: "Certified Local Island Guide",
       inc_1: "Premium Automatic ATV & Fuel",
       inc_2: "DOT/ECE Approved Helmets",
       inc_3: "Certified Local Island Guide",
-      inc_4: "Local Samian Snacks & Water",
+      inc_4: "Off-Road & Mountain Trails",
       inc_5: "Free Action Photos Shared",
       inc_6: "Hotel Transfer (Available on Request)",
       inc_max8: "Small Group (Max 8 Guests)",
@@ -85,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
       bring_sunscreen: "Sunscreen & Hat",
       bring_jacket: "Light Evening Jacket",
 
-      btn_book_t1: "Book This Tour (€110)",
+      btn_book_t1: "Book This Tour (€95)",
       btn_book_t2: "Book Sunset Tour (€95)",
       btn_whatsapp_inquire: "💬 WhatsApp Chat",
 
@@ -206,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       spec_dur: "Διάρκεια",
       spec_terrain: "Έδαφος",
-      spec_terrain_val: "70% Χώμα / 30% Άσφαλτος",
+      spec_terrain_val: "Off-Road • Βουνό • Θάλασσα",
       spec_t2_terrain: "60% Χώμα / 40% Θέα",
       spec_lic: "Δίπλωμα & Ηλικία",
       spec_grp: "Μέγεθος Group",
@@ -217,23 +226,32 @@ document.addEventListener('DOMContentLoaded', () => {
       tab_inclusions: "Παροχές",
       tab_bring: "Τι να Φέρετε",
 
-      t1_title: "Beta Samos 3.5-4ωρη Περιήγηση ATV & Πεζοπορίας",
+      t1_title: "ATV ADVENTURE – PYTHAGORAS CAVE TOUR",
       t1_dep: "Αναχωρήσεις: 09:00 & 13:00 Καθημερινά",
-      t1_desc: "Η κορυφαία περιπέτειά μας διάρκειας 3.5–4 ωρών συνδυάζει συναρπαστική off-road οδήγηση quad μέσα σε πυκνά πευκοδάση με πεζοπορία στους καταρράκτες Ποτάμι και πανοραμικά σημεία θέας. Περιλαμβάνει τοπικά κεράσματα και δροσερό νερό.",
+      t1_desc: "Ζήστε μια μοναδική εμπειρία εξερεύνησης με ATV, σε μια διαδρομή που συνδυάζει off-road περιπέτεια, βουνό, θάλασσα και παραδοσιακά χωριά. Η διαδρομή περνά από 3 χωριά και συνεχίζει μέσα από ορεινές και χωμάτινες διαδρομές, με στάση στη Σπηλιά του Πυθαγόρα. Μια μοναδική ATV περιπέτεια που συνδυάζει φύση, βουνό, θάλασσα και εξερεύνηση!",
 
       itin_1_title: "Ενημέρωση Ασφαλείας & Δοκιμαστικός Γύρος",
       itin_1_desc: "Ρύθμιση κράνους, εξοικείωση με τα χειριστήρια και δοκιμαστικός γύρος στην έδρα μας στο Καρλόβασι.",
-      itin_2_title: "Ορεινές Off-Road Διαδρομές",
-      itin_2_desc: "Οδήγηση σε χωμάτινα μονοπάτια και δασικούς δρόμους μέσα στα πεύκα.",
-      itin_3_title: "Πεζοπορία στους Καταρράκτες Ποτάμι",
-      itin_3_desc: "Στάθμευση των ATV για guided πεζοπορία σε καταπράσινα φαράγγια και ιστορικά πέτρινα μονοπάτια.",
-      itin_4_title: "Στάση για Τοπικά Κεράσματα & Θέα",
-      itin_4_desc: "Χαλάρωση σε σημείο με πανοραμική θέα στο Αιγαίο με παραδοσιακά σαμιώτικα σνακ και φρέσκα φρούτα.",
+      itin_2_title: "Διαδρομή μέσα από 3 Χωριά",
+      itin_2_desc: "Πέρασμα μέσα από 3 γραφικά παραδοσιακά χωριά της Σάμου γεμάτα αυθεντικό νησιώτικο χρώμα.",
+      itin_3_title: "Off-Road Ορεινές & Παραθαλάσσιες Διαδρομές",
+      itin_3_desc: "Οδήγηση σε συναρπαστικά χωμάτινα μονοπάτια, ορεινές διαδρομές και seaside route δίπλα στη θάλασσα.",
+      itin_4_title: "Στάση στη Σπηλιά του Πυθαγόρα & Δροσερό Ρόφημα",
+      itin_4_desc: "Επίσκεψη στην ιστορική Σπηλιά του Πυθαγόρα, στάσεις για πανοραμικές φωτογραφίες και δροσερό ρόφημα.",
 
+      inc_atv: "Αυτόματο ATV & Καύσιμα",
+      inc_helmet: "Κράνος Ασφαλείας DOT/ECE",
+      inc_offroad: "Off-road & Mountain Διαδρομές",
+      inc_seaside: "Seaside Route (Παραθαλάσσια Διαδρομή)",
+      inc_villages: "Διαδρομή μέσα από 3 Χωριά",
+      inc_cave: "Στάση στη Σπηλιά του Πυθαγόρα",
+      inc_photos: "Στάσεις για Φωτογραφίες & Θέα",
+      inc_drink: "Δροσερό Ρόφημα & Νερό",
+      inc_guide: "Πιστοποιημένος Τοπικός Οδηγός",
       inc_1: "Κορυφαίο Αυτόματο ATV & Καύσιμα",
       inc_2: "Εγκεκριμένα Κράνη DOT/ECE",
       inc_3: "Πιστοποιημένος Τοπικός Οδηγός",
-      inc_4: "Σαμιώτικα Σνακ & Δροσερό Νερό",
+      inc_4: "Off-road & Mountain Διαδρομές",
       inc_5: "Δωρεάν Φωτογραφίες Δράσης",
       inc_6: "Μεταφορά από Ξενοδοχείο (Κατόπιν Συνεννόησης)",
       inc_max8: "Μικρό Group (Έως 8 Άτομα)",
@@ -245,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
       bring_sunscreen: "Αντηλιακό & Καπέλο",
       bring_jacket: "Ελαφρύ Μπουφάν (Απόγευμα)",
 
-      btn_book_t1: "Κράτηση Εκδρομής (€110)",
+      btn_book_t1: "Κράτηση Εκδρομής (€95)",
       btn_book_t2: "Κράτηση Sunset Tour (€95)",
       btn_whatsapp_inquire: "💬 Συνομιλία WhatsApp",
 
@@ -464,7 +482,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const quads = modalQuads ? parseInt(modalQuads.value, 10) || 1 : 1;
     const isShared = modalRiderType ? modalRiderType.value === 'shared' : false;
 
-    let baseQuadPrice = 110;
+    let baseQuadPrice = 95;
     if (tour === 'sunset') {
       baseQuadPrice = 95;
     } else if (tour === 'vip') {

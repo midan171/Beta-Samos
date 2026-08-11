@@ -1,7 +1,7 @@
 # GetYourGuide (GYG) Official Listing Submission Package
 *Company*: BETA SAMOS MONOPROSOPI IKE
-*Tour*: Samos ATV & Hiking Guided Tour with Local Snacks
-*Last Verified*: 2026-08-06
+*Tour*: ATV Adventure to Pythagoras Cave & 3 Traditional Villages
+*Last Verified*: 2026-08-11
 
 ---
 
@@ -29,10 +29,10 @@
 ## SECTION 2: General Activity Settings
 
 - **Activity Type**: Day Tour / Outdoor Activity
-- **Category**: Off-Road Vehicle & Quad Bike / Nature & Hiking Tour
+- **Category**: Off-Road Vehicle & Quad Bike / Cultural & Scenic Tour
 - **Location**: Karlovasi, Samos, North Aegean, Greece
-- **Duration**: 4 Hours (3.5 – 4.0 Hours)
-- **Pricing**: €110.00 per person
+- **Duration**: 3.5 Hours (3.0 – 4.0 Hours)
+- **Pricing**: €95.00 per person
 - **Languages**: English (Live Guide), Greek (Live Guide)
 - **Start Times**: 09:00 AM & 13:00 PM Daily
 - **Group Capacity**: Small group (Max 8 participants)
@@ -44,39 +44,42 @@
 
 ## SECTION 3: Content & Listing Descriptions (Ready to Copy/Paste)
 
-### 1. Activity Title (Character count: 57 / Limit: 30-80)
-`Samos: Guided ATV Off-Road Tour & Nature Hike with Snacks`
+### 1. Activity Title (Character count: 52 / Limit: 30-80)
+`Samos: ATV Adventure to Pythagoras Cave & 3 Villages`
 
-### 2. Catchline / Short Description (Character count: 188 / Limit: 100-200)
-`Explore Samos on a guided ATV off-road tour combined with a scenic nature walk. Drive through pine forests, discover hidden mountain viewpoints, and enjoy traditional local snacks.`
+### 2. Catchline / Short Description (Character count: 178 / Limit: 100-200)
+`Explore Samos on an off-road ATV tour through 3 traditional villages and mountain trails. Visit the historic Pythagoras Cave and enjoy scenic seaside and mountain vistas.`
 
 ### 3. Key Highlights (Bullet points starting with action verbs)
-- **Drive** curated off-road mountain and coastal ATV routes with an expert local guide
-- **Hike** scenic trails to hidden panoramic viewpoints inaccessible to standard vehicles
-- **Discover** local island history, native plants, and cultural lore along the way
-- **Taste** traditional fresh Greek snacks and refreshing beverages during the break
-- **Stay safe** in an intimate small group (up to 8 guests) with quality safety gear
+- **Drive** automatic ATVs through off-road dirt tracks, pine mountains, and seaside routes
+- **Explore** 3 charming traditional Samian villages full of authentic character
+- **Discover** the legendary Cave of Pythagoras with historical insights from your guide
+- **Capture** breathtaking panoramic viewpoint photos of the Aegean coast
+- **Recharge** with a cold refreshing drink and stay safe in an intimate small group (max 8)
 
 ### 4. Full Description
-Experience an unforgettable outdoor adventure on Samos Island, combining the thrill of off-road quad biking with the serenity of guided nature hiking. Led by experienced local guides, this 3.5 to 4-hour excursion is crafted to showcase the wild, untouched beauty of Samos.
+Experience a unique ATV exploration tour on Samos Island, seamlessly combining off-road adventure, mountain tracks, seaside views, and traditional villages. Led by passionate local guides, this 3 to 4-hour tour is designed to reveal authentic hidden corners of Samos.
 
-Your journey begins at our base in Karlovasi with a comprehensive safety briefing, gear fitting (helmets and goggles), and a test drive session. Once you are comfortable operating your automatic ATV, follow your guide onto scenic mountain tracks and pine forest paths, ascending to sweeping panoramic viewpoints over the Aegean Sea.
+Your journey starts at our Karlovasi headquarters with a thorough safety briefing, helmet fitting, and an ATV orientation drive. Once prepared, follow your guide through 3 picturesque traditional Samian villages, taking in authentic architecture and peaceful island life.
 
-After the off-road ride, park your quad bike to embark on a guided hike along scenic coastal and mountain trails. Explore hidden flora, historic landmarks, and dramatic cliffside vistas. During the walk, pause at a peaceful rest spot to recharge with fresh traditional Samos snacks and chilled bottled water.
+Continue through rugged off-road mountain trails, lush pine-scented tracks, and panoramic seaside paths overlooking the sparkling Aegean Sea. Ascend towards the iconic Mount Kerkis to explore the historic Cave of Pythagoras, where the ancient philosopher and mathematician sought refuge.
 
-Conclude your adventure with a smooth ride back along coastal roads to the Karlovasi base, taking home unforgettable memories and photos of Samos' wild landscapes.
+Pause for breathtaking photos at scenic viewpoints, learn about local history and folklore, and cool down with a refreshing cold beverage before enjoying a scenic coastal ride back to base.
 
 ---
 
 ## SECTION 4: Inclusions & Exclusions
 
 ### Includes:
-- 3.5 to 4-hour guided ATV and hiking tour
-- Automatic ATV / Quad bike vehicle & fuel
+- 3 to 4-hour guided ATV tour
+- Well-maintained automatic Quad / ATV & fuel
 - Certified local guide
-- Helmet & safety goggles
-- Guided nature hiking session
-- Traditional local Samos snacks & bottled water
+- DOT/ECE approved safety helmet
+- Off-road, mountain & seaside routes
+- Route through 3 traditional villages
+- Guided stop at Pythagoras Cave
+- Viewpoint photo stops
+- Refreshing cold drink & bottled water
 - Small group setting (maximum 8 participants)
 
 ### Excludes:
@@ -90,18 +93,18 @@ Conclude your adventure with a smooth ride back along coastal roads to the Karlo
 
 ### What to Bring:
 - Valid physical driver's license (EU Category B or International Driving Permit)
-- Closed-toe shoes (Sneakers or hiking boots mandatory for ATV driving & hiking)
+- Closed-toe shoes (Sneakers or hiking boots mandatory for ATV driving)
 - Sunglasses
 - Sunscreen & hat
-- Comfortable outdoor clothing (clothes that can get dusty)
+- Comfortable outdoor clothing
 - Photo ID or passport
 
 ### Know Before You Go:
 - **Age Restriction**: All participants (drivers and passengers) must be **between 21 and 74 years old**.
-- **Driver Requirements**: Drivers must present a valid physical car driver's license (Category B) on the day of the tour. Digital photos or photocopies are not accepted by traffic authorities.
+- **Driver Requirements**: Drivers must present a valid physical car driver's license (Category B) on the day of the tour. Digital photos or photocopies are not accepted.
 - **Group Limit**: Tours are capped at a strict maximum of 8 participants to ensure safety and personal guidance.
-- **Fitness Level**: Suitable for participants with moderate physical fitness who can walk on uneven dirt trails for approximately 1 hour.
-- **Health Restrictions**: Not recommended for pregnant women or individuals with severe back problems, heart conditions, or limited mobility.
+- **Fitness Level**: Suitable for participants with moderate physical fitness.
+- **Health Restrictions**: Not recommended for pregnant women or individuals with severe back problems or limited mobility.
 
 ---
 
@@ -110,4 +113,3 @@ Conclude your adventure with a smooth ride back along coastal roads to the Karlo
 - **Meeting Point Name**: Beta Samos Base - Karlovasi
 - **Full Address**: Kanari 1, Karlovasi, Samos 83200, Greece
 - **Location Instructions**: Located at Kanari 1 in Karlovasi town. Look for the Beta Samos ATV tour signage. Please arrive **15 minutes before** scheduled departure time (08:45 AM for 09:00 tour / 12:45 PM for 13:00 tour).
-

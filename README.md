@@ -10,7 +10,7 @@ The repository maintains a structured, agent-accessible Knowledge Base for all c
 
 - **[`company_profile.md`](knowledge_base/company_profile.md)**: Company background, mission, contact info, brand tone, USPs, operating hours.
 - **[`tours_catalog/`](knowledge_base/tours_catalog/)**:
-  - **[`atv_hiking_guided_tour.md`](knowledge_base/tours_catalog/atv_hiking_guided_tour.md)**: Flagship 5-hour ATV & Hiking Tour (€110/person, snacks, itinerary, inclusions).
+  - **[`atv_hiking_guided_tour.md`](knowledge_base/tours_catalog/atv_hiking_guided_tour.md)**: Flagship 3–4 hour ATV Adventure – Pythagoras Cave Tour (€95/person, 3 villages, seaside & mountain trails).
   - **[`custom_private_tours.md`](knowledge_base/tours_catalog/custom_private_tours.md)**: Tailor-made private group packages.
 - **[`operations_and_faq.md`](knowledge_base/operations_and_faq.md)**: License rules (Category B), age limits, weather contingency, cancellation policy, customer FAQs.
 - **[`getyourguide_specs.md`](knowledge_base/getyourguide_specs.md)**: GetYourGuide listing character limits, title standards, keywords, and inclusion formatting.
