@@ -422,6 +422,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalEmail = document.getElementById('modalEmail');
   const btnSubmitWhatsApp = document.getElementById('btnSubmitWhatsApp');
   const btnSubmitEmail = document.getElementById('btnSubmitEmail');
+  const modalFeedback = document.getElementById('modalFeedback');
+
+  function showFeedback(message, type = 'success') {
+    if (modalFeedback) {
+      modalFeedback.className = `form-feedback ${type}`;
+      modalFeedback.innerHTML = message;
+      modalFeedback.style.display = 'block';
+    }
+  }
+
+  function clearFeedback() {
+    if (modalFeedback) {
+      modalFeedback.className = 'form-feedback';
+      modalFeedback.innerHTML = '';
+      modalFeedback.style.display = 'none';
+    }
+  }
 
   // Set default minimum date to tomorrow
   const today = new Date();
@@ -461,6 +478,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (bookingModal) {
       if (modalTourSelect) modalTourSelect.value = preselectedTour;
       calculatePrice();
+      clearFeedback();
       bookingModal.classList.add('active');
       document.body.style.overflow = 'hidden';
     }
@@ -550,9 +568,9 @@ _Sent via betasamos.gr instant reservation engine._`;
     });
   }
 
-  // --- Email Reservation Dispatch ---
+  // --- Email Reservation Dispatch (Automatic Form Submission) ---
   if (btnSubmitEmail) {
-    btnSubmitEmail.addEventListener('click', () => {
+    btnSubmitEmail.addEventListener('click', async () => {
       const name = modalName ? modalName.value.trim() : '';
       const phone = modalPhone ? modalPhone.value.trim() : '';
       const email = modalEmail ? modalEmail.value.trim() : '';
@@ -563,34 +581,79 @@ _Sent via betasamos.gr instant reservation engine._`;
       const riderType = modalRiderType ? (modalRiderType.value === 'shared' ? 'Driver + Passenger (Shared)' : '1 Driver Solo') : '';
       const total = modalPriceDisplay ? modalPriceDisplay.textContent : '';
 
+      clearFeedback();
+
       if (!name || !phone || !date) {
-        alert(currentLang === 'el' ? 'Παρακαλούμε συμπληρώστε Όνομα, Τηλέφωνο και Ημερομηνία.' : 'Please fill in your Name, Phone/WhatsApp, and Date.');
+        showFeedback(
+          currentLang === 'el' 
+            ? '⚠️ Παρακαλούμε συμπληρώστε Ονοματεπώνυμο, Τηλέφωνο και Ημερομηνία.' 
+            : '⚠️ Please fill in your Full Name, Phone/WhatsApp, and Tour Date.',
+          'error'
+        );
         return;
       }
 
-      const subject = `Beta Samos Tour Reservation Request - ${name} (${date})`;
-      const body = `Hello Beta Samos Team,
+      // Button Loading State
+      const originalHtml = btnSubmitEmail.innerHTML;
+      btnSubmitEmail.disabled = true;
+      btnSubmitEmail.innerHTML = currentLang === 'el' 
+        ? '<span>⏳</span> Αποστολή Αιτήματος...' 
+        : '<span>⏳</span> Sending Request...';
 
-I would like to request a reservation with the following details:
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/betasamos.greece@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            _subject: `New Tour Reservation Request: ${name} (${date})`,
+            _template: 'table',
+            _captcha: 'false',
+            'Lead Guest Name': name,
+            'Phone / WhatsApp': phone,
+            'Guest Email': email || 'Not provided',
+            'Selected Tour': tour,
+            'Preferred Date': date,
+            'Time Slot': time,
+            'Number of Quads': quads,
+            'Rider Arrangement': riderType,
+            'Estimated Total': total,
+            'Submitted At': new Date().toLocaleString()
+          })
+        });
 
-- Lead Guest: ${name}
-- Phone / WhatsApp: ${phone}
-- Guest Email: ${email || 'Not provided'}
-- Selected Tour: ${tour}
-- Preferred Date: ${date} (${time})
-- Number of Quads: ${quads} Quad(s) [${riderType}]
-- Estimated Total: ${total}
+        const result = await response.json();
 
-Looking forward to your confirmation.
-
-Best regards,
-${name}
-
-(Sent via betasamos.gr instant booking system)`;
-
-      const mailtoUrl = `mailto:betasamos.greece@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = mailtoUrl;
-      closeModal();
+        if (response.ok || result.success === 'true' || result.success === true) {
+          showFeedback(
+            currentLang === 'el'
+              ? '✅ <strong>Το αίτημα κράτησης στάλθηκε με επιτυχία!</strong><br>Θα επικοινωνήσουμε άμεσα μαζί σας για επιβεβαίωση.'
+              : '✅ <strong>Reservation request sent successfully!</strong><br>We have received your request and will contact you shortly to confirm.',
+            'success'
+          );
+          if (modalName) modalName.value = '';
+          if (modalPhone) modalPhone.value = '';
+          if (modalEmail) modalEmail.value = '';
+          setTimeout(() => {
+            closeModal();
+            clearFeedback();
+          }, 3500);
+        } else {
+          throw new Error('Submission response not ok');
+        }
+      } catch (err) {
+        showFeedback(
+          currentLang === 'el'
+            ? '⚠️ Δεν ήταν δυνατή η αυτόματη αποστολή αυτή τη στιγμή. Παρακαλούμε επικοινωνήστε απευθείας μέσω WhatsApp (+30 694 243 0930) ή στο betasamos.greece@gmail.com.'
+            : '⚠️ Could not send automatic email right now. Please reach us directly via WhatsApp (+30 694 243 0930) or email betasamos.greece@gmail.com.',
+          'error'
+        );
+      } finally {
+        btnSubmitEmail.disabled = false;
+        btnSubmitEmail.innerHTML = originalHtml;
+      }
     });
   }
 });
