@@ -34,10 +34,10 @@
 
 ## Technical Infrastructure & Booking Integrations
 - **Hosting & CDN**: Cloudflare Pages / Workers Edge (`https://beta-samos.mikedan171.workers.dev` ➔ `https://betasamos.gr`)
-- **Customer Auto-Reply Engine**: EmailJS (`service_9lkp0ui` / `template_jcgp2kt` / Public Key: `Mfl9TCU5KOaXXnAHQ`)
-- **Anti-Bot Security**: Cloudflare Turnstile (`0x4AAAAAAEM66YNFEFt1F-pA`)
-- **Business Lead Delivery**: Web3Forms (`99164a9b-9882-420b-a2a5-986516419acb`)
-- **Detailed Documentation**: See [company_and payment_info.md](file:///c:/Users/admin/Desktop/Git%20Projects/Beta%20Samos/knowledge_base/important_info/company_and%20payment_info.md)
+- **Customer Auto-Reply Engine**: EmailJS (Automated booking confirmation dispatched directly to guest email)
+- **Anti-Bot Security**: Cloudflare Turnstile (Managed interactive verification)
+- **Business Lead Delivery**: Web3Forms (Structured JSON lead dispatch to management inbox)
+- **Detailed Documentation & Credentials**: Stored securely in `.secrets/credentials.env` and `knowledge_base/important_info/company_and payment_info.md` (both strictly git-ignored).
 
 ## Core Unique Selling Propositions (USPs)
 1. **Combined ATV & Hiking Experience**: Unique hybrid tour format combining off-road ATV driving excitement with peaceful, guided nature hiking.
