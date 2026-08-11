@@ -481,6 +481,9 @@ document.addEventListener('DOMContentLoaded', () => {
       clearFeedback();
       bookingModal.classList.add('active');
       document.body.style.overflow = 'hidden';
+      if (typeof turnstile !== 'undefined') {
+        try { turnstile.reset(); } catch (e) {}
+      }
     }
   }
 
@@ -488,6 +491,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (bookingModal) {
       bookingModal.classList.remove('active');
       document.body.style.overflow = 'auto';
+      if (typeof turnstile !== 'undefined') {
+        try { turnstile.reset(); } catch (e) {}
+      }
     }
   }
 
@@ -598,6 +604,18 @@ _Sent via betasamos.gr instant reservation engine._`;
           currentLang === 'el' 
             ? '⚠️ Παρακαλούμε εισάγετε μια έγκυρη διεύθυνση Email.' 
             : '⚠️ Please enter a valid Email address.',
+          'error'
+        );
+        return;
+      }
+
+      // Check Cloudflare Turnstile Verification
+      const cfResponse = document.querySelector('[name="cf-turnstile-response"]');
+      if (typeof turnstile !== 'undefined' && cfResponse && !cfResponse.value) {
+        showFeedback(
+          currentLang === 'el'
+            ? '⚠️ Παρακαλούμε ολοκληρώστε την επαλήθευση ασφαλείας (Cloudflare Turnstile).'
+            : '⚠️ Please complete the Cloudflare security check.',
           'error'
         );
         return;
