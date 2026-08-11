@@ -4,10 +4,8 @@
 - **Operating Months**: April through October (Summer season).
 - **Daily Hours**: 09:00 - 20:00.
 - **Tour Departure Times**:
-  - Morning Half-Day Tour (3.5–4h): **09:00 AM**
-  - Afternoon Half-Day Tour (3.5–4h): **13:00 PM**
-  - Sunset Tour (3.5h): **17:30 PM** (Seasonal)
-  - Full-Day Safari (7–8h): Custom schedule upon request
+  - Morning Tour (3.5–4h): **09:00 AM**
+  - Afternoon Tour (3.5–4h): **13:00 PM**
 - **Group Capacity**: Maximum 8 participants per guided excursion.
 
 ## Driver & Participant Regulations

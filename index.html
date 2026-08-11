@@ -799,7 +799,7 @@
       <button class="modal-close" id="modalClose">&times;</button>
       <div class="modal-header">
         <h3 data-i18n="modal_title">Reserve Your Samos Adventure</h3>
-        <p style="color: var(--slate-500); font-size: 0.9rem;" data-i18n="modal_sub">Instant reservation request via WhatsApp</p>
+        <p style="color: var(--slate-500); font-size: 0.9rem;" data-i18n="modal_sub">Instant reservation request via WhatsApp or Email</p>
       </div>
 
       <form class="modal-form" id="bookingForm" onsubmit="return false;">
@@ -820,10 +820,8 @@
           <div class="form-group">
             <label data-i18n="m_time_label">Time Slot</label>
             <select class="form-control" id="modalTime">
-              <option value="09:00 AM">Morning (09:00 AM)</option>
-              <option value="13:00 PM">Afternoon (13:00 PM)</option>
-              <option value="17:30 PM">Sunset (17:30 PM)</option>
-              <option value="09:00 AM (Full Day)">Full Day Safari (09:00 AM)</option>
+              <option value="09:00 AM" data-i18n="opt_time_morning">Morning (09:00 AM)</option>
+              <option value="13:00 PM" data-i18n="opt_time_afternoon">Afternoon (13:00 PM)</option>
             </select>
           </div>
         </div>
@@ -870,6 +868,9 @@
 
         <button type="button" class="btn btn-whatsapp btn-block" id="btnSubmitWhatsApp">
           <span>💬</span> <span data-i18n="btn_send_wa">Send Reservation Request via WhatsApp</span>
+        </button>
+        <button type="button" class="btn btn-email btn-block" id="btnSubmitEmail">
+          <span>✉️</span> <span data-i18n="btn_send_email">Send Reservation Request via Email</span>
         </button>
       </form>
     </div>

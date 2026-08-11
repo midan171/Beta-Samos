@@ -150,17 +150,20 @@ document.addEventListener('DOMContentLoaded', () => {
       mob_book: "⚡ Book Tour",
 
       modal_title: "Reserve Your Samos Adventure",
-      modal_sub: "Instant reservation request via WhatsApp",
+      modal_sub: "Instant reservation request via WhatsApp or Email",
       m_tour_label: "Selected Tour",
       m_date_label: "Preferred Date",
       m_time_label: "Time Slot",
+      opt_time_morning: "Morning (09:00 AM)",
+      opt_time_afternoon: "Afternoon (13:00 PM)",
       m_quads_label: "Number of Quads",
       m_rider_type_label: "Rider Arrangement",
       m_name_label: "Lead Guest Full Name",
       m_phone_label: "Phone / WhatsApp Number",
       m_email_label: "Email Address",
       m_est_price: "Estimated Total:",
-      btn_send_wa: "Send Reservation Request via WhatsApp"
+      btn_send_wa: "Send Reservation Request via WhatsApp",
+      btn_send_email: "Send Reservation Request via Email"
     },
 
     el: {
@@ -307,17 +310,20 @@ document.addEventListener('DOMContentLoaded', () => {
       mob_book: "⚡ Κράτηση",
 
       modal_title: "Κράτηση Περιπέτειας στη Σάμο",
-      modal_sub: "Άμεσο αίτημα κράτησης μέσω WhatsApp",
+      modal_sub: "Άμεσο αίτημα κράτησης μέσω WhatsApp ή Email",
       m_tour_label: "Επιλεγμένη Εκδρομή",
       m_date_label: "Επιθυμητή Ημερομηνία",
       m_time_label: "Ώρα Αναχώρησης",
+      opt_time_morning: "Πρωί (09:00)",
+      opt_time_afternoon: "Μεσημέρι / Απόγευμα (13:00)",
       m_quads_label: "Αριθμός Quads",
       m_rider_type_label: "Διάταξη Αναβατών",
       m_name_label: "Ονοματεπώνυμο",
       m_phone_label: "Τηλέφωνο / WhatsApp",
       m_email_label: "Email",
       m_est_price: "Εκτιμώμενο Σύνολο:",
-      btn_send_wa: "Αποστολή Αιτήματος μέσω WhatsApp"
+      btn_send_wa: "Αποστολή Αιτήματος μέσω WhatsApp",
+      btn_send_email: "Αποστολή Αιτήματος μέσω Email"
     }
   };
 
@@ -415,6 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalPhone = document.getElementById('modalPhone');
   const modalEmail = document.getElementById('modalEmail');
   const btnSubmitWhatsApp = document.getElementById('btnSubmitWhatsApp');
+  const btnSubmitEmail = document.getElementById('btnSubmitEmail');
 
   // Set default minimum date to tomorrow
   const today = new Date();
@@ -539,6 +546,50 @@ _Sent via betasamos.gr instant reservation engine._`;
       const encodedMsg = encodeURIComponent(message);
       const waUrl = `https://wa.me/306942430930?text=${encodedMsg}`;
       window.open(waUrl, '_blank');
+      closeModal();
+    });
+  }
+
+  // --- Email Reservation Dispatch ---
+  if (btnSubmitEmail) {
+    btnSubmitEmail.addEventListener('click', () => {
+      const name = modalName ? modalName.value.trim() : '';
+      const phone = modalPhone ? modalPhone.value.trim() : '';
+      const email = modalEmail ? modalEmail.value.trim() : '';
+      const date = modalDate ? modalDate.value : '';
+      const time = modalTime ? modalTime.value : '';
+      const tour = modalTourSelect ? modalTourSelect.options[modalTourSelect.selectedIndex].text : '';
+      const quads = modalQuads ? modalQuads.value : '1';
+      const riderType = modalRiderType ? (modalRiderType.value === 'shared' ? 'Driver + Passenger (Shared)' : '1 Driver Solo') : '';
+      const total = modalPriceDisplay ? modalPriceDisplay.textContent : '';
+
+      if (!name || !phone || !date) {
+        alert(currentLang === 'el' ? 'Παρακαλούμε συμπληρώστε Όνομα, Τηλέφωνο και Ημερομηνία.' : 'Please fill in your Name, Phone/WhatsApp, and Date.');
+        return;
+      }
+
+      const subject = `Beta Samos Tour Reservation Request - ${name} (${date})`;
+      const body = `Hello Beta Samos Team,
+
+I would like to request a reservation with the following details:
+
+- Lead Guest: ${name}
+- Phone / WhatsApp: ${phone}
+- Guest Email: ${email || 'Not provided'}
+- Selected Tour: ${tour}
+- Preferred Date: ${date} (${time})
+- Number of Quads: ${quads} Quad(s) [${riderType}]
+- Estimated Total: ${total}
+
+Looking forward to your confirmation.
+
+Best regards,
+${name}
+
+(Sent via betasamos.gr instant booking system)`;
+
+      const mailtoUrl = `mailto:betasamos.greece@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoUrl;
       closeModal();
     });
   }
