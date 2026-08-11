@@ -697,8 +697,12 @@ Beta Samos ATV & Hiking Tour Team
           phone: phone,
           guest_email: email,
           tour: tour,
-          date: `${date} (${time})`,
-          quads: `${quads} Quad(s) [${riderType}]`,
+          tour_name: tour,
+          date: date,
+          time: time,
+          date_time: `${date} (${time})`,
+          quads: quads,
+          rider_type: riderType,
           total: total,
           reply_to: 'betasamos.greece@gmail.com'
         };
