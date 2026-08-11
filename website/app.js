@@ -568,7 +568,7 @@ _Sent via betasamos.gr instant reservation engine._`;
     });
   }
 
-  // --- Email Reservation Dispatch (Automatic Form Submission) ---
+  // --- Email Reservation Dispatch (Automatic Form Submission & Autoresponder) ---
   if (btnSubmitEmail) {
     btnSubmitEmail.addEventListener('click', async () => {
       const name = modalName ? modalName.value.trim() : '';
@@ -583,11 +583,21 @@ _Sent via betasamos.gr instant reservation engine._`;
 
       clearFeedback();
 
-      if (!name || !phone || !date) {
+      if (!name || !phone || !date || !email) {
         showFeedback(
           currentLang === 'el' 
-            ? '⚠️ Παρακαλούμε συμπληρώστε Ονοματεπώνυμο, Τηλέφωνο και Ημερομηνία.' 
-            : '⚠️ Please fill in your Full Name, Phone/WhatsApp, and Tour Date.',
+            ? '⚠️ Παρακαλούμε συμπληρώστε Ονοματεπώνυμο, Τηλέφωνο, Ημερομηνία και Email για να λάβετε την αυτόματη επιβεβαίωση.' 
+            : '⚠️ Please fill in your Full Name, Phone, Date, and Email address to receive your confirmation.',
+          'error'
+        );
+        return;
+      }
+
+      if (!email.includes('@') || !email.includes('.')) {
+        showFeedback(
+          currentLang === 'el' 
+            ? '⚠️ Παρακαλούμε εισάγετε μια έγκυρη διεύθυνση Email.' 
+            : '⚠️ Please enter a valid Email address.',
           'error'
         );
         return;
@@ -600,6 +610,52 @@ _Sent via betasamos.gr instant reservation engine._`;
         ? '<span>⏳</span> Αποστολή Αιτήματος...' 
         : '<span>⏳</span> Sending Request...';
 
+      const autoresponseMessage = currentLang === 'el'
+        ? `Γεια σας ${name},
+
+Ευχαριστούμε για το αίτημα κράτησης στο Beta Samos ATV & Hiking Tour!
+
+Λάβαμε το αίτημά σας με τα ακόλουθα στοιχεία:
+---------------------------------------------
+• Εκδρομή: ${tour}
+• Ημερομηνία & Ώρα: ${date} (${time})
+• Quads & Αναβάτες: ${quads} Quad(s) [${riderType}]
+• Τηλέφωνο: ${phone}
+• Email Επισκέπτη: ${email}
+• Εκτιμώμενο Κόστος: ${total}
+---------------------------------------------
+
+Το αίτημά σας καταχωρήθηκε με επιτυχία. Η ομάδα μας θα επικοινωνήσει σύντομα μαζί σας για την τελική έγκριση και επιβεβαίωση της κράτησής σας.
+
+Με εκτίμηση,
+Beta Samos ATV & Hiking Tour
+📍 Καρλόβασι, Σάμος, Ελλάδα
+📞 WhatsApp/Τηλ: +30 694 243 0930
+✉️ betasamos.greece@gmail.com
+🌐 https://betasamos.gr`
+        : `Dear ${name},
+
+Thank you for your reservation request with Beta Samos ATV & Hiking Tour!
+
+We have successfully received your request with the following details:
+---------------------------------------------
+• Selected Tour: ${tour}
+• Preferred Date & Time: ${date} (${time})
+• Quads & Rider Setup: ${quads} Quad(s) [${riderType}]
+• Contact Phone: ${phone}
+• Guest Email: ${email}
+• Estimated Total: ${total}
+---------------------------------------------
+
+Your request is now in our system and our team will contact you shortly regarding the approval and confirmation of your excursion.
+
+Best regards,
+Beta Samos ATV & Hiking Tour Team
+📍 Karlovasi, Samos Island, Greece
+📞 WhatsApp/Phone: +30 694 243 0930
+✉️ betasamos.greece@gmail.com
+🌐 https://betasamos.gr`;
+
       try {
         const response = await fetch('https://formsubmit.co/ajax/betasamos.greece@gmail.com', {
           method: 'POST',
@@ -611,9 +667,12 @@ _Sent via betasamos.gr instant reservation engine._`;
             _subject: `New Tour Reservation Request: ${name} (${date})`,
             _template: 'table',
             _captcha: 'false',
+            _replyto: email,
+            email: email,
+            _autoresponse: autoresponseMessage,
             'Lead Guest Name': name,
             'Phone / WhatsApp': phone,
-            'Guest Email': email || 'Not provided',
+            'Guest Email': email,
             'Selected Tour': tour,
             'Preferred Date': date,
             'Time Slot': time,
@@ -629,8 +688,8 @@ _Sent via betasamos.gr instant reservation engine._`;
         if (response.ok || result.success === 'true' || result.success === true) {
           showFeedback(
             currentLang === 'el'
-              ? '✅ <strong>Το αίτημα κράτησης στάλθηκε με επιτυχία!</strong><br>Θα επικοινωνήσουμε άμεσα μαζί σας για επιβεβαίωση.'
-              : '✅ <strong>Reservation request sent successfully!</strong><br>We have received your request and will contact you shortly to confirm.',
+              ? `✅ <strong>Το αίτημα κράτησης στάλθηκε!</strong><br>Αυτόματο email επιβεβαίωσης στάλθηκε στο <strong>${email}</strong>. Θα επικοινωνήσουμε άμεσα μαζί σας για την τελική έγκριση.`
+              : `✅ <strong>Reservation request sent!</strong><br>An automatic confirmation email has been sent to <strong>${email}</strong>. We will contact you shortly regarding approval.`,
             'success'
           );
           if (modalName) modalName.value = '';
@@ -639,7 +698,7 @@ _Sent via betasamos.gr instant reservation engine._`;
           setTimeout(() => {
             closeModal();
             clearFeedback();
-          }, 3500);
+          }, 4500);
         } else {
           throw new Error('Submission response not ok');
         }
