@@ -657,11 +657,13 @@ Beta Samos ATV & Hiking Tour Team
 🌐 https://betasamos.gr`;
 
       try {
-        const ownerPayload = {
+        const payload = {
           _subject: `New Tour Reservation Request: ${name} (${date})`,
           _template: 'table',
           _captcha: 'false',
           _replyto: email,
+          email: email,
+          _autoresponse: autoresponseMessage,
           'Lead Guest Name': name,
           'Phone / WhatsApp': phone,
           'Guest Email': email,
@@ -674,49 +676,22 @@ Beta Samos ATV & Hiking Tour Team
           'Submitted At': new Date().toLocaleString()
         };
 
-        const customerPayload = {
-          _subject: currentLang === 'el'
-            ? `Beta Samos - Επιβεβαίωση Παραλαβής Αιτήματος Κράτησης (${date})`
-            : `Beta Samos - Reservation Request Received (${date})`,
-          _template: 'table',
-          _captcha: 'false',
-          _replyto: 'betasamos.greece@gmail.com',
-          'Status': currentLang === 'el'
-            ? 'Ελήφθη - Υπό Επεξεργασία & Έγκριση'
-            : 'Received - Pending Approval & Availability Confirmation',
-          'Lead Guest': name,
-          'Selected Tour': tour,
-          'Date & Time': `${date} (${time})`,
-          'Quads & Setup': `${quads} Quad(s) [${riderType}]`,
-          'Phone': phone,
-          'Estimated Total': total,
-          'Next Steps': currentLang === 'el'
-            ? 'Λάβαμε το αίτημά σας! Η ομάδα του Beta Samos θα επικοινωνήσει άμεσα μαζί σας για την τελική έγκριση και επιβεβαίωση της κράτησής σας.'
-            : 'We have received your reservation request! Our team will contact you shortly regarding the approval and confirmation of your excursion.',
-          'Beta Samos Contact': 'WhatsApp/Tel: +30 694 243 0930 | Email: betasamos.greece@gmail.com | Karlovasi, Samos'
-        };
+        const response = await fetch('https://formsubmit.co/ajax/betasamos.greece@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
 
-        // Dispatch simultaneously to Operator and Customer
-        const [ownerRes, customerRes] = await Promise.all([
-          fetch('https://formsubmit.co/ajax/betasamos.greece@gmail.com', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-            body: JSON.stringify(ownerPayload)
-          }),
-          fetch(`https://formsubmit.co/ajax/${encodeURIComponent(email)}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-            body: JSON.stringify(customerPayload)
-          })
-        ]);
+        const result = await response.json().catch(() => ({}));
 
-        const ownerResult = await ownerRes.json().catch(() => ({}));
-
-        if (ownerRes.ok || ownerResult.success === 'true' || ownerResult.success === true) {
+        if (response.ok || result.success === 'true' || result.success === true) {
           showFeedback(
             currentLang === 'el'
-              ? `✅ <strong>Το αίτημα κράτησης στάλθηκε!</strong><br>Email επιβεβαίωσης παραλαβής στάλθηκε στο <strong>${email}</strong>. Θα επικοινωνήσουμε άμεσα μαζί σας για την τελική έγκριση.`
-              : `✅ <strong>Reservation request sent!</strong><br>A confirmation email has been sent to <strong>${email}</strong>. We will contact you shortly regarding approval.`,
+              ? `✅ <strong>Το αίτημα κράτησης στάλθηκε!</strong><br>Αυτόματο email επιβεβαίωσης παραλαβής αποστέλλεται στο <strong>${email}</strong>. Θα επικοινωνήσουμε άμεσα μαζί σας για την τελική έγκριση.`
+              : `✅ <strong>Reservation request sent!</strong><br>A confirmation receipt email is being sent to <strong>${email}</strong>. We will contact you shortly regarding approval.`,
             'success'
           );
           if (modalName) modalName.value = '';
