@@ -31,9 +31,11 @@
 - **Activity Type**: Day Tour / Outdoor Activity
 - **Category**: Off-Road Vehicle & Quad Bike / Nature & Hiking Tour
 - **Location**: Karlovasi, Samos, North Aegean, Greece
-- **Duration**: 5 Hours
+- **Duration**: 4 Hours (3.5 – 4.0 Hours)
 - **Pricing**: €110.00 per person
 - **Languages**: English (Live Guide), Greek (Live Guide)
+- **Start Times**: 09:00 AM & 13:00 PM Daily
+- **Group Capacity**: Small group (Max 8 participants)
 - **Cut-off Time for Booking**: 12 Hours before start
 - **Cancellation Policy**: Free cancellation up to 24 hours before start (Full refund)
 - **Confirmation**: Instant Confirmation
@@ -53,10 +55,10 @@
 - **Hike** scenic trails to hidden panoramic viewpoints inaccessible to standard vehicles
 - **Discover** local island history, native plants, and cultural lore along the way
 - **Taste** traditional fresh Greek snacks and refreshing beverages during the break
-- **Stay safe** with a comprehensive safety briefing and top-quality gear provided
+- **Stay safe** in an intimate small group (up to 8 guests) with quality safety gear
 
 ### 4. Full Description
-Experience an unforgettable outdoor adventure on Samos Island, combining the thrill of off-road quad biking with the serenity of guided nature hiking. Led by experienced local guides, this 5-hour excursion is crafted to showcase the wild, untouched beauty of Samos.
+Experience an unforgettable outdoor adventure on Samos Island, combining the thrill of off-road quad biking with the serenity of guided nature hiking. Led by experienced local guides, this 3.5 to 4-hour excursion is crafted to showcase the wild, untouched beauty of Samos.
 
 Your journey begins at our base in Karlovasi with a comprehensive safety briefing, gear fitting (helmets and goggles), and a test drive session. Once you are comfortable operating your automatic ATV, follow your guide onto scenic mountain tracks and pine forest paths, ascending to sweeping panoramic viewpoints over the Aegean Sea.
 
@@ -69,12 +71,13 @@ Conclude your adventure with a smooth ride back along coastal roads to the Karlo
 ## SECTION 4: Inclusions & Exclusions
 
 ### Includes:
-- 5-hour guided ATV and hiking tour
+- 3.5 to 4-hour guided ATV and hiking tour
 - Automatic ATV / Quad bike vehicle & fuel
 - Certified local guide
 - Helmet & safety goggles
 - Guided nature hiking session
 - Traditional local Samos snacks & bottled water
+- Small group setting (maximum 8 participants)
 
 ### Excludes:
 - Hotel pickup and drop-off (Available upon request for private groups)
@@ -94,9 +97,10 @@ Conclude your adventure with a smooth ride back along coastal roads to the Karlo
 - Photo ID or passport
 
 ### Know Before You Go:
-- **Driver Requirements**: Drivers must be at least 18 years old and present a valid physical car driver's license on the day of the tour. Digital photos or photocopies are not accepted by traffic authorities.
-- **Passenger Age**: Minimum age for passengers is 8 years old.
-- **Fitness Level**: Suitable for participants with moderate physical fitness who can walk on uneven dirt trails for approximately 1.5 hours.
+- **Age Restriction**: All participants (drivers and passengers) must be **between 21 and 74 years old**.
+- **Driver Requirements**: Drivers must present a valid physical car driver's license (Category B) on the day of the tour. Digital photos or photocopies are not accepted by traffic authorities.
+- **Group Limit**: Tours are capped at a strict maximum of 8 participants to ensure safety and personal guidance.
+- **Fitness Level**: Suitable for participants with moderate physical fitness who can walk on uneven dirt trails for approximately 1 hour.
 - **Health Restrictions**: Not recommended for pregnant women or individuals with severe back problems, heart conditions, or limited mobility.
 
 ---
@@ -105,6 +109,5 @@ Conclude your adventure with a smooth ride back along coastal roads to the Karlo
 
 - **Meeting Point Name**: Beta Samos Base - Karlovasi
 - **Full Address**: Kanari 1, Karlovasi, Samos 83200, Greece
-- **Location Instructions**: Located at Kanari 1 in Karlovasi town. Look for the Beta Samos ATV tour signage. Please arrive **15 minutes before** scheduled departure time.
-"@
+- **Location Instructions**: Located at Kanari 1 in Karlovasi town. Look for the Beta Samos ATV tour signage. Please arrive **15 minutes before** scheduled departure time (08:45 AM for 09:00 tour / 12:45 PM for 13:00 tour).
 

@@ -16,6 +16,7 @@
 - **GEMI (General Electronic Business Register / Αριθμός ΓΕΜΗ)**: 177240851000
 - **Registered Headquarters**: Kanari 1, Karlovasi, Samos, Greece (T.K. 83200)
 - **Primary Official Email**: `betasamos.greece@gmail.com`
+- **Dealer / Owner Direct Email**: `betaoltion1990@gmail.com`
 - **Secondary Contact Email**: `edeliverades@gmail.com`
 - **Phone / WhatsApp**: `+30 6942430930` / `+30 2273079075`
 - **Operating Hours**: 09:00 - 20:00 Daily (Seasonal summer operation)

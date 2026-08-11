@@ -3,9 +3,9 @@
 ## Tour Summary
 - **Tour Name**: Beta Samos ATV and Hiking Guided Tour
 - **Category**: Off-Road ATV Adventure & Guided Hike
-- **Duration**: 5 hours (05:00 Hours)
+- **Duration**: 3.5 - 4 hours (Departures: 09:00 AM & 13:00 PM)
 - **Pricing**: €110 per person
-- **Group Size**: Small group (Up to 10 ATVs) or Private options
+- **Group Size**: Small group (Max 8 participants) or Private options
 - **Languages Offered**: English, Greek
 - **Start Location / Meeting Point**: Beta Samos HQ, Karlovasi (T.K. 83200, Samos)
 
@@ -20,14 +20,14 @@ Discover the hidden gems of Samos with our guided ATV and hiking tour! Experienc
 - **Refreshments Included**: Enjoy fresh local snacks and water during the excursion.
 
 ## Full Itinerary
-1. **Welcome & Safety Briefing (30 mins)**: Meet at Karlovasi HQ, receive safety equipment (helmet, goggles), test drive ATVs, and go over hand signals and trail rules.
-2. **Off-Road ATV Scenic Ride (1.5 hours)**: Drive through lush pine forests, olive groves, and rugged mountain paths towards mountain viewpoints overlooking the Aegean Sea.
-3. **Guided Hike & Trail Exploration (1.5 hours)**: Park the ATVs and embark on a relaxed, scenic hike along hidden trails. Discover local herbs, historic ruins, and panoramic vistas.
-4. **Snack & Refreshment Break (45 mins)**: Pause at a scenic rest spot to enjoy traditional local Greek snacks, fresh seasonal fruit, and cool drinks while taking in the views.
-5. **Return ATV Scenic Drive (45 mins)**: Enjoy a smooth ride back along coastal paths to Karlovasi base.
+1. **Welcome & Safety Briefing (20 mins)**: Meet at Karlovasi HQ, receive safety equipment (helmet, goggles), test drive ATVs, and go over hand signals and trail rules.
+2. **Off-Road ATV Scenic Ride (1 hour 15 mins)**: Drive through lush pine forests, olive groves, and rugged mountain paths towards mountain viewpoints overlooking the Aegean Sea.
+3. **Guided Hike & Trail Exploration (1 hour 15 mins)**: Park the ATVs and embark on a relaxed, scenic hike along hidden trails. Discover local herbs, historic ruins, and panoramic vistas.
+4. **Snack & Refreshment Break (30 mins)**: Pause at a scenic rest spot to enjoy traditional local Greek snacks, fresh seasonal fruit, and cool drinks while taking in the views.
+5. **Return ATV Scenic Drive (40 mins)**: Enjoy a smooth ride back along coastal paths to Karlovasi base.
 
 ## Inclusions
-- 5-hour guided ATV and hiking tour
+- 3.5 to 4-hour guided ATV and hiking tour
 - Well-maintained quad / ATV vehicle
 - Fuel and maintenance charges
 - Certified local guide(s)
@@ -41,7 +41,8 @@ Discover the hidden gems of Samos with our guided ATV and hiking tour! Experienc
 - Gratuities for guides
 
 ## Participant Requirements & Rules
-- **Drivers**: Must be at least 18 years old and hold a valid full car driver's license (Category B). International Driving Permit (IDP) required for non-EU license holders.
-- **Passengers**: Minimum age 8 years old for ATV passengers.
-- **Fitness Level**: Moderate physical activity (able to walk on uneven dirt/rocky trails for ~1.5 hours).
-- **What to Bring**: Closed-toe shoes (sneakers or hiking boots mandatory for ATV & hiking), sunglasses, sunscreen, comfortable outdoor clothing, and valid photo ID / Driver's license.
+- **Age Limits**: All participants (drivers & passengers) must be **between 21 and 74 years old** (Ages 21–74).
+- **Drivers**: Must hold a valid full car driver's license (Category B). International Driving Permit (IDP) required for non-EU license holders.
+- **Group Capacity**: Strict maximum of 8 participants per tour group.
+- **Fitness Level**: Moderate physical activity (able to walk on uneven dirt/rocky trails for ~1 hour).
+- **What to Bring**: Closed-toe shoes (sneakers or hiking boots mandatory for ATV & hiking), sunglasses, sunscreen, comfortable outdoor clothing, and valid physical driver's license / photo ID.

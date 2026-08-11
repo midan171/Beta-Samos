@@ -3,17 +3,17 @@
 ## Tour Summary
 - **Category**: Custom / Private Group Outdoor Excursion
 - **Target Audience**: Families, corporate retreats, wedding parties, friends groups
-- **Duration**: Flexible (3 to 6 hours)
+- **Duration**: Flexible (Half-day 3.5–4 hours or Full-day 7–8 hours)
 - **Pricing**: Custom quote based on group size and requested inclusions
-- **Group Size**: Private (Custom group size)
+- **Group Size**: Private (Up to 8 participants per group)
 - **Languages Offered**: English, Greek
 - **Start Location / Meeting Point**: Beta Samos HQ, Karlovasi or customized hotel/port pickup
 
 ## Short Description
-Enjoy a completely private and customized outdoor adventure across Samos Island. Tailor your ATV off-road routes, hiking trails, photo stops, and local food breaks to your group's unique pace and preferences.
+Enjoy a completely private and customized outdoor adventure across Samos Island. Tailor your ATV off-road routes, hiking trails, photo stops, and local food breaks to your group's unique pace and preferences. Available as a Half-Day (3.5–4h) or Full-Day (7–8h) private safari.
 
 ## Highlights
-- **100% Private Convoy**: Reserved exclusively for your private family or group.
+- **100% Private Convoy**: Reserved exclusively for your private group (up to 8 guests).
 - **Custom ATV Driving Routes**: Choose between exhilarating off-road trails or relaxed scenic coastal drives.
 - **Flexible Hiking Pace**: Tailor the hiking duration and terrain from easy strolls to mountain summits.
 - **Bespoke Food & Snack Stops**: Include traditional mezedes, local wine tasting, or beach tavern stops.
@@ -34,6 +34,6 @@ Enjoy a completely private and customized outdoor adventure across Samos Island.
 - Tailored snacks and bottled water
 
 ## Participant Requirements
-- **Drivers**: Valid full car driver's license (EU Category B or International Driving Permit) required.
-- **Age Limits**: Minimum 18 years for drivers; minimum 8 years for passengers.
+- **Age Limits**: All participants must be between **21 and 74 years old** (Ages 21–74).
+- **Drivers**: Valid full physical car driver's license (EU Category B or International Driving Permit) required.
 - **What to Bring**: Closed-toe shoes (mandatory), sunglasses, sunscreen, photo ID.

@@ -3,11 +3,16 @@
 ## Operating Hours & Seasonality
 - **Operating Months**: April through October (Summer season).
 - **Daily Hours**: 09:00 - 20:00.
-- **Tour Departure Times**: Morning tours departure at 09:30 AM; Afternoon sunset tours departure at 15:30 PM.
+- **Tour Departure Times**:
+  - Morning Half-Day Tour (3.5–4h): **09:00 AM**
+  - Afternoon Half-Day Tour (3.5–4h): **13:00 PM**
+  - Sunset Tour (3.5h): **17:30 PM** (Seasonal)
+  - Full-Day Safari (7–8h): Custom schedule upon request
+- **Group Capacity**: Maximum 8 participants per guided excursion.
 
-## Driver & Passenger Regulations
+## Driver & Participant Regulations
 - **Driver License**: Drivers MUST present a valid, full physical car driver's license (EU Category B or international driver's license equivalent) on the day of the tour. Digital photos or copies are NOT accepted by Greek traffic law.
-- **Age Limits**: Minimum age to drive: 18 years. Minimum age for passenger: 8 years.
+- **Age Limits**: All participants (drivers & passengers) must be **between 21 and 74 years old** (Ages 21–74).
 - **Safety Equipment**: Wearing provided DOT/ECE approved helmets is mandatory by law during all ATV riding segments. Closed-toe footwear is required.
 
 ## Booking & Payment Policies
