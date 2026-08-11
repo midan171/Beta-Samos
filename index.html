@@ -802,10 +802,20 @@
         <p style="color: var(--slate-500); font-size: 0.9rem;" data-i18n="modal_sub">Instant reservation request via WhatsApp or Email</p>
       </div>
 
-      <form class="modal-form" id="bookingForm" onsubmit="return false;">
+      <form class="modal-form" id="bookingForm" action="https://formsubmit.co/betasamos.greece@gmail.com" method="POST" target="formSubmitIframe">
+        <!-- FormSubmit Configuration -->
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="about:blank">
+        <input type="hidden" name="_subject" id="formSubject" value="New Tour Reservation Request">
+        <input type="hidden" name="_autoresponse" id="formAutoresponse" value="">
+        <input type="hidden" name="Selected Tour" id="formTourText" value="">
+        <input type="hidden" name="Date & Time Slot" id="formDateTimeText" value="">
+        <input type="hidden" name="Quads & Setup" id="formQuadsText" value="">
+        <input type="hidden" name="Estimated Total" id="formTotalText" value="">
+
         <div class="form-group">
           <label data-i18n="m_tour_label">Selected Tour</label>
-          <select class="form-control" id="modalTourSelect">
+          <select class="form-control" id="modalTourSelect" name="Tour ID">
             <option value="flagship">Beta Samos 3.5-4h Guided Tour (€110)</option>
             <option value="sunset">Sunset Mountain &amp; Coastal Quad Tour (€95)</option>
             <option value="vip">Custom Private / Full-Day VIP Excursion</option>
@@ -815,11 +825,11 @@
         <div class="form-row">
           <div class="form-group">
             <label data-i18n="m_date_label">Preferred Date</label>
-            <input type="date" class="form-control" id="modalDate" required>
+            <input type="date" class="form-control" id="modalDate" name="Tour Date" required>
           </div>
           <div class="form-group">
             <label data-i18n="m_time_label">Time Slot</label>
-            <select class="form-control" id="modalTime">
+            <select class="form-control" id="modalTime" name="Time Slot">
               <option value="09:00 AM" data-i18n="opt_time_morning">Morning (09:00 AM)</option>
               <option value="13:00 PM" data-i18n="opt_time_afternoon">Afternoon (13:00 PM)</option>
             </select>
@@ -829,7 +839,7 @@
         <div class="form-row">
           <div class="form-group">
             <label data-i18n="m_quads_label">Number of Quads</label>
-            <select class="form-control" id="modalQuads">
+            <select class="form-control" id="modalQuads" name="Quads Count">
               <option value="1">1 Quad</option>
               <option value="2">2 Quads</option>
               <option value="3">3 Quads</option>
@@ -838,7 +848,7 @@
           </div>
           <div class="form-group">
             <label data-i18n="m_rider_type_label">Rider Arrangement</label>
-            <select class="form-control" id="modalRiderType">
+            <select class="form-control" id="modalRiderType" name="Rider Setup">
               <option value="solo">1 Driver per Quad (Solo)</option>
               <option value="shared">Driver + Passenger (Shared)</option>
             </select>
@@ -847,17 +857,17 @@
 
         <div class="form-group">
           <label data-i18n="m_name_label">Lead Guest Full Name</label>
-          <input type="text" class="form-control" id="modalName" placeholder="e.g. John Doe" required>
+          <input type="text" class="form-control" id="modalName" name="Lead Guest Name" placeholder="e.g. John Doe" required>
         </div>
 
         <div class="form-row">
           <div class="form-group">
             <label data-i18n="m_phone_label">Phone / WhatsApp Number</label>
-            <input type="tel" class="form-control" id="modalPhone" placeholder="+30 690 000 0000" required>
+            <input type="tel" class="form-control" id="modalPhone" name="Phone / WhatsApp" placeholder="+30 690 000 0000" required>
           </div>
           <div class="form-group">
             <label data-i18n="m_email_label">Email Address</label>
-            <input type="email" class="form-control" id="modalEmail" placeholder="your@email.com" required>
+            <input type="email" class="form-control" id="modalEmail" name="email" placeholder="your@email.com" required>
           </div>
         </div>
 
@@ -874,6 +884,8 @@
         </button>
         <div class="form-feedback" id="modalFeedback"></div>
       </form>
+      <!-- Hidden iframe for seamless background form processing -->
+      <iframe name="formSubmitIframe" id="formSubmitIframe" style="display:none; width:0; height:0; border:none;"></iframe>
     </div>
   </div>
 
