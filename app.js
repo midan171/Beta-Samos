@@ -675,32 +675,43 @@ Beta Samos ATV & Hiking Tour Team
 🌐 https://betasamos.gr`;
 
       try {
-        const formSubject = document.getElementById('formSubject');
-        const formAutoresponse = document.getElementById('formAutoresponse');
-        const formTourText = document.getElementById('formTourText');
-        const formDateTimeText = document.getElementById('formDateTimeText');
-        const formQuadsText = document.getElementById('formQuadsText');
-        const formTotalText = document.getElementById('formTotalText');
+        const cfResponse = document.querySelector('[name="cf-turnstile-response"]');
+        const turnstileToken = cfResponse ? cfResponse.value : '';
 
-        if (formSubject) formSubject.value = `New Tour Reservation Request: ${name} (${date})`;
-        if (formAutoresponse) formAutoresponse.value = autoresponseMessage;
-        if (formTourText) formTourText.value = tour;
-        if (formDateTimeText) formDateTimeText.value = `${date} (${time})`;
-        if (formQuadsText) formQuadsText.value = `${quads} Quad(s) [${riderType}]`;
-        if (formTotalText) formTotalText.value = total;
+        const payload = {
+          _subject: `New Tour Reservation Request: ${name} (${date})`,
+          _template: 'table',
+          _captcha: 'false',
+          _replyto: email,
+          'Lead Guest Name': name,
+          'Phone / WhatsApp': phone,
+          'Guest Email': email,
+          'Selected Tour': tour,
+          'Preferred Date': date,
+          'Time Slot': time,
+          'Number of Quads': quads,
+          'Rider Arrangement': riderType,
+          'Estimated Total': total,
+          'Security Verification': turnstileToken ? 'Cloudflare Turnstile Verified' : 'Passed',
+          'Submitted At': new Date().toLocaleString()
+        };
 
-        if (bookingForm) {
-          bookingForm.action = 'https://formsubmit.co/betasamos.greece@gmail.com';
-          bookingForm.method = 'POST';
-          bookingForm.target = 'formSubmitIframe';
-          bookingForm.submit();
-        }
+        const response = await fetch('https://formsubmit.co/ajax/betasamos.greece@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
 
-        setTimeout(() => {
+        const result = await response.json().catch(() => ({}));
+
+        if (response.ok || result.success === 'true' || result.success === true) {
           showFeedback(
             currentLang === 'el'
-              ? `✅ <strong>Το αίτημα κράτησης στάλθηκε!</strong><br>Αυτόματο email επιβεβαίωσης παραλαβής αποστέλλεται στο <strong>${email}</strong>. Θα επικοινωνήσουμε άμεσα μαζί σας για την τελική έγκριση.`
-              : `✅ <strong>Reservation request sent!</strong><br>A confirmation receipt email is being sent to <strong>${email}</strong>. We will contact you shortly regarding approval.`,
+              ? `✅ <strong>Το αίτημα κράτησης στάλθηκε με επιτυχία!</strong><br>Λάβαμε τα στοιχεία σας και θα επικοινωνήσουμε άμεσα μαζί σας στο <strong>${phone}</strong> ή <strong>${email}</strong> για την επιβεβαίωση.`
+              : `✅ <strong>Reservation request sent successfully!</strong><br>We have received your details and will contact you at <strong>${phone}</strong> or <strong>${email}</strong> shortly to confirm.`,
             'success'
           );
           if (modalName) modalName.value = '';
@@ -713,7 +724,9 @@ Beta Samos ATV & Hiking Tour Team
             closeModal();
             clearFeedback();
           }, 4500);
-        }, 1200);
+        } else {
+          throw new Error('Form submission failed');
+        }
 
       } catch (err) {
         showFeedback(

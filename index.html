@@ -805,17 +805,7 @@
         <p style="color: var(--slate-500); font-size: 0.9rem;" data-i18n="modal_sub">Instant reservation request via WhatsApp or Email</p>
       </div>
 
-      <form class="modal-form" id="bookingForm" action="https://formsubmit.co/betasamos.greece@gmail.com" method="POST" target="formSubmitIframe">
-        <!-- FormSubmit Configuration -->
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="about:blank">
-        <input type="hidden" name="_subject" id="formSubject" value="New Tour Reservation Request">
-        <input type="hidden" name="_autoresponse" id="formAutoresponse" value="">
-        <input type="hidden" name="Selected Tour" id="formTourText" value="">
-        <input type="hidden" name="Date & Time Slot" id="formDateTimeText" value="">
-        <input type="hidden" name="Quads & Setup" id="formQuadsText" value="">
-        <input type="hidden" name="Estimated Total" id="formTotalText" value="">
-
+      <form class="modal-form" id="bookingForm" onsubmit="return false;">
         <div class="form-group">
           <label data-i18n="m_tour_label">Selected Tour</label>
           <select class="form-control" id="modalTourSelect" name="Tour ID">
@@ -892,8 +882,6 @@
         </button>
         <div class="form-feedback" id="modalFeedback"></div>
       </form>
-      <!-- Hidden iframe for seamless background form processing -->
-      <iframe name="formSubmitIframe" id="formSubmitIframe" style="display:none; width:0; height:0; border:none;"></iframe>
     </div>
   </div>
 
