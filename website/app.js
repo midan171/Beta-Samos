@@ -92,19 +92,48 @@ document.addEventListener('DOMContentLoaded', () => {
       inc_max8: "Small Group (Max 8 Guests)",
       inc_sunset_drink: "Sunset Refreshments & Cold Drinks",
 
+      badge_fullday: "⭐ Full Day Premium",
+      spec_t3_terrain: "80% Dirt / 20% Scenic",
+
       bring_shoes: "Closed Shoes",
       bring_license: "Physical Driver Lic.",
+      bring_swimwear: "Swimwear & Towel",
       bring_glasses: "Sunglasses",
       bring_sunscreen: "Sunscreen & Hat",
       bring_jacket: "Light Evening Jacket",
 
       btn_book_t1: "Book This Tour (€95)",
       btn_book_t2: "Book Sunset Tour (€95)",
+      btn_book_t3: "Book Megalo Seitani Tour (€175)",
       btn_whatsapp_inquire: "💬 WhatsApp Chat",
 
       t2_title: "Sunset Mountain & Coastal Quad Tour",
       t2_dep: "Departure: 17:30 PM (Seasonal)",
       t2_desc: "Ride during the cooler evening hours as the golden sun dips over the Aegean sea. Experience high mountain ridge paths, panoramic sunset viewpoints, and twilight coastal trails.",
+
+      t3_title: "MEGALO SEITANI FULL DAY SUNSET ATV EXPERIENCE",
+      t3_dep: "Departure: 10:00 AM (Full Day)",
+      t3_desc: "An all-day premium adventure combining off-road ATV thrills, nature, mountain trails, and sea exploration — leading to the breathtaking Megalo Seitani beach and an unforgettable Samos sunset! Ride through Mount Kerkis, explore waterfalls and Pythagoras Cave, visit 5 traditional villages with a tavern lunch in Drakei, hike to secluded Megalo Seitani for swimming, and conclude with a magical seaside sunset drive.",
+
+      itin_t3_1_title: "Waterfalls Nature Hike & Swim",
+      itin_t3_1_desc: "Kick off with a scenic hike and refreshing swim in the crystal waterfall pools.",
+      itin_t3_2_title: "Pythagoras Cave & Mount Kerkis Trails",
+      itin_t3_2_desc: "ATV ascent to Pythagoras Cave followed by rugged mountain trails across Mount Kerkis with sweeping panoramas.",
+      itin_t3_3_title: "5 Traditional Villages & Tavern Lunch in Drakei",
+      itin_t3_3_desc: "Ride through Marathokampos, Palaiochori and 5 villages, stopping in Drakei for a feast at a traditional tavern.",
+      itin_t3_4_title: "Megalo Seitani Hike & Beach Swim",
+      itin_t3_4_desc: "Guided coastal trek to secluded Megalo Seitani beach with free time to swim, relax, and explore.",
+      itin_t3_5_title: "Seaside Sunset Cruise",
+      itin_t3_5_desc: "Smooth coastal ATV return ride alongside a glowing Aegean sunset.",
+
+      inc_t3_kerkis: "Mount Kerkis Mountain & Off-Road Trails",
+      inc_t3_waterfalls: "Waterfalls Hike & Swimming Session",
+      inc_t3_cave: "Pythagoras Cave Hiking & Exploration",
+      inc_t3_5villages: "5 Traditional Villages Route (Marathokampos, Palaiochori)",
+      inc_t3_lunch: "Traditional Tavern Lunch in Drakei Village",
+      inc_t3_seitani_hike: "Guided Hike to Megalo Seitani Secluded Beach",
+      inc_t3_seitani_swim: "Swimming & Relaxation at Megalo Seitani",
+      inc_t3_sunset: "Seaside Coastal Excursion & Sunset 🌅",
 
       why_tag: "The Beta Samos Difference",
       why_title: "Why Explore Samos With Us?",
@@ -168,7 +197,9 @@ document.addEventListener('DOMContentLoaded', () => {
       m_date_label: "Preferred Date",
       m_time_label: "Time Slot",
       opt_time_morning: "Morning (09:00 AM)",
+      opt_time_fullday: "Full Day (10:00 AM)",
       opt_time_afternoon: "Afternoon (13:00 PM)",
+      opt_time_sunset: "Sunset (17:30 PM)",
       m_quads_label: "Number of Quads",
       m_rider_type_label: "Rider Arrangement",
       m_name_label: "Lead Guest Full Name",
@@ -265,19 +296,48 @@ document.addEventListener('DOMContentLoaded', () => {
       inc_max8: "Μικρό Group (Έως 8 Άτομα)",
       inc_sunset_drink: "Δροσερό Ρόφημα Ηλιοβασιλέματος & Νερό",
 
+      badge_fullday: "⭐ Ολοήμερη Premium",
+      spec_t3_terrain: "80% Χώμα / 20% Άσφαλτος",
+
       bring_shoes: "Κλειστά Παπούτσια",
       bring_license: "Φυσικό Δίπλωμα (Κατ. Β)",
+      bring_swimwear: "Μαγιό & Πετσέτα Θαλάσσης",
       bring_glasses: "Γυαλιά Ηλίου",
       bring_sunscreen: "Αντηλιακό & Καπέλο",
       bring_jacket: "Ελαφρύ Μπουφάν (Απόγευμα)",
 
       btn_book_t1: "Κράτηση Εκδρομής (€95)",
       btn_book_t2: "Κράτηση Sunset Tour (€95)",
+      btn_book_t3: "Κράτηση Μεγάλο Σεϊτάνι (€175)",
       btn_whatsapp_inquire: "💬 Συνομιλία WhatsApp",
 
       t2_title: "Sunset Mountain & Coastal Quad Tour",
       t2_dep: "Αναχώρηση: 17:30 (Εποχιακό)",
       t2_desc: "Οδηγήστε τις δροσερές απογευματινές ώρες καθώς ο ήλιος δύει πάνω από το Αιγαίο. Ζήστε ορεινές κορυφογραμμές, μαγευτικά σημεία ηλιοβασιλέματος και παράκτιες διαδρομές στο λυκόφως.",
+
+      t3_title: "MEGALO SEITANI FULL DAY SUNSET ATV EXPERIENCE",
+      t3_dep: "Ώρα έναρξης: 10:00 (Ολοήμερη)",
+      t3_desc: "Μια ολοήμερη premium εμπειρία γεμάτη περιπέτεια, φύση, βουνό, θάλασσα και εξερεύνηση, με τελικό προορισμό το μαγευτικό Μεγάλο Σεϊτάνι και ένα μοναδικό ηλιοβασίλεμα στη Σάμο! Συνδυάζει καταρράκτες, Σπηλιά Πυθαγόρα, ορεινές διαδρομές στον Κέρκη, 5 παραδοσιακά χωριά με γεύμα σε παραδοσιακή ταβέρνα στους Δρακαίους, πεζοπορία και κολύμβηση στο Μεγάλο Σεϊτάνι και παραθαλάσσια εκδρομή στο ηλιοβασίλεμα.",
+
+      itin_t3_1_title: "Στάση στους Καταρράκτες & Κολύμβηση",
+      itin_t3_1_desc: "Πεζοπορία μέσα στη φύση και χρόνος για κολύμβηση σε ένα μοναδικό φυσικό τοπίο με καταρράκτες.",
+      itin_t3_2_title: "Σπηλιά Πυθαγόρα & Ορεινές Διαδρομές στον Κέρκη",
+      itin_t3_2_desc: "Πεζοπορία και εξερεύνηση στη Σπηλιά του Πυθαγόρα και εντυπωσιακές off-road διαδρομές στον επιβλητικό Κέρκη με πανοραμική θέα.",
+      itin_t3_3_title: "5 Παραδοσιακά Χωριά & Γεύμα στους Δρακαίους",
+      itin_t3_3_desc: "Πέρασμα από 5 χωριά (Μαραθόκαμπος, Παλαιοχώρι) και στάση στους Δρακαίους για γεύμα σε παραδοσιακή ταβέρνα.",
+      itin_t3_4_title: "Πεζοπορία & Κολύμβηση στο Μεγάλο Σεϊτάνι",
+      itin_t3_4_desc: "Πεζοπορία προς την κρυμμένη παραλία Μεγάλο Σεϊτάνι, με χρόνο για κολύμβηση, χαλάρωση και εξερεύνηση.",
+      itin_t3_5_title: "Παραθαλάσσια Διαδρομή & Ηλιοβασίλεμα",
+      itin_t3_5_desc: "Ολοκλήρωση της εκδρομής με παραθαλάσσια διαδρομή και μαγευτικό ηλιοβασίλεμα δίπλα στη θάλασσα.",
+
+      inc_t3_kerkis: "Mountain Διαδρομές στον Κέρκη & Off-Road",
+      inc_t3_waterfalls: "Πεζοπορία & Κολύμβηση στους Καταρράκτες",
+      inc_t3_cave: "Πεζοπορία & Εξερεύνηση στη Σπηλιά του Πυθαγόρα",
+      inc_t3_5villages: "Πέρασμα από 5 Παραδοσιακά Χωριά (Μαραθόκαμπος, Παλαιοχώρι)",
+      inc_t3_lunch: "Γεύμα σε Παραδοσιακή Ταβέρνα στους Δρακαίους",
+      inc_t3_seitani_hike: "Πεζοπορία προς το Μεγάλο Σεϊτάνι",
+      inc_t3_seitani_swim: "Κολύμβηση & Χαλάρωση στο Μεγάλο Σεϊτάνι",
+      inc_t3_sunset: "Παραθαλάσσια Εκδρομή & Ηλιοβασίλεμα 🌅",
 
       why_tag: "Η Διαφορά Beta Samos",
       why_title: "Γιατί να Επιλέξετε Εμάς;",
@@ -341,7 +401,9 @@ document.addEventListener('DOMContentLoaded', () => {
       m_date_label: "Επιθυμητή Ημερομηνία",
       m_time_label: "Ώρα Αναχώρησης",
       opt_time_morning: "Πρωί (09:00)",
+      opt_time_fullday: "Ολοήμερη (10:00)",
       opt_time_afternoon: "Μεσημέρι / Απόγευμα (13:00)",
+      opt_time_sunset: "Ηλιοβασίλεμα (17:30)",
       m_quads_label: "Αριθμός Quads",
       m_rider_type_label: "Διάταξη Αναβατών",
       m_name_label: "Ονοματεπώνυμο",
@@ -493,8 +555,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let baseQuadPrice = 95;
     if (tour === 'sunset') {
       baseQuadPrice = 95;
-    } else if (tour === 'vip') {
-      baseQuadPrice = 140;
+    } else if (tour === 'seitani' || tour === 'vip') {
+      baseQuadPrice = 175;
     }
 
     // Shared quad supplement (+€40 for passenger snacks/gear)
