@@ -70,6 +70,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  min-width: 0;
 }
 
 html {
@@ -77,7 +78,7 @@ html {
   font-size: 16px;
   overflow-x: hidden;
   width: 100%;
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 body {
@@ -87,7 +88,7 @@ body {
   line-height: 1.65;
   overflow-x: hidden;
   width: 100%;
-  max-width: 100%;
+  max-width: 100vw;
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
@@ -633,6 +634,8 @@ h1, h2, h3, h4, h5, h6 {
 .section-tours {
   padding: 90px 0;
   background: var(--slate-50);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .tour-card {
@@ -643,6 +646,9 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid var(--slate-200);
   margin-bottom: 48px;
   transition: var(--transition);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .tour-card:hover {
@@ -653,11 +659,16 @@ h1, h2, h3, h4, h5, h6 {
 .tour-grid {
   display: grid;
   grid-template-columns: 42% 58%;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .tour-media {
   position: relative;
   min-height: 400px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .tour-img {
@@ -668,11 +679,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .tour-badge-top {
   position: absolute;
-  top: 18px;
-  left: 18px;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  max-width: calc(100% - 28px);
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+  z-index: 2;
 }
 
 .pill-badge {
@@ -683,6 +697,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius-pill);
   font-size: 0.8rem;
   font-weight: 700;
+  max-width: 100%;
+  line-height: 1.3;
 }
 
 .pill-badge.featured {
@@ -693,6 +709,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 34px 38px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .tour-header-row {
@@ -701,12 +721,17 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-start;
   margin-bottom: 16px;
   gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .tour-title {
   font-size: 1.8rem;
   font-weight: 800;
   color: var(--navy-900);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .tour-pricing-box {
@@ -736,22 +761,33 @@ h1, h2, h3, h4, h5, h6 {
 /* Quick Tour Specs Grid (Madeira Signature) */
 .tour-specs-bar {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   background: var(--slate-100);
   border-radius: var(--radius-md);
   padding: 14px 18px;
   margin-bottom: 22px;
   gap: 12px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .spec-item {
   display: flex;
   align-items: center;
   gap: 8px;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .spec-icon {
   font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.spec-data {
+  min-width: 0;
+  overflow: hidden;
 }
 
 .spec-data h5 {
@@ -759,12 +795,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: var(--slate-500);
   text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .spec-data p {
   font-size: 0.88rem;
   font-weight: 700;
   color: var(--navy-900);
+  overflow-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.3;
 }
 
 /* Tabbed Tour Content */
@@ -778,6 +820,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   padding-bottom: 2px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .tour-tabs::-webkit-scrollbar {
@@ -804,6 +849,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.95rem;
   color: var(--slate-600);
   line-height: 1.6;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .tab-pane.active {
@@ -1587,21 +1637,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     line-height: 1.2;
     margin-bottom: 14px;
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.98rem;
     line-height: 1.55;
     margin-bottom: 24px;
   }
 
   .quick-book-card {
-    padding: 18px 16px;
+    padding: 18px 14px;
     margin-top: 20px;
     border-radius: var(--radius-md);
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .quick-book-grid {
@@ -1610,16 +1662,25 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .section-tours, .section-features, .section-guide, .section-gallery, .section-reviews, .section-location {
-    padding: 55px 0;
+    padding: 50px 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 14px;
+    box-sizing: border-box;
   }
 
   .section-title {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
     line-height: 1.25;
   }
 
   .section-subtitle {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     margin-bottom: 24px;
   }
 
@@ -1630,31 +1691,59 @@ h1, h2, h3, h4, h5, h6 {
   .trust-grid, .features-grid, .guide-grid, .gallery-grid, .reviews-grid {
     grid-template-columns: 1fr;
     gap: 16px;
+    width: 100%;
   }
 
   .tour-card {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
     border-radius: var(--radius-md);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tour-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .tour-media {
-    min-height: 240px;
-    max-height: 280px;
+    min-height: 230px;
+    max-height: 260px;
+    width: 100%;
+  }
+
+  .tour-badge-top {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    max-width: calc(100% - 20px);
+    gap: 6px;
+  }
+
+  .pill-badge {
+    font-size: 0.72rem;
+    padding: 5px 10px;
   }
 
   .tour-body {
-    padding: 22px 18px;
+    padding: 18px 14px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .tour-header-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
+    width: 100%;
   }
 
   .tour-title {
-    font-size: 1.4rem;
+    font-size: 1.32rem;
     line-height: 1.25;
+    word-break: break-word;
   }
 
   .tour-pricing-box {
@@ -1662,50 +1751,92 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: baseline;
     gap: 8px;
+    width: 100%;
   }
 
   .price-val {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
   }
 
   .tour-specs-bar {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 12px 14px;
-    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 10px 12px;
+    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .spec-data h5 {
+    font-size: 0.68rem;
+  }
+
+  .spec-data p {
+    font-size: 0.8rem;
+    word-break: break-word;
+  }
+
+  .inclusions-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .bring-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tour-footer-actions {
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  .tour-footer-actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    white-space: normal;
+    padding: 12px 14px;
   }
 
   .location-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
+    width: 100%;
   }
 
   .location-info {
-    padding: 24px 18px;
+    padding: 20px 14px;
     border-radius: var(--radius-md);
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .map-frame-wrap {
-    height: 300px;
+    height: 280px;
     border-radius: var(--radius-md);
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .footer {
-    padding: 45px 0 20px;
+    padding: 40px 0 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 26px;
-    margin-bottom: 30px;
+    gap: 24px;
+    margin-bottom: 26px;
+    width: 100%;
   }
 
   .footer-col h5 {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .mobile-action-bar {
@@ -1720,47 +1851,38 @@ h1, h2, h3, h4, h5, h6 {
 /* Smartphone Adjustments (<= 580px) */
 @media (max-width: 580px) {
   .container {
-    padding: 0 16px;
+    padding: 0 12px;
   }
 
   .hero-title {
-    font-size: 1.95rem;
+    font-size: 1.85rem;
   }
 
-  .inclusions-grid {
-    grid-template-columns: 1fr;
-    gap: 9px;
+  .tour-body {
+    padding: 16px 12px;
+  }
+
+  .tour-title {
+    font-size: 1.25rem;
   }
 
   .tour-specs-bar {
-    grid-template-columns: 1fr 1fr;
-    padding: 10px 12px;
-    gap: 8px;
-  }
-
-  .spec-item {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 8px 10px;
     gap: 6px;
   }
 
+  .spec-icon {
+    font-size: 1.05rem;
+  }
+
   .spec-data h5 {
-    font-size: 0.68rem;
+    font-size: 0.65rem;
   }
 
   .spec-data p {
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     word-break: break-word;
-  }
-
-  .tour-footer-actions {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-  }
-
-  .tour-footer-actions .btn {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
   }
 
   .modal-overlay {
@@ -1769,9 +1891,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .modal-box {
-    padding: 22px 16px;
+    padding: 22px 14px;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     max-height: 92vh;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .form-row {
@@ -1780,42 +1904,44 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .modal-header h3 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 }
 
 /* Small Smartphone Screens (<= 380px) */
 @media (max-width: 380px) {
   .container {
-    padding: 0 12px;
+    padding: 0 8px;
   }
 
   .hero-title {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   .hero-badge {
-    font-size: 0.7rem;
-    padding: 5px 10px;
+    font-size: 0.68rem;
+    padding: 4px 8px;
   }
 
   .logo-title {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   .logo-tag {
-    font-size: 0.58rem;
+    font-size: 0.55rem;
   }
 
   .tour-body {
-    padding: 16px 12px;
+    padding: 14px 8px;
   }
 
   .tour-title {
-    font-size: 1.22rem;
+    font-size: 1.15rem;
   }
 
   .tour-specs-bar {
     grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 8px;
   }
 }
