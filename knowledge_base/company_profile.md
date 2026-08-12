@@ -19,6 +19,7 @@
 - **Dealer / Owner Direct Email**: `betaoltion1990@gmail.com`
 - **Secondary Contact Email**: `edeliverades@gmail.com`
 - **Phone / WhatsApp**: `+30 6942430930` / `+30 2273079075`
+- **Instagram**: `@beta_samos_atv_tours` (`https://www.instagram.com/beta_samos_atv_tours/`)
 - **Operating Hours**: 09:00 - 20:00 Daily (Seasonal summer operation)
 - **Official Domain**: `https://betasamos.gr` (Registrar: Papaki.gr)
 - **Technical Contact & Lead Developer**: Michail Danousis (`mikedan171@gmail.com` / `+30 6988708303`)

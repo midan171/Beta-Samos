@@ -4,8 +4,8 @@
 - **Tour Name**: ATV ADVENTURE – PYTHAGORAS CAVE TOUR
 - **Tagline**: Off-Road • Mountain • Seaside • 3 Villages • Pythagoras Cave
 - **Category**: Off-Road ATV Adventure & Cultural Sightseeing
-- **Duration**: 3–4 hours (Departures: 09:00 AM & 13:00 PM)
-- **Pricing**: €95 per person
+- **Duration**: 3.5 hours (Departures: 09:30 AM & 13:30 PM Daily)
+- **Pricing**: €95 per quad (flat rate for 1 or 2 persons per ATV)
 - **Group Size**: Small group (Max 8 participants) or Private options
 - **Languages Offered**: English, Greek
 - **Start Location / Meeting Point**: Beta Samos HQ, Karlovasi (T.K. 83200, Samos)
@@ -27,21 +27,21 @@
 1. **Welcome & Safety Briefing (20 mins)**: Meet at Karlovasi HQ, receive safety equipment (DOT/ECE helmet), get familiar with automatic ATV controls, and complete a test drive.
 2. **Traditional Villages & Scenic Countryside (45 mins)**: Drive through 3 picturesque traditional Samian villages experiencing authentic island charm.
 3. **Off-Road Mountain & Seaside Trails (1 hour 15 mins)**: Navigate exciting dirt paths, pine forest trails, and scenic coastal seaside tracks overlooking the Aegean Sea.
-4. **Pythagoras Cave Stop & Refreshment Break (45 mins)**: Stop at the historic Cave of Pythagoras. Enjoy guided sightseeing, take stunning panoramic photos, and relax with a refreshing cold drink.
+4. **Pythagoras Cave Stop & Refreshment Break (40 mins)**: Stop at the historic Cave of Pythagoras. Enjoy guided sightseeing, take stunning panoramic photos, and relax with a refreshing cold drink.
 5. **Return Scenic ATV Ride (30 mins)**: Enjoy a smooth ride back along panoramic coastal tracks to Karlovasi base.
 
 ## Inclusions
-- 🏍️ Well-maintained automatic Quad / ATV
-- ⛽ Fuel included
-- 🪖 DOT/ECE certified safety helmet
-- 🏔️ Off-road & mountain routes
-- 🌊 Seaside route
-- 🏘️ Route through 3 traditional villages
-- 🪨 Stop at Pythagoras Cave
-- 📸 Scenic viewpoint & photo stops
-- 🥤 Refreshing cold beverage and water
-- 🇬🇷 Certified local guide
-- 👥 Small group experience (Max 8 guests)
+- Premium automatic Quad / ATV
+- Fuel included
+- DOT/ECE certified safety helmet
+- Off-road & mountain routes
+- Seaside route
+- Route through 3 traditional villages
+- Guided stop at Pythagoras Cave
+- Scenic viewpoint & photo stops
+- Refreshing cold beverage and water
+- Certified local island guide
+- Small group experience (Max 8 guests)
 
 ## Exclusions
 - Hotel pickup/drop-off (Available upon request for private groups)

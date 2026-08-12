@@ -292,6 +292,32 @@ h1, h2, h3, h4, h5, h6 {
   gap: 16px;
 }
 
+.topbar-social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.topbar-social-link:hover {
+  color: var(--orange-500);
+}
+
+.topbar-social-link svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
 .lang-btn {
   display: inline-flex;
   align-items: center;
@@ -437,8 +463,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   padding: 90px 0 110px;
-  background: radial-gradient(circle at 75% 20%, rgba(14, 165, 233, 0.25), transparent 45%),
-              linear-gradient(180deg, rgba(6, 18, 30, 0.75) 0%, rgba(11, 25, 44, 0.88) 100%),
+  background: radial-gradient(circle at 75% 20%, rgba(14, 165, 233, 0.18), transparent 50%),
+              linear-gradient(180deg, rgba(15, 23, 42, 0.28) 0%, rgba(15, 23, 42, 0.45) 100%),
               url('assets/images/IMG_3026.jpeg') center/cover no-repeat;
   color: var(--white);
   text-align: center;
@@ -455,15 +481,17 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 8px 20px;
   border-radius: var(--radius-pill);
   font-size: 0.88rem;
   font-weight: 600;
   color: var(--amber-100);
   margin-bottom: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 .hero-title {
@@ -473,20 +501,22 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--white);
   margin-bottom: 20px;
   letter-spacing: -0.02em;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.5);
 }
 
 .hero-title span {
-  background: linear-gradient(135deg, #ff9f43, #ff6b35);
+  background: linear-gradient(135deg, #ffab5e, #ff7a45);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hero-subtitle {
   font-size: 1.22rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   max-width: 740px;
   margin: 0 auto 36px;
   line-height: 1.6;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 
 /* --- Floating Quick-Booking Bar (Madeira Style) --- */
@@ -817,12 +847,25 @@ h1, h2, h3, h4, h5, h6 {
 .inc-item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-size: 0.88rem;
+  line-height: 1.4;
 }
 
 .inc-item.yes {
-  color: var(--emerald-600);
+  color: var(--slate-700);
+  font-weight: 500;
+}
+
+.inc-item.yes::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  background: #10b981 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E") center/11px no-repeat;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .inc-item.no {
@@ -1142,6 +1185,41 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-links a:hover {
   color: var(--orange-500);
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.footer-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 7px 14px;
+  border-radius: var(--radius-md);
+  color: var(--white);
+  font-size: 0.84rem;
+  font-weight: 600;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.footer-social-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.footer-social-btn:hover {
+  background: linear-gradient(135deg, #f09433, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: transparent;
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 .footer-bottom {

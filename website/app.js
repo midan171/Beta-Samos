@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
       tours_title: "Choose Your Samos Adventure",
       tours_subtitle: "Small-group off-road quad safaris combining rugged mountain trails, waterfall hikes, and panoramic sea vistas.",
 
-      badge_bestseller: "🔥 Most Popular",
-      badge_sunset: "🌅 Golden Hour",
+      badge_bestseller: "Most Popular",
+      badge_sunset: "Golden Hour",
       price_from: "From",
-      price_per_driver: "/ driver",
+      price_per_driver: "/ quad (1-2 persons)",
 
       spec_dur: "Duration",
       spec_terrain: "Terrain",
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tab_bring: "What to Bring",
 
       t1_title: "ATV ADVENTURE – PYTHAGORAS CAVE TOUR",
-      t1_dep: "Departures: 09:00 AM & 13:00 PM Daily",
+      t1_dep: "Departures: 09:30 AM & 13:30 PM Daily",
       t1_desc: "Experience a unique ATV exploration tour on a route that combines off-road adventure, mountain trails, seaside views, and traditional villages. The route passes through 3 villages and continues through mountain and dirt tracks, with a guided stop at the historic Pythagoras Cave. A unique ATV adventure combining nature, mountain, sea, and exploration!",
 
       itin_1_title: "Safety Briefing & Practice Lap",
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
       inc_max8: "Small Group (Max 8 Guests)",
       inc_sunset_drink: "Sunset Refreshments & Cold Drinks",
 
-      badge_fullday: "⭐ Full Day Premium",
+      badge_fullday: "Full Day Premium",
       spec_t3_terrain: "80% Dirt / 20% Scenic",
 
       bring_shoes: "Closed Shoes",
@@ -105,10 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
       btn_book_t1: "Book This Tour (€95)",
       btn_book_t2: "Book Sunset Tour (€95)",
       btn_book_t3: "Book Megalo Seitani Tour (€175)",
-      btn_whatsapp_inquire: "💬 WhatsApp Chat",
+      btn_whatsapp_inquire: "WhatsApp Chat",
 
       t2_title: "Sunset Mountain & Coastal Quad Tour",
-      t2_dep: "Departure: 17:30 PM (Seasonal)",
+      t2_dep: "Departure: 16:30 - 20:00 Daily (Sunset)",
       t2_desc: "Ride during the cooler evening hours as the golden sun dips over the Aegean sea. Experience high mountain ridge paths, panoramic sunset viewpoints, and twilight coastal trails.",
 
       t3_title: "MEGALO SEITANI FULL DAY SUNSET ATV EXPERIENCE",
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
       inc_t3_lunch: "Traditional Tavern Lunch in Drakei Village",
       inc_t3_seitani_hike: "Guided Hike to Megalo Seitani Secluded Beach",
       inc_t3_seitani_swim: "Swimming & Relaxation at Megalo Seitani",
-      inc_t3_sunset: "Seaside Coastal Excursion & Sunset 🌅",
+      inc_t3_sunset: "Seaside Coastal Excursion & Sunset",
 
       why_tag: "The Beta Samos Difference",
       why_title: "Why Explore Samos With Us?",
@@ -187,21 +187,21 @@ document.addEventListener('DOMContentLoaded', () => {
       foot_info: "Information",
       foot_contact: "Contact Us",
 
-      mob_call: "📞 Call",
-      mob_wa: "💬 WhatsApp",
-      mob_book: "⚡ Book Tour",
+      mob_call: "Call",
+      mob_wa: "WhatsApp",
+      mob_book: "Book Tour",
 
       modal_title: "Reserve Your Samos Adventure",
       modal_sub: "Instant reservation request via WhatsApp or Email",
       m_tour_label: "Selected Tour",
       m_date_label: "Preferred Date",
       m_time_label: "Time Slot",
-      opt_time_morning: "Morning (09:00 AM)",
+      opt_time_morning: "Morning (09:30 AM)",
       opt_time_fullday: "Full Day (10:00 AM)",
-      opt_time_afternoon: "Afternoon (13:00 PM)",
-      opt_time_sunset: "Sunset (17:30 PM)",
+      opt_time_afternoon: "Afternoon (13:30 PM)",
+      opt_time_sunset: "Sunset (16:30 - 20:00)",
       m_quads_label: "Number of Quads",
-      m_rider_type_label: "Rider Arrangement",
+      m_rider_type_label: "Rider Arrangement (1 or 2 on quad)",
       m_name_label: "Lead Guest Full Name",
       m_phone_label: "Phone / WhatsApp Number",
       m_email_label: "Email Address",
@@ -243,10 +243,10 @@ document.addEventListener('DOMContentLoaded', () => {
       tours_title: "Επιλέξτε την Περιπέτειά σας",
       tours_subtitle: "Ολιγομελή quad safaris που συνδυάζουν χωμάτινες ορεινές διαδρομές, πεζοπορία σε καταρράκτες και πανοραμική θέα στη θάλασσα.",
 
-      badge_bestseller: "🔥 Δημοφιλέστερη",
-      badge_sunset: "🌅 Ηλιοβασίλεμα",
+      badge_bestseller: "Δημοφιλέστερη",
+      badge_sunset: "Χρυσή Ώρα",
       price_from: "Από",
-      price_per_driver: "/ οδηγό",
+      price_per_driver: "/ όχημα (1-2 άτομα)",
 
       spec_dur: "Διάρκεια",
       spec_terrain: "Έδαφος",
@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tab_bring: "Τι να Φέρετε",
 
       t1_title: "ATV ADVENTURE – PYTHAGORAS CAVE TOUR",
-      t1_dep: "Αναχωρήσεις: 09:00 & 13:00 Καθημερινά",
+      t1_dep: "Αναχωρήσεις: 09:30 & 13:30 Καθημερινά",
       t1_desc: "Ζήστε μια μοναδική εμπειρία εξερεύνησης με ATV, σε μια διαδρομή που συνδυάζει off-road περιπέτεια, βουνό, θάλασσα και παραδοσιακά χωριά. Η διαδρομή περνά από 3 χωριά και συνεχίζει μέσα από ορεινές και χωμάτινες διαδρομές, με στάση στη Σπηλιά του Πυθαγόρα. Μια μοναδική ATV περιπέτεια που συνδυάζει φύση, βουνό, θάλασσα και εξερεύνηση!",
 
       itin_1_title: "Ενημέρωση Ασφαλείας & Δοκιμαστικός Γύρος",
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
       inc_max8: "Μικρό Group (Έως 8 Άτομα)",
       inc_sunset_drink: "Δροσερό Ρόφημα Ηλιοβασιλέματος & Νερό",
 
-      badge_fullday: "⭐ Ολοήμερη Premium",
+      badge_fullday: "Ολοήμερη Premium",
       spec_t3_terrain: "80% Χώμα / 20% Άσφαλτος",
 
       bring_shoes: "Κλειστά Παπούτσια",
@@ -309,10 +309,10 @@ document.addEventListener('DOMContentLoaded', () => {
       btn_book_t1: "Κράτηση Εκδρομής (€95)",
       btn_book_t2: "Κράτηση Sunset Tour (€95)",
       btn_book_t3: "Κράτηση Μεγάλο Σεϊτάνι (€175)",
-      btn_whatsapp_inquire: "💬 Συνομιλία WhatsApp",
+      btn_whatsapp_inquire: "Συνομιλία WhatsApp",
 
       t2_title: "Sunset Mountain & Coastal Quad Tour",
-      t2_dep: "Αναχώρηση: 17:30 (Εποχιακό)",
+      t2_dep: "Αναχώρηση: 16:30 - 20:00 Καθημερινά (Ηλιοβασίλεμα)",
       t2_desc: "Οδηγήστε τις δροσερές απογευματινές ώρες καθώς ο ήλιος δύει πάνω από το Αιγαίο. Ζήστε ορεινές κορυφογραμμές, μαγευτικά σημεία ηλιοβασιλέματος και παράκτιες διαδρομές στο λυκόφως.",
 
       t3_title: "MEGALO SEITANI FULL DAY SUNSET ATV EXPERIENCE",
@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
       inc_t3_lunch: "Γεύμα σε Παραδοσιακή Ταβέρνα στους Δρακαίους",
       inc_t3_seitani_hike: "Πεζοπορία προς το Μεγάλο Σεϊτάνι",
       inc_t3_seitani_swim: "Κολύμβηση & Χαλάρωση στο Μεγάλο Σεϊτάνι",
-      inc_t3_sunset: "Παραθαλάσσια Εκδρομή & Ηλιοβασίλεμα 🌅",
+      inc_t3_sunset: "Παραθαλάσσια Εκδρομή & Ηλιοβασίλεμα",
 
       why_tag: "Η Διαφορά Beta Samos",
       why_title: "Γιατί να Επιλέξετε Εμάς;",
@@ -391,21 +391,21 @@ document.addEventListener('DOMContentLoaded', () => {
       foot_info: "Πληροφορίες",
       foot_contact: "Επικοινωνία",
 
-      mob_call: "📞 Κλήση",
-      mob_wa: "💬 WhatsApp",
-      mob_book: "⚡ Κράτηση",
+      mob_call: "Κλήση",
+      mob_wa: "WhatsApp",
+      mob_book: "Κράτηση",
 
       modal_title: "Κράτηση Περιπέτειας στη Σάμο",
       modal_sub: "Άμεσο αίτημα κράτησης μέσω WhatsApp ή Email",
       m_tour_label: "Επιλεγμένη Εκδρομή",
       m_date_label: "Επιθυμητή Ημερομηνία",
       m_time_label: "Ώρα Αναχώρησης",
-      opt_time_morning: "Πρωί (09:00)",
+      opt_time_morning: "Πρωί (09:30)",
       opt_time_fullday: "Ολοήμερη (10:00)",
-      opt_time_afternoon: "Μεσημέρι / Απόγευμα (13:00)",
-      opt_time_sunset: "Ηλιοβασίλεμα (17:30)",
+      opt_time_afternoon: "Μεσημέρι / Απόγευμα (13:30)",
+      opt_time_sunset: "Ηλιοβασίλεμα (16:30 - 20:00)",
       m_quads_label: "Αριθμός Quads",
-      m_rider_type_label: "Διάταξη Αναβατών",
+      m_rider_type_label: "Διάταξη Αναβατών (1 ή 2 ανά όχημα)",
       m_name_label: "Ονοματεπώνυμο",
       m_phone_label: "Τηλέφωνο / WhatsApp",
       m_email_label: "Email",
@@ -550,7 +550,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function calculatePrice() {
     const tour = modalTourSelect ? modalTourSelect.value : 'flagship';
     const quads = modalQuads ? parseInt(modalQuads.value, 10) || 1 : 1;
-    const isShared = modalRiderType ? modalRiderType.value === 'shared' : false;
 
     let baseQuadPrice = 95;
     if (tour === 'sunset') {
@@ -559,9 +558,8 @@ document.addEventListener('DOMContentLoaded', () => {
       baseQuadPrice = 175;
     }
 
-    // Shared quad supplement (+€40 for passenger snacks/gear)
-    const perQuadCost = isShared ? baseQuadPrice + 40 : baseQuadPrice;
-    const total = perQuadCost * quads;
+    // Flat pricing per Quad (1 or 2 riders on the same Quad is same price)
+    const total = baseQuadPrice * quads;
 
     if (modalPriceDisplay) {
       modalPriceDisplay.textContent = `€${total}`;
@@ -656,15 +654,15 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      const message = `🏔️ *Beta Samos Tour Reservation Request*
-👤 *Lead Guest:* ${name}
-📞 *Phone/WhatsApp:* ${phone}
-🗺️ *Tour:* ${tour}
-📅 *Date:* ${date} (${time})
-🚜 *Quads:* ${quads} Quad(s) [${riderType}]
-💰 *Estimated Total:* ${total}
+      const message = `*Beta Samos Tour Reservation Request*
+• Lead Guest: ${name}
+• Phone/WhatsApp: ${phone}
+• Tour: ${tour}
+• Date: ${date} (${time})
+• Quads: ${quads} Quad(s) [${riderType}]
+• Estimated Total: ${total}
 
-_Sent via betasamos.gr instant reservation engine._`;
+Sent via betasamos.gr instant reservation engine.`;
 
       const encodedMsg = encodeURIComponent(message);
       const waUrl = `https://wa.me/306942430930?text=${encodedMsg}`;
@@ -724,8 +722,8 @@ _Sent via betasamos.gr instant reservation engine._`;
       const originalHtml = btnSubmitEmail.innerHTML;
       btnSubmitEmail.disabled = true;
       btnSubmitEmail.innerHTML = currentLang === 'el' 
-        ? '<span>⏳</span> Αποστολή Αιτήματος...' 
-        : '<span>⏳</span> Sending Request...';
+        ? 'Αποστολή Αιτήματος...' 
+        : 'Sending Request...';
 
       const autoresponseMessage = currentLang === 'el'
         ? `Γεια σας ${name},
@@ -746,10 +744,11 @@ _Sent via betasamos.gr instant reservation engine._`;
 
 Με εκτίμηση,
 Beta Samos ATV & Hiking Tour
-📍 Καρλόβασι, Σάμος, Ελλάδα
-📞 WhatsApp/Τηλ: +30 694 243 0930
-✉️ betasamos.greece@gmail.com
-🌐 https://betasamos.gr`
+Καρλόβασι, Σάμος, Ελλάδα
+WhatsApp / Τηλ: +30 694 243 0930
+Email: betasamos.greece@gmail.com
+Instagram: @beta_samos_atv_tours (https://instagram.com/beta_samos_atv_tours)
+Website: https://betasamos.gr`
         : `Dear ${name},
 
 Thank you for your reservation request with Beta Samos ATV & Hiking Tour!
@@ -768,10 +767,11 @@ Your request is now in our system and our team will contact you shortly regardin
 
 Best regards,
 Beta Samos ATV & Hiking Tour Team
-📍 Karlovasi, Samos Island, Greece
-📞 WhatsApp/Phone: +30 694 243 0930
-✉️ betasamos.greece@gmail.com
-🌐 https://betasamos.gr`;
+Karlovasi, Samos Island, Greece
+WhatsApp / Phone: +30 694 243 0930
+Email: betasamos.greece@gmail.com
+Instagram: @beta_samos_atv_tours (https://instagram.com/beta_samos_atv_tours)
+Website: https://betasamos.gr`;
 
       try {
         const cfResponse = document.querySelector('[name="cf-turnstile-response"]');

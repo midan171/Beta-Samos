@@ -4,8 +4,9 @@
 - **Operating Months**: April through October (Summer season).
 - **Daily Hours**: 09:00 - 20:00.
 - **Tour Departure Times**:
-  - Morning Tour (3.5–4h): **09:00 AM**
-  - Afternoon Tour (3.5–4h): **13:00 PM**
+  - Pythagoras Cave Tour (3.5h): **09:30 AM** (Morning) & **13:30 PM** (Afternoon)
+  - Sunset Mountain & Coastal Quad Tour (3.5h): **16:30 - 20:00** (Sunset)
+  - Megalo Seitani Full Day Tour (9–10h): **10:00 AM**
 - **Group Capacity**: Maximum 8 participants per guided excursion.
 
 ## Driver & Participant Regulations
@@ -15,7 +16,7 @@
 
 ## Booking & Payment Policies
 - **Booking Channel**: Book online via the official website booking system or direct agent channels (GetYourGuide, phone, WhatsApp).
-- **Pricing**: All prices are per person in Euros (€).
+- **Pricing**: Pricing is charged flat per Quad / ATV (€95 for 3.5h tours, accommodating 1 solo rider or 2 shared riders with no extra passenger surcharge).
 - **Cancellation Policy**:
   - Full refund for cancellations made up to 24 hours before the tour start time.
   - Cancellations within 24 hours or no-shows are non-refundable.
@@ -29,8 +30,8 @@
 ### Q: Do I need prior experience driving an ATV?
 A: No prior off-road ATV experience is required. Our guides conduct a comprehensive safety briefing and test ride session before embarking. Our ATVs feature automatic transmission, making them easy and safe to operate.
 
-### Q: Can two people share one ATV?
-A: Yes! Our ATVs are rated for 2 passengers (driver + passenger). You can select dual rider options or single rider options when booking.
+### Q: Can two people share one ATV? How is it priced?
+A: Yes! Our ATVs comfortably accommodate 2 passengers (driver + passenger). The price is flat per ATV (€95 for 3.5h tours), meaning the price is the same whether 1 or 2 people ride on the ATV!
 
 ### Q: What should I wear and bring?
 A: Wear comfortable clothes that can get dusty, closed-toe shoes (sneakers or hiking boots), sunglasses, sunscreen, and bring a bottle of water / small backpack.

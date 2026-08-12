@@ -31,10 +31,10 @@
 - **Activity Type**: Day Tour / Outdoor Activity
 - **Category**: Off-Road Vehicle & Quad Bike / Cultural & Scenic Tour
 - **Location**: Karlovasi, Samos, North Aegean, Greece
-- **Duration**: 3.5 Hours (3.0 – 4.0 Hours)
-- **Pricing**: €95.00 per person
+- **Duration**: 3.5 Hours
+- **Pricing**: €95.00 per Quad (Flat rate for 1 or 2 riders)
 - **Languages**: English (Live Guide), Greek (Live Guide)
-- **Start Times**: 09:00 AM & 13:00 PM Daily
+- **Start Times**: 09:30 AM & 13:30 PM Daily
 - **Group Capacity**: Small group (Max 8 participants)
 - **Cut-off Time for Booking**: 12 Hours before start
 - **Cancellation Policy**: Free cancellation up to 24 hours before start (Full refund)
@@ -112,4 +112,4 @@ Pause for breathtaking photos at scenic viewpoints, learn about local history an
 
 - **Meeting Point Name**: Beta Samos Base - Karlovasi
 - **Full Address**: Kanari 1, Karlovasi, Samos 83200, Greece
-- **Location Instructions**: Located at Kanari 1 in Karlovasi town. Look for the Beta Samos ATV tour signage. Please arrive **15 minutes before** scheduled departure time (08:45 AM for 09:00 tour / 12:45 PM for 13:00 tour).
+- **Location Instructions**: Located at Kanari 1 in Karlovasi town. Look for the Beta Samos ATV tour signage. Please arrive **15 minutes before** scheduled departure time (09:15 AM for 09:30 tour / 13:15 PM for 13:30 tour).
