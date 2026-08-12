@@ -445,24 +445,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('navMenu');
   if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
-      const isVisible = navMenu.style.display === 'flex';
-      navMenu.style.display = isVisible ? 'none' : 'flex';
-      if (!isVisible) {
-        navMenu.style.flexDirection = 'column';
-        navMenu.style.position = 'absolute';
-        navMenu.style.top = '76px';
-        navMenu.style.left = '0';
-        navMenu.style.width = '100%';
-        navMenu.style.background = 'white';
-        navMenu.style.padding = '20px';
-        navMenu.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
-      }
+      navMenu.classList.toggle('active');
     });
 
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         if (window.innerWidth <= 768) {
-          navMenu.style.display = 'none';
+          navMenu.classList.remove('active');
         }
       });
     });
