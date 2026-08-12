@@ -741,6 +741,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btnSubmitWhatsApp.addEventListener('click', () => {
       const name = modalName ? modalName.value.trim() : '';
       const phone = modalPhone ? modalPhone.value.trim() : '';
+      const email = modalEmail ? modalEmail.value.trim() : '';
       const date = modalDate ? modalDate.value : '';
       const time = modalTime ? modalTime.value : '';
       const tour = modalTourSelect ? modalTourSelect.options[modalTourSelect.selectedIndex].text : '';
@@ -753,6 +754,32 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
+      // 1. Silent Background Email Dispatch to betasamos.greece@gmail.com
+      const waNotifyPayload = {
+        access_key: '99164a9b-9882-420b-a2a5-986516419acb',
+        from_name: 'Beta Samos Reservation Engine',
+        subject: `[WhatsApp Booking Intent] - ${name} - ${tour} (${date})`,
+        'Booking Channel': 'WhatsApp Reservation Button (Direct)',
+        'Lead Guest Name': name,
+        'Phone / WhatsApp': phone,
+        'Guest Email': email || 'Not provided (WhatsApp Channel)',
+        'Selected Tour': tour,
+        'Preferred Date': date,
+        'Time Slot': time,
+        'Number of Quads': quads,
+        'Rider Arrangement': riderType,
+        'Estimated Total': total,
+        'Action Status': 'Customer clicked "Send Request via WhatsApp"',
+        'Submitted At': new Date().toLocaleString()
+      };
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(waNotifyPayload)
+      }).catch(err => console.warn('Silent WA notification error:', err));
+
+      // 2. Open WhatsApp for the Customer with pre-filled message
       const message = `*Beta Samos Tour Reservation Request*
 • Lead Guest: ${name}
 • Phone/WhatsApp: ${phone}
