@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Translation Dictionary (English / Greek) ---
   const translations = {
     en: {
-      topbar_location: "Karlovasi, Samos, Greece",
+      topbar_location: "Kon/nou Kanari 1, Neo Karlovasi 832 00, Samos",
       nav_tag: "ATV & Hiking Tour",
       nav_tours: "Tours & Pricing",
       nav_whyus: "Why Beta Samos",
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
 
     el: {
-      topbar_location: "Καρλόβασι, Σάμος, Ελλάδα",
+      topbar_location: "Κων/νου Κανάρη 1, Νέο Καρλόβασι 832 00, Σάμος",
       nav_tag: "Περιηγήσεις ATV & Πεζοπορία",
       nav_tours: "Εκδρομές & Τιμές",
       nav_whyus: "Γιατί Beta Samos",
