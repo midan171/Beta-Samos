@@ -282,6 +282,19 @@ h1, h2, h3, h4, h5, h6 {
   gap: 6px;
 }
 
+.topbar-wa-badge {
+  color: #25D366;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.topbar-wa-badge:hover {
+  color: #20ba5a;
+  text-decoration: underline;
+}
+
 .topbar-item:hover {
   color: var(--orange-500);
 }
@@ -1246,8 +1259,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-action-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1.6fr;
-  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 /* --- Booking Modal --- */

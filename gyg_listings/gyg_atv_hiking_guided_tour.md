@@ -44,8 +44,8 @@
 
 ## SECTION 3: Content & Listing Descriptions (Ready to Copy/Paste)
 
-### 1. Activity Title (Character count: 52 / Limit: 30-80)
-`Samos: ATV Adventure to Pythagoras Cave & 3 Villages`
+### 1. Activity Title (Character count: 56 / Limit: 30-80)
+`Samos: Pythagoras Cave & 3 Traditional Villages ATV Tour`
 
 ### 2. Catchline / Short Description (Character count: 178 / Limit: 100-200)
 `Explore Samos on an off-road ATV tour through 3 traditional villages and mountain trails. Visit the historic Pythagoras Cave and enjoy scenic seaside and mountain vistas.`

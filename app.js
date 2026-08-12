@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_gallery: "Gallery",
       nav_reviews: "Reviews",
       nav_location: "Location",
+      nav_wa: "WhatsApp",
       nav_book: "Book Now",
 
       hero_badge: "Rated as Excellent by International Travelers | Samos, Greece",
@@ -57,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tab_inclusions: "Inclusions",
       tab_bring: "What to Bring",
 
-      t1_title: "ATV ADVENTURE – PYTHAGORAS CAVE TOUR",
+      t1_title: "Pythagoras Cave & 3 Traditional Villages ATV Tour",
       t1_dep: "Departures: 09:30 AM & 13:30 PM Daily",
       t1_desc: "Experience a unique ATV exploration tour on a route that combines off-road adventure, mountain trails, seaside views, and traditional villages. The route passes through 3 villages and continues through mountain and dirt tracks, with a guided stop at the historic Pythagoras Cave. A unique ATV adventure combining nature, mountain, sea, and exploration!",
 
@@ -177,7 +178,8 @@ document.addEventListener('DOMContentLoaded', () => {
       loc_title: "Find Us in Karlovasi",
       loc_desc: "Conveniently located in Karlovasi with easy parking and direct access to mountain and coastal tracks.",
       loc_addr_label: "Address:",
-      loc_phone_label: "Phone & WhatsApp:",
+      loc_phone_label: "WhatsApp Booking:",
+      loc_wa_chat: "Chat with us on WhatsApp",
       loc_hours_label: "Opening Hours:",
       loc_hours_val: "09:00 - 20:00 Daily (Summer Season)",
       btn_directions: "Get Directions on Google Maps",
@@ -186,8 +188,8 @@ document.addEventListener('DOMContentLoaded', () => {
       foot_exp: "Adventures",
       foot_info: "Information",
       foot_contact: "Contact Us",
+      foot_wa: "WhatsApp Booking",
 
-      mob_call: "Call",
       mob_wa: "WhatsApp",
       mob_book: "Book Tour",
 
@@ -219,6 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_gallery: "Φωτογραφίες",
       nav_reviews: "Κριτικές",
       nav_location: "Τοποθεσία",
+      nav_wa: "WhatsApp",
       nav_book: "Κράτηση",
 
       hero_badge: "Αξιολογήθηκε ως Εξαιρετικό από Ταξιδιώτες Διεθνώς | Σάμος, Ελλάδα",
@@ -261,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tab_inclusions: "Παροχές",
       tab_bring: "Τι να Φέρετε",
 
-      t1_title: "ATV ADVENTURE – PYTHAGORAS CAVE TOUR",
+      t1_title: "Εκδρομή ATV: Σπηλιά Πυθαγόρα & 3 Παραδοσιακά Χωριά",
       t1_dep: "Αναχωρήσεις: 09:30 & 13:30 Καθημερινά",
       t1_desc: "Ζήστε μια μοναδική εμπειρία εξερεύνησης με ATV, σε μια διαδρομή που συνδυάζει off-road περιπέτεια, βουνό, θάλασσα και παραδοσιακά χωριά. Η διαδρομή περνά από 3 χωριά και συνεχίζει μέσα από ορεινές και χωμάτινες διαδρομές, με στάση στη Σπηλιά του Πυθαγόρα. Μια μοναδική ATV περιπέτεια που συνδυάζει φύση, βουνό, θάλασσα και εξερεύνηση!",
 
@@ -381,7 +384,8 @@ document.addEventListener('DOMContentLoaded', () => {
       loc_title: "Βρείτε μας στο Καρλόβασι",
       loc_desc: "Σε κεντρικό σημείο στο Καρλόβασι με εύκολο parking και άμεση πρόσβαση στις ορεινές και παράκτιες διαδρομές.",
       loc_addr_label: "Διεύθυνση:",
-      loc_phone_label: "Τηλέφωνο & WhatsApp:",
+      loc_phone_label: "Κράτηση WhatsApp:",
+      loc_wa_chat: "Συνομιλία στο WhatsApp",
       loc_hours_label: "Ωράριο Λειτουργίας:",
       loc_hours_val: "09:00 - 20:00 Καθημερινά (Καλοκαιρινή Περίοδος)",
       btn_directions: "Οδηγίες στο Google Maps",
@@ -390,8 +394,8 @@ document.addEventListener('DOMContentLoaded', () => {
       foot_exp: "Εκδρομές",
       foot_info: "Πληροφορίες",
       foot_contact: "Επικοινωνία",
+      foot_wa: "Κράτηση WhatsApp",
 
-      mob_call: "Κλήση",
       mob_wa: "WhatsApp",
       mob_book: "Κράτηση",
 

@@ -1,7 +1,7 @@
 # Samos: ATV Adventure to Pythagoras Cave & 3 Villages
 
 ## Tour Summary
-- **Tour Name**: ATV ADVENTURE – PYTHAGORAS CAVE TOUR
+- **Tour Name**: Pythagoras Cave & 3 Traditional Villages ATV Tour
 - **Tagline**: Off-Road • Mountain • Seaside • 3 Villages • Pythagoras Cave
 - **Category**: Off-Road ATV Adventure & Cultural Sightseeing
 - **Duration**: 3.5 hours (Departures: 09:30 AM & 13:30 PM Daily)
