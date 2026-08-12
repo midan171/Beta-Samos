@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Translation Dictionary (English / Greek) ---
   const translations = {
     en: {
-      topbar_whatsapp: "WhatsApp Booking",
+      topbar_location: "Karlovasi, Samos, Greece",
       nav_tag: "ATV & Hiking Tour",
       nav_tours: "Tours & Pricing",
       nav_whyus: "Why Beta Samos",
@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_gallery: "Gallery",
       nav_reviews: "Reviews",
       nav_location: "Location",
-      nav_wa: "WhatsApp",
       nav_book: "Book Now",
 
       hero_badge: "Rated as Excellent by International Travelers | Samos, Greece",
@@ -31,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
       trust_1_desc: "DOT/ECE helmets, safety briefing & automatic ATVs",
       trust_2_title: "Free 24h Cancellation",
       trust_2_desc: "Full refund if plans change or bad weather occurs",
-      trust_3_title: "Instant WhatsApp Booking",
-      trust_3_desc: "Direct contact with local guides for fast confirmation",
+      trust_3_title: "Instant Booking Request",
+      trust_3_desc: "Easy online reservation request via WhatsApp or Email",
       trust_4_title: "Authentic Island Guides",
       trust_4_desc: "Passionate local knowledge & hidden viewpoint trails",
 
@@ -178,8 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loc_title: "Find Us in Karlovasi",
       loc_desc: "Conveniently located in Karlovasi with easy parking and direct access to mountain and coastal tracks.",
       loc_addr_label: "Address:",
-      loc_phone_label: "WhatsApp Booking:",
-      loc_wa_chat: "Chat with us on WhatsApp",
+      loc_email_label: "Official Email:",
       loc_hours_label: "Opening Hours:",
       loc_hours_val: "09:00 - 20:00 Daily (Summer Season)",
       btn_directions: "Get Directions on Google Maps",
@@ -187,11 +185,9 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_about: "Premier outdoor tour operator on Samos Island, Greece. Guided off-road quad excursions combined with scenic nature hikes.",
       foot_exp: "Adventures",
       foot_info: "Information",
-      foot_contact: "Contact Us",
-      foot_wa: "WhatsApp Booking",
+      foot_contact: "Contact & Reservations",
 
-      mob_wa: "WhatsApp",
-      mob_book: "Book Tour",
+      mob_book: "Book Your Tour",
 
       modal_title: "Reserve Your Samos Adventure",
       modal_sub: "Instant reservation request via WhatsApp or Email",
@@ -213,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
 
     el: {
-      topbar_whatsapp: "Κράτηση μέσω WhatsApp",
+      topbar_location: "Καρλόβασι, Σάμος, Ελλάδα",
       nav_tag: "Περιηγήσεις ATV & Πεζοπορία",
       nav_tours: "Εκδρομές & Τιμές",
       nav_whyus: "Γιατί Beta Samos",
@@ -221,7 +217,6 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_gallery: "Φωτογραφίες",
       nav_reviews: "Κριτικές",
       nav_location: "Τοποθεσία",
-      nav_wa: "WhatsApp",
       nav_book: "Κράτηση",
 
       hero_badge: "Αξιολογήθηκε ως Εξαιρετικό από Ταξιδιώτες Διεθνώς | Σάμος, Ελλάδα",
@@ -237,8 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
       trust_1_desc: "Εγκεκριμένα κράνη DOT/ECE, οδηγίες ασφαλείας & αυτόματα ATV",
       trust_2_title: "Δωρεάν Ακύρωση 24ωρο Πριν",
       trust_2_desc: "Πλήρης επιστροφή χρημάτων σε αλλαγή σχεδίων ή κακοκαιρία",
-      trust_3_title: "Άμεση Κράτηση WhatsApp",
-      trust_3_desc: "Απευθείας επικοινωνία με τους τοπικούς οδηγούς",
+      trust_3_title: "Άμεσο Αίτημα Κράτησης",
+      trust_3_desc: "Εύκολο online αίτημα κράτησης μέσω WhatsApp ή Email",
       trust_4_title: "Αυθεντικοί Τοπικοί Οδηγοί",
       trust_4_desc: "Βαθιά γνώση του νησιού και μυστικά ορεινά μονοπάτια",
 
@@ -384,8 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loc_title: "Βρείτε μας στο Καρλόβασι",
       loc_desc: "Σε κεντρικό σημείο στο Καρλόβασι με εύκολο parking και άμεση πρόσβαση στις ορεινές και παράκτιες διαδρομές.",
       loc_addr_label: "Διεύθυνση:",
-      loc_phone_label: "Κράτηση WhatsApp:",
-      loc_wa_chat: "Συνομιλία στο WhatsApp",
+      loc_email_label: "Επίσημο Email:",
       loc_hours_label: "Ωράριο Λειτουργίας:",
       loc_hours_val: "09:00 - 20:00 Καθημερινά (Καλοκαιρινή Περίοδος)",
       btn_directions: "Οδηγίες στο Google Maps",
@@ -393,11 +387,9 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_about: "Κορυφαίος πάροχος υπαίθριων περιηγήσεων στη Σάμο. Καθοδηγούμενες off-road εκδρομές με ATV σε συνδυασμό με γραφική πεζοπορία στη φύση.",
       foot_exp: "Εκδρομές",
       foot_info: "Πληροφορίες",
-      foot_contact: "Επικοινωνία",
-      foot_wa: "Κράτηση WhatsApp",
+      foot_contact: "Επικοινωνία & Κρατήσεις",
 
-      mob_wa: "WhatsApp",
-      mob_book: "Κράτηση",
+      mob_book: "Κάντε Κράτηση Τώρα",
 
       modal_title: "Κράτηση Περιπέτειας στη Σάμο",
       modal_sub: "Άμεσο αίτημα κράτησης μέσω WhatsApp ή Email",
