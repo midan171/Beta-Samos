@@ -632,13 +632,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Set default minimum date to tomorrow
+  // Set default minimum date and default selected date to tomorrow
   const today = new Date();
   today.setDate(today.getDate() + 1);
   const minDateStr = today.toISOString().split('T')[0];
-  if (modalDate) modalDate.min = minDateStr;
+  if (modalDate) {
+    modalDate.min = minDateStr;
+    if (!modalDate.value) modalDate.value = minDateStr;
+  }
   const qbDate = document.getElementById('qbDate');
-  if (qbDate) qbDate.min = minDateStr;
+  if (qbDate) {
+    qbDate.min = minDateStr;
+    if (!qbDate.value) qbDate.value = minDateStr;
+  }
 
   function calculatePrice() {
     const tour = modalTourSelect ? modalTourSelect.value : 'flagship';
