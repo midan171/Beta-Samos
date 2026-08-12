@@ -753,7 +753,7 @@
     </div>
   </section>
 
-  <!-- Photo Gallery -->
+  <!-- Photo Gallery / Sights & Trails Carousel -->
   <section class="section-gallery" id="gallery">
     <div class="container">
       <div class="section-header">
@@ -762,20 +762,69 @@
         <p class="section-subtitle" data-i18n="gal_subtitle">A glimpse of the terrain, pine forests, and vistas waiting for you.</p>
       </div>
 
-      <div class="gallery-grid">
-        <div class="gallery-card">
-          <img src="assets/images/IMG_3031.jpeg" alt="Forest &amp; Water Crossing">
-          <div class="gallery-overlay"><span data-i18n="g_cap_1">Forest &amp; Water Crossing</span></div>
+      <div class="gallery-carousel-wrapper">
+        <button class="carousel-nav-btn prev" id="galleryPrev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+
+        <div class="gallery-carousel-track" id="galleryTrack">
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <img src="assets/images/IMG_5179.jpg" alt="Potami Waterfalls Nature Hike" loading="lazy">
+              <div class="gallery-overlay"><span data-i18n="g_cap_waterfalls">Potami Waterfalls &amp; Nature Hike</span></div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <img src="assets/images/IMG_5181.jpg" alt="Off-Road Mountain Safari" loading="lazy">
+              <div class="gallery-overlay"><span data-i18n="g_cap_offroad">Off-Road Mountain Safari</span></div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <img src="assets/images/img_05.jpeg" alt="Mountain Ridge Convoy" loading="lazy">
+              <div class="gallery-overlay"><span data-i18n="g_cap_convoy">Mountain Ridge Convoy</span></div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <img src="assets/images/img_01.jpeg" alt="Samos Island Trails Exploration" loading="lazy">
+              <div class="gallery-overlay"><span data-i18n="g_cap_trails">Samos Island Trails Exploration</span></div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <img src="assets/images/imd_02.jpeg" alt="Authentic Traditional Villages" loading="lazy">
+              <div class="gallery-overlay"><span data-i18n="g_cap_villages">Authentic Traditional Villages</span></div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <img src="assets/images/img_14.jpeg" alt="Golden Hour Coastal Sunset" loading="lazy">
+              <div class="gallery-overlay"><span data-i18n="g_cap_sunset">Golden Hour Coastal Sunset</span></div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <img src="assets/images/IMG_3031.jpeg" alt="Forest &amp; Water Crossing" loading="lazy">
+              <div class="gallery-overlay"><span data-i18n="g_cap_1">Forest &amp; Water Crossing</span></div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <img src="assets/images/IMG_3018.jpeg" alt="Mount Kerkis Scenic Ridge" loading="lazy">
+              <div class="gallery-overlay"><span data-i18n="g_cap_2">Mount Kerkis Scenic Ridge</span></div>
+            </div>
+          </div>
         </div>
-        <div class="gallery-card">
-          <img src="assets/images/IMG_3018.jpeg" alt="Mountain Ridge Convoy">
-          <div class="gallery-overlay"><span data-i18n="g_cap_2">Mountain Ridge Convoy</span></div>
-        </div>
-        <div class="gallery-card">
-          <img src="assets/images/IMG_2939.jpeg" alt="Sunset Over Aegean Sea">
-          <div class="gallery-overlay"><span data-i18n="g_cap_3">Golden Hour Over Karlovasi</span></div>
-        </div>
+
+        <button class="carousel-nav-btn next" id="galleryNext" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
       </div>
+
+      <!-- Carousel Pagination Dots -->
+      <div class="carousel-dots" id="galleryDots"></div>
     </div>
   </section>
 

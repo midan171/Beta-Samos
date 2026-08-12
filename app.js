@@ -172,9 +172,14 @@ document.addEventListener('DOMContentLoaded', () => {
       gal_tag: "Sights & Trails",
       gal_title: "Real Moments on the Trails",
       gal_subtitle: "A glimpse of the terrain, pine forests, and vistas waiting for you.",
+      g_cap_waterfalls: "Potami Waterfalls & Nature Hike",
+      g_cap_offroad: "Off-Road Mountain Safari",
+      g_cap_convoy: "Mountain Ridge Convoy",
+      g_cap_trails: "Samos Island Trails Exploration",
+      g_cap_villages: "Authentic Traditional Villages",
+      g_cap_sunset: "Golden Hour Coastal Sunset",
       g_cap_1: "Forest & Water Crossing",
-      g_cap_2: "Mountain Ridge Convoy",
-      g_cap_3: "Golden Hour Over Karlovasi",
+      g_cap_2: "Mount Kerkis Scenic Ridge",
 
       rev_tag: "Guest Experiences",
       rev_title: "Loved by Travelers Worldwide",
@@ -384,9 +389,14 @@ document.addEventListener('DOMContentLoaded', () => {
       gal_tag: "Τοπία & Διαδρομές",
       gal_title: "Στιγμές από τις Διαδρομές μας",
       gal_subtitle: "Μια ματιά στα δάση, τις κορυφές και τα μονοπάτια που σας περιμένουν.",
-      g_cap_1: "Πέρασμα από το Ποτάμι",
-      g_cap_2: "Κομβόι στις Κορυφογραμμές",
-      g_cap_3: "Ηλιοβασίλεμα πάνω από το Καρλόβασι",
+      g_cap_waterfalls: "Καταρράκτες Ποτάμι & Πεζοπορία",
+      g_cap_offroad: "Off-Road Safari στο Βουνό",
+      g_cap_convoy: "Κομβόι στις Κορυφογραμμές",
+      g_cap_trails: "Εξερεύνηση στα Μονοπάτια της Σάμου",
+      g_cap_villages: "Αυθεντικά Παραδοσιακά Χωριά",
+      g_cap_sunset: "Μαγευτικό Παραθαλάσσιο Ηλιοβασίλεμα",
+      g_cap_1: "Διάσχιση Δάσους & Ποταμιού",
+      g_cap_2: "Επιβλητικός Κέρκης & Θέα στο Αιγαίο",
 
       rev_tag: "Εμπειρίες Επισκεπτών",
       rev_title: "Τι Λένε οι Ταξιδιώτες",
@@ -500,6 +510,84 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // --- Sights & Trails Carousel Controller ---
+  const galleryTrack = document.getElementById('galleryTrack');
+  const galleryPrev = document.getElementById('galleryPrev');
+  const galleryNext = document.getElementById('galleryNext');
+  const galleryDots = document.getElementById('galleryDots');
+
+  if (galleryTrack) {
+    const slides = galleryTrack.querySelectorAll('.gallery-slide');
+    const totalSlides = slides.length;
+
+    // Create pagination dots
+    if (galleryDots && totalSlides > 0) {
+      galleryDots.innerHTML = '';
+      slides.forEach((_, idx) => {
+        const dot = document.createElement('button');
+        dot.className = `carousel-dot ${idx === 0 ? 'active' : ''}`;
+        dot.setAttribute('aria-label', `Go to slide ${idx + 1}`);
+        dot.addEventListener('click', () => {
+          const slideWidth = slides[0].getBoundingClientRect().width + 20;
+          galleryTrack.scrollTo({
+            left: idx * slideWidth,
+            behavior: 'smooth'
+          });
+        });
+        galleryDots.appendChild(dot);
+      });
+    }
+
+    const updateActiveDot = () => {
+      if (!galleryDots || slides.length === 0) return;
+      const scrollLeft = galleryTrack.scrollLeft;
+      const slideWidth = slides[0].getBoundingClientRect().width + 20;
+      const activeIdx = Math.round(scrollLeft / slideWidth);
+      const dots = galleryDots.querySelectorAll('.carousel-dot');
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === Math.min(activeIdx, dots.length - 1));
+      });
+    };
+
+    galleryTrack.addEventListener('scroll', updateActiveDot, { passive: true });
+
+    if (galleryPrev) {
+      galleryPrev.addEventListener('click', () => {
+        const slideWidth = slides[0].getBoundingClientRect().width + 20;
+        galleryTrack.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+      });
+    }
+
+    if (galleryNext) {
+      galleryNext.addEventListener('click', () => {
+        const slideWidth = slides[0].getBoundingClientRect().width + 20;
+        galleryTrack.scrollBy({ left: slideWidth, behavior: 'smooth' });
+      });
+    }
+
+    // Auto-scroll on idle (pauses on hover)
+    let autoScrollInterval;
+    const startAutoScroll = () => {
+      autoScrollInterval = setInterval(() => {
+        const slideWidth = slides[0].getBoundingClientRect().width + 20;
+        const maxScroll = galleryTrack.scrollWidth - galleryTrack.clientWidth;
+        if (galleryTrack.scrollLeft >= maxScroll - 10) {
+          galleryTrack.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          galleryTrack.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        }
+      }, 4500);
+    };
+
+    const stopAutoScroll = () => clearInterval(autoScrollInterval);
+
+    galleryTrack.addEventListener('mouseenter', stopAutoScroll);
+    galleryTrack.addEventListener('mouseleave', startAutoScroll);
+    galleryTrack.addEventListener('touchstart', stopAutoScroll, { passive: true });
+
+    startAutoScroll();
+  }
 
   // --- Dynamic Pricing & Booking Modal ---
   const bookingModal = document.getElementById('bookingModal');
