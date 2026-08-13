@@ -21,3 +21,7 @@ You are an AI assistant and agent working on behalf of **Beta Samos ATV and Hiki
 
 3. **Knowledge Base Synchronization**:
    - If new tour information, website changes, or policy updates are discovered (e.g., via the `site-scraper` skill), update the relevant files in `knowledge_base/` to keep all agents synchronized.
+
+4. **Live Site Verification & Testing**:
+   - The official website is always live at **`https://www.betasamos.gr/`**.
+   - When requested by the user to test changes in the browser, always perform visual verification, interactive testing, and console checks directly on **`https://www.betasamos.gr/`** (avoiding local file URLs or disconnected local ports).

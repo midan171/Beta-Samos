@@ -441,6 +441,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  let currentLang = 'en';
+
   // --- Timeslot Definitions per Tour ---
   const TOUR_TIMESLOTS = {
     flagship: [
@@ -469,8 +471,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const opt = document.createElement('option');
       opt.value = slot.value;
       opt.setAttribute('data-i18n', slot.i18nKey);
-      const text = translations[currentLang] && translations[currentLang][slot.i18nKey]
-        ? translations[currentLang][slot.i18nKey]
+      const activeLang = (typeof currentLang !== 'undefined' && currentLang) ? currentLang : 'en';
+      const text = translations[activeLang] && translations[activeLang][slot.i18nKey]
+        ? translations[activeLang][slot.i18nKey]
         : (translations.en[slot.i18nKey] || slot.value);
       opt.textContent = text;
       modalTimeEl.appendChild(opt);
@@ -502,7 +505,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.documentElement.lang = lang;
 
-    updateTimeslots(modalTourSelect ? modalTourSelect.value : 'flagship');
+    const modalTourEl = document.getElementById('modalTourSelect');
+    updateTimeslots(modalTourEl ? modalTourEl.value : 'flagship');
   }
 
   // Language Switcher Buttons

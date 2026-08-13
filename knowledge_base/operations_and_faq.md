@@ -38,3 +38,7 @@ A: Wear comfortable clothes that can get dusty, closed-toe shoes (sneakers or hi
 
 ### Q: Are food and drinks included?
 A: Yes, traditional local Samos snacks and bottled water are provided during the tour break.
+
+## Website & Live Testing Environment
+- **Live Production URL**: `https://www.betasamos.gr/`
+- **Testing Directive**: All automated browser testing and verification requested by users/developers must be performed directly against `https://www.betasamos.gr/`.

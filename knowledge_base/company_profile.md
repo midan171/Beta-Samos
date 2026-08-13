@@ -34,6 +34,7 @@
 - **Detailed Reference**: See [company_and payment_info](file:///c:/Users/admin/Desktop/Git%20Projects/Beta%20Samos/knowledge_base/important_info/company_and%20payment_info)
 
 ## Technical Infrastructure & Booking Integrations
+- **Live Production URL**: `https://www.betasamos.gr/` (Always live; use this URL for testing changes when requested)
 - **Hosting & CDN**: Cloudflare Pages / Workers Edge (`https://beta-samos.mikedan171.workers.dev` ➔ `https://betasamos.gr`)
 - **Customer Auto-Reply Engine**: EmailJS (Automated booking confirmation dispatched directly to guest email)
 - **Anti-Bot Security**: Cloudflare Turnstile (Managed interactive verification)
