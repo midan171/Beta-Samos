@@ -185,8 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
       rev_title: "Loved by Travelers Worldwide",
       rev_subtitle: "Here is what our guests have to say about riding with Beta Samos.",
       r1_text: "\"The highlight of our 2 weeks in Samos! Oltion was an incredible guide who showed us mountain viewpoints we would never have found on our own. The quads are brand new and the hike was refreshing!\"",
-      r2_text: "\"Fantastic 5-hour tour! The mix of off-road quad riding and the walk through Potami waterfalls was perfect. Great safety briefing and the local Greek snacks at the viewpoint were delicious.\"",
-      r3_text: "\"Η καλύτερη εμπειρία στη Σάμο! Φοβερή διαδρομή στο βουνό, απόλυτη ασφάλεια και απίστευτη θέα. Το συστήνουμε ανεπιφύλακτα σε όποιον θέλει πραγματική περιπέτεια στο νησί!\"",
+      r2_text: "\"Fantastic 5-hour tour! The mix of off-road quad riding and the walk through Potami waterfalls was perfect.\"",
+      r3_text: "\"Η καλύτερη εμπειρία στη Σάμο! Φοβερή διαδρομή στο βουνό, και απίστευτη θέα. Το συστήνω!!!\"",
 
       loc_tag: "Meeting Point",
       loc_title: "Find Us in Karlovasi",
@@ -402,8 +402,8 @@ document.addEventListener('DOMContentLoaded', () => {
       rev_title: "Τι Λένε οι Ταξιδιώτες",
       rev_subtitle: "Πραγματικές κριτικές από επισκέπτες που οδήγησαν μαζί μας.",
       r1_text: "\"Το αποκορύφωμα των διακοπών μας στη Σάμο! Ο Oltion ήταν φανταστικός οδηγός που μας έδειξε μέρη που δεν θα βρίσκαμε ποτέ μόνοι μας. Τα quads είναι καινούργια και η πεζοπορία αναζωογονητική!\"",
-      r2_text: "\"Φανταστική 5ωρη εκδρομή! Ο συνδυασμός quad και πεζοπορίας στους καταρράκτες ήταν τέλειος. Άψογη ενημέρωση ασφαλείας και πεντανόστιμα τοπικά σνακ στη στάση με θέα.\"",
-      r3_text: "\"Η καλύτερη εμπειρία στη Σάμο! Φοβερή διαδρομή στο βουνό, απόλυτη ασφάλεια και απίστευτη θέα. Το συστήνουμε ανεπιφύλακτα σε όποιον θέλει πραγματική περιπέτεια στο νησί!\"",
+      r2_text: "\"Φανταστική 5ωρη εκδρομή! Ο συνδυασμός quad και πεζοπορίας στους καταρράκτες ήταν τέλειος.\"",
+      r3_text: "\"Η καλύτερη εμπειρία στη Σάμο! Φοβερή διαδρομή στο βουνό, και απίστευτη θέα. Το συστήνω!!!\"",
 
       loc_tag: "Σημείο Συνάντησης",
       loc_title: "Βρείτε μας στο Καρλόβασι",
