@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
       opt_time_morning: "Morning (09:30 AM)",
       opt_time_fullday: "Full Day (10:00 AM)",
       opt_time_afternoon: "Afternoon (13:30 PM)",
-      opt_time_sunset: "Sunset (16:30 - 20:00)",
+      opt_time_sunset: "Sunset (16:30)",
       m_quads_label: "Number of Quads",
       m_rider_type_label: "Rider Arrangement (1 or 2 on quad)",
       m_name_label: "Lead Guest Full Name",
@@ -429,7 +429,7 @@ document.addEventListener('DOMContentLoaded', () => {
       opt_time_morning: "Πρωί (09:30)",
       opt_time_fullday: "Ολοήμερη (10:00)",
       opt_time_afternoon: "Μεσημέρι / Απόγευμα (13:30)",
-      opt_time_sunset: "Ηλιοβασίλεμα (16:30 - 20:00)",
+      opt_time_sunset: "Ηλιοβασίλεμα (16:30)",
       m_quads_label: "Αριθμός Quads",
       m_rider_type_label: "Διάταξη Αναβατών (1 ή 2 ανά όχημα)",
       m_name_label: "Ονοματεπώνυμο",
@@ -441,7 +441,48 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  let currentLang = 'en';
+  // --- Timeslot Definitions per Tour ---
+  const TOUR_TIMESLOTS = {
+    flagship: [
+      { value: '09:30 AM', i18nKey: 'opt_time_morning' },
+      { value: '13:30 PM', i18nKey: 'opt_time_afternoon' }
+    ],
+    sunset: [
+      { value: '16:30 PM', i18nKey: 'opt_time_sunset' }
+    ],
+    seitani: [
+      { value: '10:00 AM', i18nKey: 'opt_time_fullday' }
+    ]
+  };
+
+  function updateTimeslots(tourKey) {
+    const modalTimeEl = document.getElementById('modalTime');
+    const modalTourEl = document.getElementById('modalTourSelect');
+    if (!modalTimeEl) return;
+
+    const tour = tourKey || (modalTourEl ? modalTourEl.value : 'flagship');
+    const slots = TOUR_TIMESLOTS[tour] || TOUR_TIMESLOTS.flagship;
+    const previousVal = modalTimeEl.value;
+
+    modalTimeEl.innerHTML = '';
+    slots.forEach(slot => {
+      const opt = document.createElement('option');
+      opt.value = slot.value;
+      opt.setAttribute('data-i18n', slot.i18nKey);
+      const text = translations[currentLang] && translations[currentLang][slot.i18nKey]
+        ? translations[currentLang][slot.i18nKey]
+        : (translations.en[slot.i18nKey] || slot.value);
+      opt.textContent = text;
+      modalTimeEl.appendChild(opt);
+    });
+
+    const hasPrevious = Array.from(modalTimeEl.options).some(o => o.value === previousVal);
+    if (hasPrevious) {
+      modalTimeEl.value = previousVal;
+    } else if (modalTimeEl.options.length > 0) {
+      modalTimeEl.selectedIndex = 0;
+    }
+  }
 
   // --- Apply Language Translation ---
   function setLanguage(lang) {
@@ -460,6 +501,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.documentElement.lang = lang;
+
+    updateTimeslots(modalTourSelect ? modalTourSelect.value : 'flagship');
   }
 
   // Language Switcher Buttons
@@ -666,13 +709,19 @@ document.addEventListener('DOMContentLoaded', () => {
     return total;
   }
 
-  if (modalTourSelect) modalTourSelect.addEventListener('change', calculatePrice);
+  if (modalTourSelect) {
+    modalTourSelect.addEventListener('change', () => {
+      calculatePrice();
+      updateTimeslots(modalTourSelect.value);
+    });
+  }
   if (modalQuads) modalQuads.addEventListener('change', calculatePrice);
   if (modalRiderType) modalRiderType.addEventListener('change', calculatePrice);
 
   function openModal(preselectedTour = 'flagship') {
     if (bookingModal) {
       if (modalTourSelect) modalTourSelect.value = preselectedTour;
+      updateTimeslots(preselectedTour);
       calculatePrice();
       clearFeedback();
       bookingModal.classList.add('active');
@@ -682,6 +731,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
+
+  // Initialize modal timeslots on page load
+  updateTimeslots(modalTourSelect ? modalTourSelect.value : 'flagship');
 
   function closeModal() {
     if (bookingModal) {
