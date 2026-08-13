@@ -5,7 +5,7 @@
 - **Daily Hours**: 09:00 - 20:00.
 - **Tour Departure Times**:
   - Pythagoras Cave Tour (3.5h): **09:30 AM** (Morning) & **13:30 PM** (Afternoon)
-  - Sunset Mountain & Coastal Quad Tour (3.5h): **16:30 - 20:00** (Sunset)
+  - Sunset Mountain & Coastal Quad Tour (3.5h): **16:30 Daily (Sunset)**
   - Megalo Seitani Full Day Tour (9–10h): **10:00 AM**
 - **Group Capacity**: Maximum 8 participants per guided excursion.
 
