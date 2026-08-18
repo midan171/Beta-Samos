@@ -930,6 +930,7 @@ Beta Samos ATV & Hiking Tour
 WhatsApp / Τηλ: +30 694 243 0930
 Email: betasamos.greece@gmail.com
 Instagram: @beta_samos_atv_tours (https://instagram.com/beta_samos_atv_tours)
+TikTok: @beta.samos (https://www.tiktok.com/@beta.samos?_r=1&_t=ZN-98xUVsds55C)
 Website: https://betasamos.gr`
         : `Dear ${name},
 
@@ -953,6 +954,7 @@ Karlovasi, Samos Island, Greece
 WhatsApp / Phone: +30 694 243 0930
 Email: betasamos.greece@gmail.com
 Instagram: @beta_samos_atv_tours (https://instagram.com/beta_samos_atv_tours)
+TikTok: @beta.samos (https://www.tiktok.com/@beta.samos?_r=1&_t=ZN-98xUVsds55C)
 Website: https://betasamos.gr`;
 
       try {
