@@ -48,10 +48,10 @@ Conclude your adventure with a smooth ride back along coastal roads to Karlovasi
 ## 5. Inclusions
 - 5-hour guided ATV and hiking tour
 - Automatic ATV / Quad vehicle & fuel
-- Certified local guide
+- Local island guide
 - Helmet & safety equipment
 - Guided nature hike session
-- Traditional local snacks & bottled water
+- Cold water and snacks
 
 ## 6. Exclusions
 - Hotel pickup and drop-off (Available on private tour options)

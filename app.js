@@ -77,20 +77,20 @@ document.addEventListener('DOMContentLoaded', () => {
       inc_villages: "Route Through 3 Traditional Villages",
       inc_cave: "Stop at Pythagoras Cave",
       inc_photos: "Photo & Viewpoint Stops",
-      inc_drink: "Refreshing Cold Beverage",
-      inc_guide: "Certified Local Island Guide",
+      inc_drink: "Cold Water & Snacks",
+      inc_guide: "Local Island Guide",
       inc_t2_mountain: "Off-Road & Mountain Trails",
       inc_t2_rivers: "Scenic River & Water Crossings",
       inc_t2_sunshine: "Panoramic Sunset & Sunshine Views",
       inc_t2_photos: "Golden Hour & Sunset Photo Stops",
       inc_1: "Premium Automatic ATV & Fuel",
       inc_2: "DOT/ECE Approved Helmets",
-      inc_3: "Certified Local Island Guide",
+      inc_3: "Local Island Guide",
       inc_4: "Off-Road & Mountain Trails",
       inc_5: "Free Action Photos Shared",
       inc_6: "Hotel Transfer (Available on Request)",
       inc_max8: "Small Group (Max 8 Guests)",
-      inc_sunset_drink: "Sunset Refreshments & Cold Drinks",
+      inc_sunset_drink: "Cold Water & Snacks",
 
       badge_fullday: "FULL DAY PREMIUM EXPERIENCE",
       spec_t3_terrain: "80% Dirt / 20% Scenic",
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn_whatsapp_inquire: "WhatsApp Chat",
 
       t2_title: "Sunset Mountain & Coastal Quad Tour",
-      t2_dep: "Departure: 16:30 Daily (Sunset)",
+      t2_dep: "Departure: 15:00 Daily (Sunset)",
       t2_desc: "Ride during the cooler evening hours as the golden sun dips over the Aegean sea. Experience high mountain ridge paths, panoramic sunset viewpoints, and twilight coastal trails.",
 
       t3_title: "Megalo Seitani Full Day Sunset ATV Experience",
@@ -212,9 +212,9 @@ document.addEventListener('DOMContentLoaded', () => {
       opt_time_morning: "10:00 AM",
       opt_time_fullday: "Full Day (10:00 AM)",
       opt_time_afternoon: "Afternoon (13:30 PM)",
-      opt_time_sunset: "Sunset (16:30)",
-      m_quads_label: "Number of Quads",
-      m_rider_type_label: "Rider Arrangement (1 or 2 on quad)",
+      opt_time_sunset: "Sunset (15:00)",
+      m_persons_label: "Number of Persons",
+      m_quads_label: "Number of Quads (Passengers are discounted)",
       m_name_label: "Lead Guest Full Name",
       m_phone_label: "Phone / WhatsApp Number",
       m_email_label: "Email Address",
@@ -294,20 +294,20 @@ document.addEventListener('DOMContentLoaded', () => {
       inc_villages: "Διαδρομή μέσα από 3 Χωριά",
       inc_cave: "Στάση στη Σπηλιά του Πυθαγόρα",
       inc_photos: "Στάσεις για Φωτογραφίες & Θέα",
-      inc_drink: "Δροσερό Ρόφημα & Νερό",
-      inc_guide: "Πιστοποιημένος Τοπικός Οδηγός",
+      inc_drink: "Δροσερό Νερό & Snacks",
+      inc_guide: "Τοπικός Οδηγός",
       inc_t2_mountain: "Off-Road & Ορεινές Διαδρομές",
       inc_t2_rivers: "Διαδρομές σε Ποτάμια & Τρεχούμενα Νερά",
       inc_t2_sunshine: "Πανοραμική Θέα Ηλιοβασιλέματος & Sunshine Views",
       inc_t2_photos: "Στάσεις για Φωτογραφίες στο Ηλιοβασίλεμα",
       inc_1: "Κορυφαίο Αυτόματο ATV & Καύσιμα",
       inc_2: "Εγκεκριμένα Κράνη DOT/ECE",
-      inc_3: "Πιστοποιημένος Τοπικός Οδηγός",
+      inc_3: "Τοπικός Οδηγός",
       inc_4: "Off-road & Mountain Διαδρομές",
       inc_5: "Δωρεάν Φωτογραφίες Δράσης",
       inc_6: "Μεταφορά από Ξενοδοχείο (Κατόπιν Συνεννόησης)",
       inc_max8: "Μικρό Group (Έως 8 Άτομα)",
-      inc_sunset_drink: "Δροσερό Ρόφημα Ηλιοβασιλέματος & Νερό",
+      inc_sunset_drink: "Δροσερό Νερό & Snacks",
 
       badge_fullday: "ΟΛΟΗΜΕΡΗ PREMIUM ΕΜΠΕΙΡΙΑ",
       spec_t3_terrain: "80% Χώμα / 20% Άσφαλτος",
@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn_whatsapp_inquire: "Συνομιλία WhatsApp",
 
       t2_title: "Sunset Mountain & Coastal Quad Tour",
-      t2_dep: "Αναχώρηση: 16:30 Καθημερινά (Ηλιοβασίλεμα)",
+      t2_dep: "Αναχώρηση: 15:00 Καθημερινά (Ηλιοβασίλεμα)",
       t2_desc: "Οδηγήστε τις δροσερές απογευματινές ώρες καθώς ο ήλιος δύει πάνω από το Αιγαίο. Ζήστε ορεινές κορυφογραμμές, μαγευτικά σημεία ηλιοβασιλέματος και παράκτιες διαδρομές στο λυκόφως.",
 
       t3_title: "Megalo Seitani Full Day Sunset ATV Experience",
@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
       g1_title: "Δίπλωμα Οδήγησης & Ηλικία",
       g1_desc: "Όλοι οι συμμετέχοντες πρέπει να είναι 21 έως 74 ετών. Οι οδηγοί πρέπει να κατέχουν έγκυρο φυσικό δίπλωμα αυτοκινήτου (Κατηγορία Β).",
       g2_title: "Κατάλληλα Υποδήματα",
-      g2_desc: "Τα κλειστά αθλητικά ή πεζοπορικά παπούτσια είναι υποχρεωτικά. Δεν επιτρέπονται σαγιονάρες ή ανοιχτά σανδάλια.",
+      g2_desc: "Τα κλειστά αθλητικά ή πεζοπορικά παπούτσια είναι υποχρεωτικά. Δεν επιτρέπονται σαγιονάρες ή ανοιχτά σανδαλια.",
       g3_title: "Μικρά Groups (Έως 8 Άτομα)",
       g3_desc: "Οι εκδρομές περιορίζονται αυστηρά σε έως 8 συμμετέχοντες για μέγιστη ασφάλεια και προσωπική καθοδήγηση.",
       g4_title: "Εγγύηση Καιρού",
@@ -429,9 +429,9 @@ document.addEventListener('DOMContentLoaded', () => {
       opt_time_morning: "10:00",
       opt_time_fullday: "Ολοήμερη (10:00)",
       opt_time_afternoon: "Μεσημέρι / Απόγευμα (13:30)",
-      opt_time_sunset: "Ηλιοβασίλεμα (16:30)",
-      m_quads_label: "Αριθμός Quads",
-      m_rider_type_label: "Διάταξη Αναβατών (1 ή 2 ανά όχημα)",
+      opt_time_sunset: "Ηλιοβασίλεμα (15:00)",
+      m_persons_label: "Αριθμός Ατόμων",
+      m_quads_label: "Αριθμός Quads (Έκπτωση για συνοδηγούς)",
       m_name_label: "Ονοματεπώνυμο",
       m_phone_label: "Τηλέφωνο / WhatsApp",
       m_email_label: "Email",
@@ -449,7 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { value: '10:00 AM', i18nKey: 'opt_time_morning' }
     ],
     sunset: [
-      { value: '16:30 PM', i18nKey: 'opt_time_sunset' }
+      { value: '15:00 PM', i18nKey: 'opt_time_sunset' }
     ],
     seitani: [
       { value: '10:00 AM', i18nKey: 'opt_time_fullday' }
@@ -486,6 +486,51 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // --- Dynamic Quads Dropdown based on Persons ---
+  function updateQuadsDropdown(keepSelectedQuad = false) {
+    const modalPersonsEl = document.getElementById('modalPersons');
+    const modalQuadsEl = document.getElementById('modalQuads');
+    if (!modalPersonsEl || !modalQuadsEl) return;
+
+    const persons = parseInt(modalPersonsEl.value, 10) || 1;
+    const minQuads = Math.ceil(persons / 2);
+    const maxQuads = persons;
+    const prevVal = keepSelectedQuad ? parseInt(modalQuadsEl.value, 10) : minQuads;
+
+    modalQuadsEl.innerHTML = '';
+    for (let q = minQuads; q <= maxQuads; q++) {
+      const opt = document.createElement('option');
+      opt.value = q.toString();
+      const passengers = persons - q;
+      const isGreek = (typeof currentLang !== 'undefined' && currentLang === 'el');
+
+      if (isGreek) {
+        if (q === 1 && passengers === 0) {
+          opt.textContent = '1 Quad (1 Οδηγός)';
+        } else if (passengers === 0) {
+          opt.textContent = `${q} Quads (${q} Οδηγοί Solo)`;
+        } else {
+          opt.textContent = `${q} Quad${q > 1 ? 's' : ''} (${q} Οδηγ.${q > 1 ? 'οί' : 'ός'} + ${passengers} Συνοδηγ.${passengers > 1 ? 'οί' : 'ός'})`;
+        }
+      } else {
+        if (q === 1 && passengers === 0) {
+          opt.textContent = '1 Quad (1 Solo Driver)';
+        } else if (passengers === 0) {
+          opt.textContent = `${q} Quads (${q} Solo Drivers)`;
+        } else {
+          opt.textContent = `${q} Quad${q > 1 ? 's' : ''} (${q} Driver${q > 1 ? 's' : ''} + ${passengers} Passenger${passengers > 1 ? 's' : ''})`;
+        }
+      }
+      modalQuadsEl.appendChild(opt);
+    }
+
+    if (keepSelectedQuad && prevVal >= minQuads && prevVal <= maxQuads) {
+      modalQuadsEl.value = prevVal.toString();
+    } else {
+      modalQuadsEl.value = minQuads.toString();
+    }
+  }
+
   // --- Apply Language Translation ---
   function setLanguage(lang) {
     if (!translations[lang]) return;
@@ -506,6 +551,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const modalTourEl = document.getElementById('modalTourSelect');
     updateTimeslots(modalTourEl ? modalTourEl.value : 'flagship');
+    updateQuadsDropdown(true);
   }
 
   // Language Switcher Buttons
@@ -580,23 +626,22 @@ document.addEventListener('DOMContentLoaded', () => {
             left: idx * slideWidth,
             behavior: 'smooth'
           });
+          document.querySelectorAll('.carousel-dot').forEach((d, i) => {
+            d.classList.toggle('active', i === idx);
+          });
         });
         galleryDots.appendChild(dot);
       });
     }
 
-    const updateActiveDot = () => {
-      if (!galleryDots || slides.length === 0) return;
-      const scrollLeft = galleryTrack.scrollLeft;
+    // Scroll event to sync active dot
+    galleryTrack.addEventListener('scroll', () => {
       const slideWidth = slides[0].getBoundingClientRect().width + 20;
-      const activeIdx = Math.round(scrollLeft / slideWidth);
-      const dots = galleryDots.querySelectorAll('.carousel-dot');
-      dots.forEach((dot, idx) => {
-        dot.classList.toggle('active', idx === Math.min(activeIdx, dots.length - 1));
+      const currentIdx = Math.round(galleryTrack.scrollLeft / slideWidth);
+      document.querySelectorAll('.carousel-dot').forEach((d, i) => {
+        d.classList.toggle('active', i === currentIdx);
       });
-    };
-
-    galleryTrack.addEventListener('scroll', updateActiveDot, { passive: true });
+    }, { passive: true });
 
     if (galleryPrev) {
       galleryPrev.addEventListener('click', () => {
@@ -639,8 +684,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const bookingModal = document.getElementById('bookingModal');
   const modalClose = document.getElementById('modalClose');
   const modalTourSelect = document.getElementById('modalTourSelect');
+  const modalPersons = document.getElementById('modalPersons');
   const modalQuads = document.getElementById('modalQuads');
-  const modalRiderType = document.getElementById('modalRiderType');
   const modalPriceDisplay = document.getElementById('modalPriceDisplay');
   const modalDate = document.getElementById('modalDate');
   const modalTime = document.getElementById('modalTime');
@@ -693,24 +738,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function calculatePrice() {
+    const modalTourSelect = document.getElementById('modalTourSelect');
+    const modalPersons = document.getElementById('modalPersons');
+    const modalQuads = document.getElementById('modalQuads');
+    const modalPriceDisplay = document.getElementById('modalPriceDisplay');
+
     const tour = modalTourSelect ? modalTourSelect.value : 'flagship';
-    const quads = modalQuads ? parseInt(modalQuads.value, 10) || 1 : 1;
-    const isShared = modalRiderType ? (modalRiderType.value === 'shared') : false;
+    const persons = modalPersons ? parseInt(modalPersons.value, 10) || 1 : 1;
+    const quads = modalQuads ? parseInt(modalQuads.value, 10) || Math.ceil(persons / 2) : 1;
+    const passengers = Math.max(0, persons - quads);
 
     let driverPrice = 110;
-    let passengerPrice = 80; // €110 - €30 discount
+    let passengerPrice = 80; 
 
     if (tour === 'sunset') {
       driverPrice = 110;
-      passengerPrice = 80; // €110 - €30 discount
+      passengerPrice = 80; 
     } else if (tour === 'seitani' || tour === 'vip') {
       driverPrice = 175;
-      passengerPrice = 125; // €175 - €50 discount
+      passengerPrice = 125; 
     }
 
-    // Pricing: 1st person (driver) pays full price; 2nd person (passenger) pays with discount
-    const pricePerQuad = isShared ? (driverPrice + passengerPrice) : driverPrice;
-    const total = pricePerQuad * quads;
+    // Pricing: 1st person on each quad (driver) pays full price; passengers (sharing) pay with discount
+    const total = (quads * driverPrice) + (passengers * passengerPrice);
 
     if (modalPriceDisplay) {
       modalPriceDisplay.textContent = `€${total}`;
@@ -724,13 +774,21 @@ document.addEventListener('DOMContentLoaded', () => {
       updateTimeslots(modalTourSelect.value);
     });
   }
-  if (modalQuads) modalQuads.addEventListener('change', calculatePrice);
-  if (modalRiderType) modalRiderType.addEventListener('change', calculatePrice);
+  if (modalPersons) {
+    modalPersons.addEventListener('change', () => {
+      updateQuadsDropdown(false);
+      calculatePrice();
+    });
+  }
+  if (modalQuads) {
+    modalQuads.addEventListener('change', calculatePrice);
+  }
 
   function openModal(preselectedTour = 'flagship') {
     if (bookingModal) {
       if (modalTourSelect) modalTourSelect.value = preselectedTour;
       updateTimeslots(preselectedTour);
+      updateQuadsDropdown(true);
       calculatePrice();
       clearFeedback();
       bookingModal.classList.add('active');
@@ -741,8 +799,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Initialize modal timeslots on page load
+  // Initialize modal timeslots and quads on page load
   updateTimeslots(modalTourSelect ? modalTourSelect.value : 'flagship');
+  updateQuadsDropdown(false);
 
   function closeModal() {
     if (bookingModal) {
@@ -780,16 +839,27 @@ document.addEventListener('DOMContentLoaded', () => {
       if (modalTourSelect) modalTourSelect.value = qbTour;
       if (modalDate && qbDateVal) modalDate.value = qbDateVal;
 
-      if (modalQuads && modalRiderType) {
-        if (qbRidersVal.includes('shared')) {
-          modalRiderType.value = 'shared';
-        } else {
-          modalRiderType.value = 'solo';
-        }
-        if (qbRidersVal.startsWith('2')) {
-          modalQuads.value = '2';
-        } else {
+      if (modalPersons && modalQuads) {
+        if (qbRidersVal === '1-solo') {
+          modalPersons.value = '1';
+          updateQuadsDropdown(false);
           modalQuads.value = '1';
+        } else if (qbRidersVal === '1-shared') {
+          modalPersons.value = '2';
+          updateQuadsDropdown(false);
+          modalQuads.value = '1';
+        } else if (qbRidersVal === '2-solo') {
+          modalPersons.value = '2';
+          updateQuadsDropdown(false);
+          modalQuads.value = '2';
+        } else if (qbRidersVal === '2-shared') {
+          modalPersons.value = '4';
+          updateQuadsDropdown(false);
+          modalQuads.value = '2';
+        } else if (qbRidersVal === 'group') {
+          modalPersons.value = '4';
+          updateQuadsDropdown(false);
+          modalQuads.value = '2';
         }
       }
 
@@ -806,8 +876,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const date = modalDate ? modalDate.value : '';
       const time = modalTime ? modalTime.value : '';
       const tour = modalTourSelect ? modalTourSelect.options[modalTourSelect.selectedIndex].text : '';
+      const persons = modalPersons ? modalPersons.value : '1';
       const quads = modalQuads ? modalQuads.value : '1';
-      const riderType = modalRiderType ? (modalRiderType.value === 'shared' ? 'Driver + Passenger (Shared)' : '1 Driver Solo') : '';
+      const passengers = Math.max(0, parseInt(persons, 10) - parseInt(quads, 10));
+      const groupSummary = `${persons} Guest${parseInt(persons, 10) > 1 ? 's' : ''} on ${quads} Quad${parseInt(quads, 10) > 1 ? 's' : ''} (${quads} Driver${parseInt(quads, 10) > 1 ? 's' : ''}${passengers > 0 ? ` + ${passengers} Passenger${passengers > 1 ? 's' : ''}` : ''})`;
       const total = modalPriceDisplay ? modalPriceDisplay.textContent : '';
 
       if (!name || !phone || !date) {
@@ -827,8 +899,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'Selected Tour': tour,
         'Preferred Date': date,
         'Time Slot': time,
+        'Number of Persons': persons,
         'Number of Quads': quads,
-        'Rider Arrangement': riderType,
+        'Group & Rider Setup': groupSummary,
         'Estimated Total': total,
         'Action Status': 'Customer clicked "Send Request via WhatsApp"',
         'Submitted At': new Date().toLocaleString()
@@ -846,7 +919,7 @@ document.addEventListener('DOMContentLoaded', () => {
 • Phone/WhatsApp: ${phone}
 • Tour: ${tour}
 • Date: ${date} (${time})
-• Quads: ${quads} Quad(s) [${riderType}]
+• Group: ${persons} Person(s) / ${quads} Quad(s) (${quads} Driver(s)${passengers > 0 ? `, ${passengers} Passenger(s)` : ''})
 • Estimated Total: ${total}
 
 Sent via betasamos.gr instant reservation engine.`;
@@ -867,8 +940,10 @@ Sent via betasamos.gr instant reservation engine.`;
       const date = modalDate ? modalDate.value : '';
       const time = modalTime ? modalTime.value : '';
       const tour = modalTourSelect ? modalTourSelect.options[modalTourSelect.selectedIndex].text : '';
+      const persons = modalPersons ? modalPersons.value : '1';
       const quads = modalQuads ? modalQuads.value : '1';
-      const riderType = modalRiderType ? (modalRiderType.value === 'shared' ? 'Driver + Passenger (Shared)' : '1 Driver Solo') : '';
+      const passengers = Math.max(0, parseInt(persons, 10) - parseInt(quads, 10));
+      const groupSummary = `${persons} Guest${parseInt(persons, 10) > 1 ? 's' : ''} on ${quads} Quad${parseInt(quads, 10) > 1 ? 's' : ''} (${quads} Driver${parseInt(quads, 10) > 1 ? 's' : ''}${passengers > 0 ? ` + ${passengers} Passenger${passengers > 1 ? 's' : ''}` : ''})`;
       const total = modalPriceDisplay ? modalPriceDisplay.textContent : '';
 
       clearFeedback();
@@ -921,7 +996,7 @@ Sent via betasamos.gr instant reservation engine.`;
 ---------------------------------------------
 • Εκδρομή: ${tour}
 • Ημερομηνία & Ώρα: ${date} (${time})
-• Quads & Αναβάτες: ${quads} Quad(s) [${riderType}]
+• Άτομα & Quads: ${groupSummary}
 • Τηλέφωνο: ${phone}
 • Email Επισκέπτη: ${email}
 • Εκτιμώμενο Κόστος: ${total}
@@ -945,7 +1020,7 @@ We have successfully received your request with the following details:
 ---------------------------------------------
 • Selected Tour: ${tour}
 • Preferred Date & Time: ${date} (${time})
-• Quads & Rider Setup: ${quads} Quad(s) [${riderType}]
+• Group & Quads: ${groupSummary}
 • Contact Phone: ${phone}
 • Guest Email: ${email}
 • Estimated Total: ${total}
@@ -978,8 +1053,9 @@ Website: https://betasamos.gr`;
           date: date,
           time: time,
           date_time: `${date} (${time})`,
+          persons: persons,
           quads: quads,
-          rider_type: riderType,
+          group_summary: groupSummary,
           total: total,
           reply_to: 'betasamos.greece@gmail.com'
         };
@@ -1002,8 +1078,9 @@ Website: https://betasamos.gr`;
           'Selected Tour': tour,
           'Preferred Date': date,
           'Time Slot': time,
+          'Number of Persons': persons,
           'Number of Quads': quads,
-          'Rider Arrangement': riderType,
+          'Group & Quads Setup': groupSummary,
           'Estimated Total': total,
           'Security Verification': turnstileToken ? 'Cloudflare Turnstile Verified' : 'Passed',
           'Submitted At': new Date().toLocaleString()

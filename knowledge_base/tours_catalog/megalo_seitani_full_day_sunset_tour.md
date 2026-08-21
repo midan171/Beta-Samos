@@ -44,7 +44,7 @@
 - Guided hike to Megalo Seitani secluded beach
 - Swimming and relaxation at Megalo Seitani
 - Seaside coastal tour with magical sunset views
-- Certified local expert guide
+- Local island guide
 - Small group experience (Max 8 participants)
 
 ## Exclusions

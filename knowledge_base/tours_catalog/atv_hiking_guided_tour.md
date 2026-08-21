@@ -21,13 +21,13 @@
 - **Seaside Route**: Enjoy scenic coastal ATV riding alongside the crystal-clear Aegean Sea.
 - **Pythagoras Cave Exploration**: Stop at the historic Cave of Pythagoras on Mount Kerkis.
 - **Panoramic Photo Stops**: Capture unforgettable viewpoint photos across dramatic coastal cliffs and mountains.
-- **Refreshing Cold Beverage**: Enjoy cool refreshments and water during the excursion.
+- **Cold Water and Snacks**: Enjoy cold water and snacks during the excursion.
 
 ## Full Itinerary
 1. **Welcome & Safety Briefing (20 mins)**: Meet at Karlovasi HQ, receive safety equipment (DOT/ECE helmet), get familiar with automatic ATV controls, and complete a test drive.
 2. **Traditional Villages & Scenic Countryside (45 mins)**: Drive through 3 picturesque traditional Samian villages experiencing authentic island charm.
 3. **Off-Road Mountain & Seaside Trails (1 hour 15 mins)**: Navigate exciting dirt paths, pine forest trails, and scenic coastal seaside tracks overlooking the Aegean Sea.
-4. **Pythagoras Cave Stop & Refreshment Break (40 mins)**: Stop at the historic Cave of Pythagoras. Enjoy guided sightseeing, take stunning panoramic photos, and relax with a refreshing cold drink.
+4. **Pythagoras Cave Stop & Refreshment Break (40 mins)**: Stop at the historic Cave of Pythagoras. Enjoy guided sightseeing, take stunning panoramic photos, and relax with cold water and snacks.
 5. **Return Scenic ATV Ride (30 mins)**: Enjoy a smooth ride back along panoramic coastal tracks to Karlovasi base.
 
 ## Inclusions
@@ -39,8 +39,8 @@
 - Route through 3 traditional villages
 - Guided stop at Pythagoras Cave
 - Scenic viewpoint & photo stops
-- Refreshing cold beverage and water
-- Certified local island guide
+- Cold water and snacks
+- Local island guide
 - Small group experience (Max 8 guests)
 
 ## Exclusions

@@ -55,7 +55,7 @@
 - **Explore** 3 charming traditional Samian villages full of authentic character
 - **Discover** the legendary Cave of Pythagoras with historical insights from your guide
 - **Capture** breathtaking panoramic viewpoint photos of the Aegean coast
-- **Recharge** with a cold refreshing drink and stay safe in an intimate small group (max 8)
+- **Recharge** with cold water and snacks and stay safe in an intimate small group (max 8)
 
 ### 4. Full Description
 Experience a unique ATV exploration tour on Samos Island, seamlessly combining off-road adventure, mountain tracks, seaside views, and traditional villages. Led by passionate local guides, this 4.5-hour tour is designed to reveal authentic hidden corners of Samos.
@@ -64,7 +64,7 @@ Your journey starts at our Karlovasi headquarters with a thorough safety briefin
 
 Continue through rugged off-road mountain trails, lush pine-scented tracks, and panoramic seaside paths overlooking the sparkling Aegean Sea. Ascend towards the iconic Mount Kerkis to explore the historic Cave of Pythagoras, where the ancient philosopher and mathematician sought refuge.
 
-Pause for breathtaking photos at scenic viewpoints, learn about local history and folklore, and cool down with a refreshing cold beverage before enjoying a scenic coastal ride back to base.
+Pause for breathtaking photos at scenic viewpoints, learn about local history and folklore, and cool down with cold water and snacks before enjoying a scenic coastal ride back to base.
 
 ---
 
@@ -73,13 +73,13 @@ Pause for breathtaking photos at scenic viewpoints, learn about local history an
 ### Includes:
 - 4.5-hour guided ATV tour
 - Well-maintained automatic Quad / ATV & fuel
-- Certified local guide
+- Local island guide
 - DOT/ECE approved safety helmet
 - Off-road, mountain & seaside routes
 - Route through 3 traditional villages
 - Guided stop at Pythagoras Cave
 - Viewpoint photo stops
-- Refreshing cold drink & bottled water
+- Cold water and snacks
 - Small group setting (maximum 8 participants)
 
 ### Excludes:

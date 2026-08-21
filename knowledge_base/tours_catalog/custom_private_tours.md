@@ -27,7 +27,7 @@ Enjoy a completely private and customized outdoor adventure across Samos Island.
 5. **Return Transfer**: Scenic drive back to base or drop-off at your requested location.
 
 ## Inclusions
-- Dedicated private certified local guide(s)
+- Dedicated private local island guide(s)
 - Private ATV / Quad vehicles with fuel
 - Helmets and safety equipment
 - Custom hiking session

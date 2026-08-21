@@ -41,10 +41,10 @@ Cancellation Policy: Free cancellation up to 24 hours before start time
 --- INCLUSIONS ---
 - 5-hour guided ATV and hiking tour
 - Automatic ATV / Quad bike vehicle & fuel
-- Certified local guide
+- Local island guide
 - Helmet & safety goggles
 - Guided nature hiking session
-- Traditional local Samos snacks & bottled water
+- Cold water and snacks
 
 --- EXCLUSIONS ---
 - Hotel pickup and drop-off
