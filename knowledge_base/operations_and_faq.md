@@ -4,8 +4,8 @@
 - **Operating Months**: April through October (Summer season).
 - **Daily Hours**: 09:00 - 20:00.
 - **Tour Departure Times**:
-  - Pythagoras Cave Tour (3.5h): **09:30 AM** (Morning) & **13:30 PM** (Afternoon)
-  - Sunset Mountain & Coastal Quad Tour (3.5h): **16:30 Daily (Sunset)**
+  - Pythagoras Cave Tour (4.5h): **10:00 AM Daily**
+  - Sunset Mountain & Coastal Quad Tour (4.5h): **16:30 Daily (Sunset)**
   - Megalo Seitani Full Day Tour (9–10h): **10:00 AM**
 - **Group Capacity**: Maximum 8 participants per guided excursion.
 
@@ -16,7 +16,9 @@
 
 ## Booking & Payment Policies
 - **Booking Channel**: Book online via the official website booking system or direct agent channels (GetYourGuide, phone, WhatsApp).
-- **Pricing**: Pricing is charged flat per Quad / ATV (€95 for 3.5h tours, accommodating 1 solo rider or 2 shared riders with no extra passenger surcharge).
+- **Pricing Structure**:
+  - **Pythagoras Cave (4.5h) & Sunset Quad Tour (4.5h)**: 1st person (driver) pays full price **€110**. 2nd person (passenger sharing the quad) pays a discounted rate of **€80** (€110 - €30 discount). Total for 2 riders on 1 quad: **€190**.
+  - **Megalo Seitani Full Day Sunset Tour (9–10h)**: 1st person (driver) pays full price **€175**. 2nd person (passenger sharing the quad) pays a discounted rate of **€125** (€175 - €50 discount). Total for 2 riders on 1 quad: **€300**.
 - **Cancellation Policy**:
   - Full refund for cancellations made up to 24 hours before the tour start time.
   - Cancellations within 24 hours or no-shows are non-refundable.
@@ -31,7 +33,7 @@
 A: No prior off-road ATV experience is required. Our guides conduct a comprehensive safety briefing and test ride session before embarking. Our ATVs feature automatic transmission, making them easy and safe to operate.
 
 ### Q: Can two people share one ATV? How is it priced?
-A: Yes! Our ATVs comfortably accommodate 2 passengers (driver + passenger). The price is flat per ATV (€95 for 3.5h tours), meaning the price is the same whether 1 or 2 people ride on the ATV!
+A: Yes! Our ATVs comfortably accommodate 2 passengers (driver + passenger). The 1st person (driver) pays full price (€110 for half-day / €175 for full-day), and the 2nd person (passenger sharing the vehicle) receives a special discount (€80 for half-day / €125 for full-day).
 
 ### Q: What should I wear and bring?
 A: Wear comfortable clothes that can get dusty, closed-toe shoes (sneakers or hiking boots), sunglasses, sunscreen, and bring a bottle of water / small backpack.

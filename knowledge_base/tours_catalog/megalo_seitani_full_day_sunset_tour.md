@@ -6,7 +6,7 @@
 - **Category**: Full-Day Premium ATV Adventure, Hiking & Cultural Experience
 - **Duration**: 9–10 hours
 - **Start Time**: 10:00 AM Daily
-- **Pricing**: €175 / quad (1-2 persons)
+- **Pricing**: From €175 per quad (1st Person / Driver: €175, 2nd Person / Passenger: €125 with €50 discount — €300 total for 2 riders on 1 ATV)
 - **Group Size**: Small group (Max 8 participants) or Private VIP
 - **Languages Offered**: English, Greek
 - **Start Location / Meeting Point**: Beta Samos HQ, Kon/nou Kanari 1, Neo Karlovasi 832 00, Samos, Greece

@@ -4,8 +4,8 @@
 - **Tour Name**: Pythagoras Cave & 3 Traditional Villages ATV Tour
 - **Tagline**: Off-Road • Mountain • Seaside • 3 Villages • Pythagoras Cave
 - **Category**: Off-Road ATV Adventure & Cultural Sightseeing
-- **Duration**: 3.5 hours (Departures: 09:30 AM & 13:30 PM Daily)
-- **Pricing**: €95 per quad (flat rate for 1 or 2 persons per ATV)
+- **Duration**: 4.5 hours (Departure: 10:00 AM Daily)
+- **Pricing**: From €110 per quad (1st Person / Driver: €110, 2nd Person / Passenger: €80 with €30 discount — €190 total for 2 riders on 1 ATV)
 - **Group Size**: Small group (Max 8 participants) or Private options
 - **Languages Offered**: English, Greek
 - **Start Location / Meeting Point**: Beta Samos HQ, Karlovasi (T.K. 83200, Samos)

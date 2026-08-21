@@ -31,10 +31,10 @@
 - **Activity Type**: Day Tour / Outdoor Activity
 - **Category**: Off-Road Vehicle & Quad Bike / Cultural & Scenic Tour
 - **Location**: Karlovasi, Samos, North Aegean, Greece
-- **Duration**: 3.5 Hours
-- **Pricing**: €95.00 per Quad (Flat rate for 1 or 2 riders)
+- **Duration**: 4.5 Hours
+- **Pricing**: From €110.00 per Quad (Driver: €110.00 / 2nd Passenger: €80.00)
 - **Languages**: English (Live Guide), Greek (Live Guide)
-- **Start Times**: 09:30 AM & 13:30 PM Daily
+- **Start Times**: 10:00 AM Daily
 - **Group Capacity**: Small group (Max 8 participants)
 - **Cut-off Time for Booking**: 12 Hours before start
 - **Cancellation Policy**: Free cancellation up to 24 hours before start (Full refund)
@@ -58,7 +58,7 @@
 - **Recharge** with a cold refreshing drink and stay safe in an intimate small group (max 8)
 
 ### 4. Full Description
-Experience a unique ATV exploration tour on Samos Island, seamlessly combining off-road adventure, mountain tracks, seaside views, and traditional villages. Led by passionate local guides, this 3 to 4-hour tour is designed to reveal authentic hidden corners of Samos.
+Experience a unique ATV exploration tour on Samos Island, seamlessly combining off-road adventure, mountain tracks, seaside views, and traditional villages. Led by passionate local guides, this 4.5-hour tour is designed to reveal authentic hidden corners of Samos.
 
 Your journey starts at our Karlovasi headquarters with a thorough safety briefing, helmet fitting, and an ATV orientation drive. Once prepared, follow your guide through 3 picturesque traditional Samian villages, taking in authentic architecture and peaceful island life.
 
@@ -71,7 +71,7 @@ Pause for breathtaking photos at scenic viewpoints, learn about local history an
 ## SECTION 4: Inclusions & Exclusions
 
 ### Includes:
-- 3 to 4-hour guided ATV tour
+- 4.5-hour guided ATV tour
 - Well-maintained automatic Quad / ATV & fuel
 - Certified local guide
 - DOT/ECE approved safety helmet
@@ -112,4 +112,4 @@ Pause for breathtaking photos at scenic viewpoints, learn about local history an
 
 - **Meeting Point Name**: Beta Samos Base - Karlovasi
 - **Full Address**: Kanari 1, Karlovasi, Samos 83200, Greece
-- **Location Instructions**: Located at Kanari 1 in Karlovasi town. Look for the Beta Samos ATV tour signage. Please arrive **15 minutes before** scheduled departure time (09:15 AM for 09:30 tour / 13:15 PM for 13:30 tour).
+- **Location Instructions**: Located at Kanari 1 in Karlovasi town. Look for the Beta Samos ATV tour signage. Please arrive **15 minutes before** scheduled departure time (09:45 AM for 10:00 AM tour).

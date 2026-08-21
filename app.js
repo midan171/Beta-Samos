@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tab_bring: "What to Bring",
 
       t1_title: "Pythagoras Cave & 3 Traditional Villages ATV Tour",
-      t1_dep: "Departures: 09:30 AM & 13:30 PM Daily",
+      t1_dep: "Departure: 10:00 AM, Duration: 4.5 Hours",
       t1_desc: "Experience a unique ATV exploration tour on a route that combines off-road adventure, mountain trails, seaside views, and traditional villages. The route passes through 3 villages and continues through mountain and dirt tracks, with a guided stop at the historic Pythagoras Cave. A unique ATV adventure combining nature, mountain, sea, and exploration!",
 
       itin_1_title: "Safety Briefing & Practice Lap",
@@ -102,8 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
       bring_sunscreen: "Sunscreen & Hat",
       bring_jacket: "Light Evening Jacket",
 
-      btn_book_t1: "Book This Tour (€95)",
-      btn_book_t2: "Book Sunset Tour (€95)",
+      btn_book_t1: "Book This Tour (€110)",
+      btn_book_t2: "Book Sunset Tour (€110)",
       btn_book_t3: "Book Megalo Seitani Tour (€175)",
       btn_whatsapp_inquire: "WhatsApp Chat",
 
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
       m_tour_label: "Selected Tour",
       m_date_label: "Preferred Date",
       m_time_label: "Time Slot",
-      opt_time_morning: "Morning (09:30 AM)",
+      opt_time_morning: "10:00 AM",
       opt_time_fullday: "Full Day (10:00 AM)",
       opt_time_afternoon: "Afternoon (13:30 PM)",
       opt_time_sunset: "Sunset (16:30)",
@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tab_bring: "Τι να Φέρετε",
 
       t1_title: "Εκδρομή ATV: Σπηλιά Πυθαγόρα & 3 Παραδοσιακά Χωριά",
-      t1_dep: "Αναχωρήσεις: 09:30 & 13:30 Καθημερινά",
+      t1_dep: "Αναχώρηση: 10:00, Διάρκεια: 4.5 Ώρες",
       t1_desc: "Ζήστε μια μοναδική εμπειρία εξερεύνησης με ATV, σε μια διαδρομή που συνδυάζει off-road περιπέτεια, βουνό, θάλασσα και παραδοσιακά χωριά. Η διαδρομή περνά από 3 χωριά και συνεχίζει μέσα από ορεινές και χωμάτινες διαδρομές, με στάση στη Σπηλιά του Πυθαγόρα. Μια μοναδική ATV περιπέτεια που συνδυάζει φύση, βουνό, θάλασσα και εξερεύνηση!",
 
       itin_1_title: "Ενημέρωση Ασφαλείας & Δοκιμαστικός Γύρος",
@@ -319,8 +319,8 @@ document.addEventListener('DOMContentLoaded', () => {
       bring_sunscreen: "Αντηλιακό & Καπέλο",
       bring_jacket: "Ελαφρύ Μπουφάν (Απόγευμα)",
 
-      btn_book_t1: "Κράτηση Εκδρομής (€95)",
-      btn_book_t2: "Κράτηση Sunset Tour (€95)",
+      btn_book_t1: "Κράτηση Εκδρομής (€110)",
+      btn_book_t2: "Κράτηση Sunset Tour (€110)",
       btn_book_t3: "Κράτηση Μεγάλο Σεϊτάνι (€175)",
       btn_whatsapp_inquire: "Συνομιλία WhatsApp",
 
@@ -426,7 +426,7 @@ document.addEventListener('DOMContentLoaded', () => {
       m_tour_label: "Επιλεγμένη Εκδρομή",
       m_date_label: "Επιθυμητή Ημερομηνία",
       m_time_label: "Ώρα Αναχώρησης",
-      opt_time_morning: "Πρωί (09:30)",
+      opt_time_morning: "10:00",
       opt_time_fullday: "Ολοήμερη (10:00)",
       opt_time_afternoon: "Μεσημέρι / Απόγευμα (13:30)",
       opt_time_sunset: "Ηλιοβασίλεμα (16:30)",
@@ -446,8 +446,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Timeslot Definitions per Tour ---
   const TOUR_TIMESLOTS = {
     flagship: [
-      { value: '09:30 AM', i18nKey: 'opt_time_morning' },
-      { value: '13:30 PM', i18nKey: 'opt_time_afternoon' }
+      { value: '10:00 AM', i18nKey: 'opt_time_morning' }
     ],
     sunset: [
       { value: '16:30 PM', i18nKey: 'opt_time_sunset' }
@@ -696,16 +695,22 @@ document.addEventListener('DOMContentLoaded', () => {
   function calculatePrice() {
     const tour = modalTourSelect ? modalTourSelect.value : 'flagship';
     const quads = modalQuads ? parseInt(modalQuads.value, 10) || 1 : 1;
+    const isShared = modalRiderType ? (modalRiderType.value === 'shared') : false;
 
-    let baseQuadPrice = 95;
+    let driverPrice = 110;
+    let passengerPrice = 80; // €110 - €30 discount
+
     if (tour === 'sunset') {
-      baseQuadPrice = 95;
+      driverPrice = 110;
+      passengerPrice = 80; // €110 - €30 discount
     } else if (tour === 'seitani' || tour === 'vip') {
-      baseQuadPrice = 175;
+      driverPrice = 175;
+      passengerPrice = 125; // €175 - €50 discount
     }
 
-    // Flat pricing per Quad (1 or 2 riders on the same Quad is same price)
-    const total = baseQuadPrice * quads;
+    // Pricing: 1st person (driver) pays full price; 2nd person (passenger) pays with discount
+    const pricePerQuad = isShared ? (driverPrice + passengerPrice) : driverPrice;
+    const total = pricePerQuad * quads;
 
     if (modalPriceDisplay) {
       modalPriceDisplay.textContent = `€${total}`;

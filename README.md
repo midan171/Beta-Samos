@@ -10,7 +10,7 @@ The repository maintains a structured, agent-accessible Knowledge Base for all c
 
 - **[`company_profile.md`](knowledge_base/company_profile.md)**: Company background, mission, contact info, brand tone, USPs, operating hours.
 - **[`tours_catalog/`](knowledge_base/tours_catalog/)**:
-  - **[`atv_hiking_guided_tour.md`](knowledge_base/tours_catalog/atv_hiking_guided_tour.md)**: Flagship 3–4 hour ATV Adventure – Pythagoras Cave Tour (€95/person, 3 villages, seaside & mountain trails).
+  - **[`atv_hiking_guided_tour.md`](knowledge_base/tours_catalog/atv_hiking_guided_tour.md)**: Flagship 4.5 hour ATV Adventure – Pythagoras Cave Tour (From €110/quad, 3 villages, seaside & mountain trails).
   - **[`megalo_seitani_full_day_sunset_tour.md`](knowledge_base/tours_catalog/megalo_seitani_full_day_sunset_tour.md)**: Full-Day 9–10 hour Megalo Seitani Sunset Experience (€175/person, Mount Kerkis, waterfalls, Drakei lunch, Megalo Seitani hike & swim).
   - **[`custom_private_tours.md`](knowledge_base/tours_catalog/custom_private_tours.md)**: Tailor-made private group packages.
 - **[`operations_and_faq.md`](knowledge_base/operations_and_faq.md)**: License rules (Category B), age limits, weather contingency, cancellation policy, customer FAQs.
