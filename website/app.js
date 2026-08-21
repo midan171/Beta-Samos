@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tours_title: "Choose Your Samos Adventure",
       tours_subtitle: "Small-group off-road quad safaris combining rugged mountain trails, waterfall hikes, and panoramic sea vistas.",
 
-      badge_bestseller: "Most Popular",
+      badge_bestseller: "ATV Adventure",
       badge_sunset: "Golden Hour",
       price_from: "From",
       price_per_driver: "/ quad (1-2 persons)",
@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tours_title: "Επιλέξτε την Περιπέτειά σας",
       tours_subtitle: "Ολιγομελή quad safaris που συνδυάζουν χωμάτινες ορεινές διαδρομές, πεζοπορία σε καταρράκτες και πανοραμική θέα στη θάλασσα.",
 
-      badge_bestseller: "Δημοφιλέστερη",
+      badge_bestseller: "Περιπέτεια ATV",
       badge_sunset: "Χρυσή Ώρα",
       price_from: "Από",
       price_per_driver: "/ όχημα (1-2 άτομα)",
