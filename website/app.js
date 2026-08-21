@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn_whatsapp_inquire: "WhatsApp Chat",
 
       t2_title: "Sunset Mountain & Coastal Quad Tour",
-      t2_dep: "Departure: 15:00 Daily (Sunset)",
+      t2_dep: "Departure: 15:00 Daily, Duration: 4.5 Hours (Until Sunset)",
       t2_desc: "Ride during the cooler evening hours as the golden sun dips over the Aegean sea. Experience high mountain ridge paths, panoramic sunset viewpoints, and twilight coastal trails.",
 
       t3_title: "Megalo Seitani Full Day Sunset ATV Experience",
@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn_whatsapp_inquire: "Συνομιλία WhatsApp",
 
       t2_title: "Sunset Mountain & Coastal Quad Tour",
-      t2_dep: "Αναχώρηση: 15:00 Καθημερινά (Ηλιοβασίλεμα)",
+      t2_dep: "Αναχώρηση: 15:00 Καθημερινά, Διάρκεια: 4,5 Ώρες (Μέχρι το Ηλιοβασίλεμα)",
       t2_desc: "Οδηγήστε τις δροσερές απογευματινές ώρες καθώς ο ήλιος δύει πάνω από το Αιγαίο. Ζήστε ορεινές κορυφογραμμές, μαγευτικά σημεία ηλιοβασιλέματος και παράκτιες διαδρομές στο λυκόφως.",
 
       t3_title: "Megalo Seitani Full Day Sunset ATV Experience",
